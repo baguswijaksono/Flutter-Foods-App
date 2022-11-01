@@ -1,8 +1,11 @@
 # Project Akhir Pemrogramman Perangkat Bergerak
 
+## Authors
+
+[Bagus Muhammad Wijaksono](https://github.com/baguswijaksono)
+
 [Features](#features) | [Installation](#installation) | [Usage](#usage) | [Examples](#examples)
 ## What are Discord Music Bots?
-
 
 Project ini dibuat untuk Project akhir semester 3 yang dibuat dengan bahasa pemrograman dart dan framework Flutter 
 
@@ -27,6 +30,4 @@ This bot is free Discord music bot that you can add and use in your Discord serv
 
 Most of the bots featured here for regular music playback fulfill all sorts of different functions, and some of these can replace your main server bot. 
 
-## Authors
 
-[Bagus Muhammad Wijaksono](https://github.com/baguswijaksono)
