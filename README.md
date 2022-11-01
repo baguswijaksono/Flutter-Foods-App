@@ -1,6 +1,6 @@
-# flutter_application_akhir
+# Project Akhir Pemrogramman Perangkat Bergerak
 
-A new Flutter project.
+Project ini dibuat untuk Project akhir semester 3 yang dibuat dengan bahasa pemrograman dart dan framework Flutter 
 
 ## Getting Started
 
