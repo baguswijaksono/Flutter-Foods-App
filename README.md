@@ -1,5 +1,5 @@
 # Project Akhir Pemrogramman Perangkat Bergerak
-[User Interface Design](#User Interface Design) | [Dependency](#Dependency) | [Installation](#installation) | [Usage](#usage) | [Pictures](#picture)
+[User Interface Design](#Ui) | [Dependency](#Dependency) | [Installation](#installation) | [Usage](#usage) | [Pictures](#picture)
 
 ## What are Discord Music Bots?
 
