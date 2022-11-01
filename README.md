@@ -1,16 +1,29 @@
 # Project Akhir Pemrogramman Perangkat Bergerak
 
+[Features](#features) | [Installation](#installation) | [Usage](#usage) | [Examples](#examples)
+## What are Discord Music Bots?
+
+
 Project ini dibuat untuk Project akhir semester 3 yang dibuat dengan bahasa pemrograman dart dan framework Flutter 
 
-## Getting Started
+A discord music bot is a program that plays audio from a specific website at the user's request. Even though they all do the same primary function (play music), some bots offer more features than others.
+For example, you can find discord music bots designed for servers that want to be as automated as possible. These come equipped with several different features such as trivia, polls, moderation, and even mini-games, amongst other things.
 
-This project is a starting point for a Flutter application.
+## Features
+`!play`: Play music according music title in command.
 
-A few resources to get you started if this is your first Flutter project:
+`!queue`: Display all music in queue.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`!leave`: Kick bot from voice server.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`!skip`: Skip current playing music.
+
+`!pause`: Pause current playing music.
+
+`!resume`: Resume current paused music.
+
+## Usage 
+This bot is free Discord music bot that you can add and use in your Discord server. It can play music from platforms Youtube. Listeners can Play , Pause, resume, see queue list and kick out bot from the voice server also there are a few more features that you can use as well.
+
+Most of the bots featured here for regular music playback fulfill all sorts of different functions, and some of these can replace your main server bot. 
+
