@@ -4,7 +4,7 @@ Project Akhir Pemrogramman Perangkat Bergerak
 [User Interface Design](#Ui) | [Information Architecture](#IA)  | [Dependency](#Dependency) | [Installation](#installation) | [Usage](#usage) | [Pictures](#picture)
 
 ## What are This Project?
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Hi Fella, I'm Bagus. I'm a student who comes from a small town in the province of Central Java. Maybe you are wondering what kind of application project this actually is. So Mbadogtify is an application that I developed for the final project of one of the courses; maybe you guys are more familiar with the term "mobile programming." This project uses the Dart programming language and the Flutter framework. This application can be used by all of you to view information about a food, whether it's nutrition information, the ingredients used to make the dish, or how to cook the food.
 
 ## UI
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
