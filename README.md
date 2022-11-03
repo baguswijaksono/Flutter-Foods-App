@@ -1,4 +1,4 @@
-# Eatfy Foods App 
+# Mbadogtify Foods App 
 Project Akhir Pemrogramman Perangkat Bergerak
 
 [User Interface Design](#Ui) | [Information Architecture](#IA)  | [Dependency](#Dependency) | [Installation](#installation) | [Usage](#usage) | [Pictures](#picture)
