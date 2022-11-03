@@ -17,8 +17,7 @@ Information architecture provides the blueprint of the design; it is the foundat
 ![alt text](https://user-images.githubusercontent.com/106671990/199673682-a3bb1dd8-eb7a-4887-b05a-4c6ba0b34b39.svg)
 
 ## Dependency
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+Dependency is a broad software engineering term used to refer when a piece of software relies on another one. Simply put, if Program A requires Program B to be able to run, Program A is dependent on Program B. This makes Program B a dependency of Program A.
 https://spoonacular.com/food-api
 
 ## Installation
