@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 This bot is free Discord music bot that you can add and use in your Discord server. It can play music from platforms Youtube. Listeners can Play , Pause, resume, see queue list and kick out bot from the voice server also there are a few more features that you can use as well. Most of the bots featured here for regular music playback fulfill all sorts of different functions, and some of these can replace your main server bot. 
 
 ## Download
-[Linux](https://github.com/baguswijaksono) | [Android](https://github.com/baguswijaksono) | [IOS](https://github.com/baguswijaksono) | [Windows](https://github.com/baguswijaksono)
+[Linux](https://github.com/baguswijaksono) | [Android](https://github.com/baguswijaksono) | [IOS](https://www.youtube.com/watch?v=dQw4w9WgXcQ) | [Windows](https://github.com/baguswijaksono)
 
 ## Authors
 [Bagus Muhammad Wijaksono](https://github.com/baguswijaksono)
