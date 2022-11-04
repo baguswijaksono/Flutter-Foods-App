@@ -10,7 +10,7 @@ Hi Fella, I'm Bagus. I'm a student who comes from a small town in the province o
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Fonts
-In this Mbadogtify application project we use several fonts that can be used for free on [Google Fonts](https://fonts.google.com/).
+In this Mbadogtify application project we use [Bento Sans](https://www.fontdload.com/downloads/benton-sans/) that can be used for free.
 
 
 ## IA 
