@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -313,7 +315,7 @@ Padding(
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
     Text(
-      "Explore",
+      "Reccomendations",
       textAlign: TextAlign.left,
       style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
     ),
@@ -1063,6 +1065,7 @@ class searchPage extends StatelessWidget{
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
+      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
             bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Container(
@@ -1113,11 +1116,120 @@ class searchPage extends StatelessWidget{
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
-                          ///aa
+                            Padding(padding: const EdgeInsets.all(15.0),
+            child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //mainAxisSize: MainAxisSize.max,
+  children: <Widget>[
+    Text(
+      "Food Classify",
+      textAlign: TextAlign.left,
+      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
+    ),
+
+  ],
+),               
+     ),
+    Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+               children: [
+                 Padding(
+                   padding: const EdgeInsets.only(left: 15),
+                   child: SizedBox(
+                    height: dev_height/27,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),
+                     Padding(
+                   padding: const EdgeInsets.only(left: 8),
+                   child: SizedBox(
+                    height: dev_height/27,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),
+                         Padding(
+                   padding: const EdgeInsets.only(left: 8),
+                   child: SizedBox(
+                    height: dev_height/27,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),      
+               ],
+             ),
+                              Padding(padding: const EdgeInsets.all(15.0),
+            child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //mainAxisSize: MainAxisSize.max,
+  children: <Widget>[
+    Text(
+      "Food Classify",
+      textAlign: TextAlign.left,
+      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
+    ),
+
+  ],
+),               
+     ),
+
+
                       ]
                       ),
-                    )]
-    ),));
+                    ),
+                    
+                       ]
+    )
+    ,));
   }
 }
 
@@ -1128,6 +1240,7 @@ class user extends StatelessWidget{
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
+      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
             bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Container(
@@ -1194,6 +1307,7 @@ class fav extends StatelessWidget{
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
+      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
             bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Container(
