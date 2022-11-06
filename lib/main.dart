@@ -319,47 +319,491 @@ Padding(
     ),
   ],
 ),),
-Row(
-  children: [
-        Padding(
-                              padding: const EdgeInsets.only(left:12.0),
-                              child: ClipRRect(
-                                
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-              children: <Widget>[
-                Container(
-                  child: Image.network(
-                  'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
+                                  ),
                                 ),
-                              ),
-    Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Text(
-            "Makanan Satu",
-            textAlign: TextAlign.end,
-            style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Text(
-            "Disini deskripsi",
-            textAlign: TextAlign.end,
-            style: TextStyle(color: Colors.white,),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
           ),
-        ),
-      ],
-    ),
-            
-  ],
+        ],
+      ),
+              
+    ],
+  ),
 ),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+Padding(
+  padding: const EdgeInsets.only(bottom: 10),
+  child:   Row(
+    children: [
+          Padding(
+                                padding: const EdgeInsets.only(left:12.0),
+                                child: ClipRRect(
+                                  
+                                  borderRadius: BorderRadius.circular(10),
+                                          child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                    ),
+                  ),
+                ],
+              ),
+                                  ),
+                                ),
+      Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Makanan Satu",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Text(
+              "Disini deskripsi",
+              textAlign: TextAlign.end,
+              style: TextStyle(color: Colors.white,),
+            ),
+          ),
+        ],
+      ),
+              
+    ],
+  ),
+),
+
                       ]
                       ),   
                     ),         //kotak scroll
@@ -429,66 +873,153 @@ class list extends StatelessWidget{
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
-                        Padding(padding: const EdgeInsets.all(15.0),
-                          ),
+                      Row(
+                        children: [
                           Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width,
+    padding: const EdgeInsets.all(4),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) => japan()));},
+
+                                                    child: ClipRRect(
+                                    
+                                    
+                                    borderRadius: BorderRadius.circular(12),
+                                            child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.topLeft,
+                child: Image.network(
+                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                ),
               ),
-            ),
-          ],
-        ),
-                            ),
-                          ),
+              Container(
+                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                  alignment: Alignment.center,
+                  child: Text(
+                          'Japanesse',
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                          
+                  ),),
+            ],
+          ),
+                                    ),
+
+),
+  ),
+                            Padding(
+    padding: const EdgeInsets.only(top: 4,bottom: 4,right: 3),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) => japan()));},
+
+                                                    child: ClipRRect(
+                                    
+                                    
+                                    borderRadius: BorderRadius.circular(12),
+                                            child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.topLeft,
+                child: Image.network(
+                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                ),
+              ),
+              Container(
+                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                  alignment: Alignment.center,
+                  child: Text(
+                          'Japanesse',
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                          
+                  ),),
+            ],
+          ),
+                                    ),
+
+),
+  ),
+                        ],
+                      ),
+                      Row(
+                        children: [
                           Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width,
+    padding: const EdgeInsets.only(left: 4,bottom: 4,right: 4),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) => japan()));},
+
+                                                    child: ClipRRect(
+                                    
+                                    
+                                    borderRadius: BorderRadius.circular(12),
+                                            child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.topLeft,
+                child: Image.network(
+                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                ),
               ),
-            ),
-          ],
-        ),
-                            ),
-                          ),
-        Padding(
-          padding: const EdgeInsets.all(12),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(19),
-            child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width,
+              Container(
+                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                  alignment: Alignment.center,
+                  child: Text(
+                          'Japanesse',
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                          
+                  ),),
+            ],
+          ),
+                                    ),
+
+),
+  ),
+                            Padding(
+    padding: const EdgeInsets.only(bottom: 4,right: 3),
+    child: GestureDetector(
+                onTap:() {Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) => japan()));},
+
+                                                    child: ClipRRect(
+                                    
+                                    
+                                    borderRadius: BorderRadius.circular(12),
+                                            child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.topLeft,
+                child: Image.network(
+                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                ),
               ),
-            ),
-                        Container(
-                          alignment: Alignment.center,
-                          height: 280,
-                child: Text(
-                  'Show text here',
-                  style: TextStyle(color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 22.0),
-                ))
-          ],
-        ),
-                            ),
-                          ),
-                          ///aa
+              Container(
+                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                  alignment: Alignment.center,
+                  child: Text(
+                          'Japanesse',
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                          
+                  ),),
+            ],
+          ),
+                                    ),
+
+),
+  ),
+                        ],
+                      ),
                       ]
                       ),
                       
@@ -513,76 +1044,15 @@ class detailScreen extends StatelessWidget{
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
                     SizedBox(
-                       height: dev_height-78,
+                       height: dev_height,
                     width: dev_width,
                     child: ListView(
                       scrollDirection: Axis.vertical,
-                      children: [
-                        Padding(padding: const EdgeInsets.all(15.0),
-                          ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width,
-              ),
-            ),
-          ],
-        ),
-                            ),
-                          ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width,
-              ),
-            ),
-          ],
-        ),
-                            ),
-                          ),
-        Padding(
-          padding: const EdgeInsets.all(12),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(19),
-            child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width,
-              ),
-            ),
-                        Container(
-                          alignment: Alignment.center,
-                          height: 280,
-                child: Text(
-                  'Show text here',
-                  style: TextStyle(color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 22.0),
-                ))
-          ],
-        ),
-                            ),
-                          ),
-                          ///aa
+                      children: [                ///aa
                       ]
                       ),
                     )]
     ),));
-
   }
 }
 
@@ -648,7 +1118,6 @@ class searchPage extends StatelessWidget{
                       ),
                     )]
     ),));
-
   }
 }
 
