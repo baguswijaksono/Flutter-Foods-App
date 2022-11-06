@@ -357,13 +357,13 @@ class list extends StatelessWidget{
                 GButton(icon: Icons.home,
                   text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));}),
                 GButton(icon: Icons.search_rounded,
-                  text: 'Search',textStyle: TextStyle(color: Colors.white,),),
+                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),),
+                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),),
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),
                 
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
@@ -573,15 +573,15 @@ class searchPage extends StatelessWidget{
               gap: 20,
               tabs: [
                 GButton(icon: Icons.home,
-                  text: 'Home',textStyle: TextStyle(color: Colors.white,),),
+                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));}),
                 GButton(icon: Icons.search_rounded,
-                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
+                  text: 'Search',textStyle: TextStyle(color: Colors.white,),),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),),
+                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),),
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),
                 
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
@@ -640,13 +640,13 @@ class user extends StatelessWidget{
               gap: 20,
               tabs: [
                 GButton(icon: Icons.home,
-                  text: 'Home',textStyle: TextStyle(color: Colors.white,),),
+                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));}),
                 GButton(icon: Icons.search_rounded,
                   text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),),
+                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
                 text: 'Account',textStyle: TextStyle(color: Colors.white,),),
                 
@@ -707,7 +707,7 @@ class fav extends StatelessWidget{
               gap: 20,
               tabs: [
                 GButton(icon: Icons.home,
-                  text: 'Home',textStyle: TextStyle(color: Colors.white,),),
+                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));}),
                 GButton(icon: Icons.search_rounded,
                   text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
                 GButton(icon: Icons.list_rounded,
@@ -715,7 +715,7 @@ class fav extends StatelessWidget{
                 GButton(icon: Icons.favorite_rounded,
                 text: 'Favourite',textStyle: TextStyle(color: Colors.white,),),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),),
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),
                 
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
