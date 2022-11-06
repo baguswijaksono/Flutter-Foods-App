@@ -1113,6 +1113,14 @@ class detailScreen extends StatelessWidget{
                               ),
   ),
 ),
+                              Container(
+                                padding: const EdgeInsets.all(8.0),
+                              
+                                child: const Text('Pantai Jatimalang adalah pantai kebanggan warga Purworejo, Jawa Tengah. Pantai ini banyak meninggalkan kenangan masa muda dulu, sering banget dulu jalan jalan ke pantai ini, selain pantai congot dan glagah. Pasir Hitam dan Ombak Besar adalah ciri khas pantai selatan di sepanjang kulonprogo, purworejo dan kebumen, tak terkecuali Pantai Jatimalang.',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontFamily: 'Oxygen',fontWeight: FontWeight.w300,color: Colors.white),
+),
+), 
       Container(
         child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
           DefaultTabController(
@@ -1156,7 +1164,9 @@ class detailScreen extends StatelessWidget{
             ])
           ),
         ]),
-      ),              ///aa
+      ),   //
+      
+                 ///aa
                       ]
                       ),
                     ),
