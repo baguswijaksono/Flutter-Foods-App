@@ -19,8 +19,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
-  
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -82,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [ 
             
                     SizedBox(
-                    height: dev_height-104,
+                    height: dev_height-78,
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
@@ -314,7 +312,6 @@ Padding(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
-    
     Text(
       "Explore",
       textAlign: TextAlign.left,
@@ -322,85 +319,55 @@ Padding(
     ),
   ],
 ),),
-Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',height: 150,width: dev_width,
-              ),
+Row(
+  children: [
+        Padding(
+                              padding: const EdgeInsets.only(left:12.0),
+                              child: ClipRRect(
+                                
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+              children: <Widget>[
+                Container(
+                  child: Image.network(
+                  'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width/3,
+                  ),
+                ),
+              ],
             ),
-          ],
+                                ),
+                              ),
+    Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: Text(
+            "Makanan Satu",
+            textAlign: TextAlign.end,
+            style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+          ),
         ),
-                            ),
-                          ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',height: 150,width: dev_width,
-              ),
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: Text(
+            "Disini deskripsi",
+            textAlign: TextAlign.end,
+            style: TextStyle(color: Colors.white,),
+          ),
         ),
-                            ),
-                          ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',height: 150,width: dev_width,
-              ),
-            ),
-          ],
-        ),
-                            ),
-                          ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',height: 150,width: dev_width,
-              ),
-            ),
-          ],
-        ),
-                            ),
-                          ),
+      ],
+    ),
+            
+  ],
+),
                       ]
-                      ),
-                      
+                      ),   
                     ),         //kotak scroll
           ],
           )),
     );
-    
   }
 }
-
 // ignore: must_be_immutable
 class list extends StatelessWidget{
   int _selectedIndex =2;
