@@ -124,8 +124,7 @@ GestureDetector(
         ),
                             ),
 
-)
-,
+),
       Padding(padding: EdgeInsets.all(12),
       
       ),
@@ -142,6 +141,17 @@ GestureDetector(
       textAlign: TextAlign.left,
       style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
     ),
+  GestureDetector(
+
+              onTap:() {Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => detailScreen()));},
+
+            child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //mainAxisSize: MainAxisSize.max,
+  children: <Widget>[
     Text(
       "View More",
       textDirection: TextDirection.ltr,
@@ -150,7 +160,13 @@ GestureDetector(
     )
   ],
 ),
+
+),
+  ],
+),
             ),
+
+
 // nuslis interface disini
                     SizedBox(
                     height: 150,
