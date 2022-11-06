@@ -1,4 +1,4 @@
-import 'dart:ffi';
+//import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -1146,6 +1146,14 @@ class searchPage extends StatelessWidget{
       style: ButtonStyle(
         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
         backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(83, 232, 139, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
@@ -1221,8 +1229,163 @@ class searchPage extends StatelessWidget{
   ],
 ),               
      ),
-
-
+         Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+               children: [
+                 Padding(
+                   padding: const EdgeInsets.only(left: 15),
+                   child: SizedBox(
+                    height: dev_height/27,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),
+                     Padding(
+                   padding: const EdgeInsets.only(left: 8),
+                   child: SizedBox(
+                    height: dev_height/27,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),
+                         Padding(
+                   padding: const EdgeInsets.only(left: 8),
+                   child: SizedBox(
+                    height: dev_height/27,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),      
+               ],
+             ),
+                 Padding(
+                   padding: const EdgeInsets.only(top: 9),
+                   child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+               children: [
+                   Padding(
+                     padding: const EdgeInsets.only(left: 15),
+                     child: SizedBox(
+                      height: dev_height/27,
+                      width: dev_width/4,
+                       child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                     ),
+                   ),
+                       Padding(
+                     padding: const EdgeInsets.only(left: 8),
+                     child: SizedBox(
+                      height: dev_height/27,
+                      width: dev_width/4,
+                       child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                     ),
+                   ),
+                           Padding(
+                     padding: const EdgeInsets.only(left: 8),
+                     child: SizedBox(
+                      height: dev_height/27,
+                      width: dev_width/4,
+                       child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                     ),
+                   ),      
+               ],
+             ),
+                 ),
+     
                       ]
                       ),
                     ),
@@ -1465,3 +1628,4 @@ class japan extends StatelessWidget{
     ),));
   }
 }
+
