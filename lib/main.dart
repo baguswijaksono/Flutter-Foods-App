@@ -171,87 +171,148 @@ GestureDetector(
                       scrollDirection: Axis.horizontal,
                       children: [
         
-  GestureDetector(
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
 
-              onTap:() {Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => detailScreen()));},
+                onTap:() {Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => indonesian()));},
 
-                                            child: ClipRRect(
-                            
-                            
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
-              ),
-            ),
-            Container(
-              width: 210,
+                                              child: ClipRRect(
+                              
+                              
+                              borderRadius: BorderRadius.circular(10),
+                                      child: Stack(
+            children: <Widget>[
+              Container(
                 alignment: Alignment.center,
-                child: Text(
-                  'Show text here',
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                  
-                ),),
-          ],
-        ),
-                            ),
+                child: Image.network(
+                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Indonesian',
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                    
+                  ),),
+            ],
+          ),
+                              ),
 
 ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
-              ),
-            ),
-            Container(
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => indonesian()));},
+
+                                              child: ClipRRect(
+                              
+                              
+                              borderRadius: BorderRadius.circular(10),
+                                      child: Stack(
+            children: <Widget>[
+              Container(
                 alignment: Alignment.center,
-                child: Text(
-                  'Show text here',
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0),
-                )),
-          ],
-        ),
-                            ),
-                          ),
-                          Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                                    child: Stack(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-              'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+                child: Image.network(
+                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+                ),
               ),
-            ),
-            Container(
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Indonesian',
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                    
+                  ),),
+            ],
+          ),
+                              ),
+
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => indonesian()));},
+
+                                              child: ClipRRect(
+                              
+                              
+                              borderRadius: BorderRadius.circular(10),
+                                      child: Stack(
+            children: <Widget>[
+              Container(
                 alignment: Alignment.center,
-                child: Text(
-                  'Show text here',
-                  style: TextStyle(color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 22.0),
-                )),
-          ],
-        ),
-                            ),
-                          ),
+                child: Image.network(
+                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Indonesian',
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                    
+                  ),),
+            ],
+          ),
+                              ),
+
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => indonesian()));},
+
+                                              child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                                      child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.network(
+                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Indonesian',
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                    
+                  ),),
+            ],
+          ),
+                              ),
+
+),
+  ),
                           ],
                       ),
-                    ),
-        
-                    Padding(padding: const EdgeInsets.all(15.0),
+                    ),      
+    Padding(padding: const EdgeInsets.all(15.0),
             child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   //mainAxisSize: MainAxisSize.max,
