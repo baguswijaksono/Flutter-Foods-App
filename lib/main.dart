@@ -1041,19 +1041,75 @@ class detailScreen extends StatelessWidget{
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
+            backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
             body: SafeArea(
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
                     SizedBox(
-                       height: dev_height,
+                       height: dev_height-132,
                     width: dev_width,
                     child: ListView(
                       scrollDirection: Axis.vertical,
-                      children: [                ///aa
+                      children: [   
+                        Padding(
+  padding: const EdgeInsets.only(bottom: 12),
+  child:   GestureDetector(
+                onTap:() {Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => detailScreen()));},
+  
+                                              child: ClipRRect(
+                                      child: Stack(
+            children: <Widget>[
+              Container(
+                
+                alignment: Alignment.center,
+                child: Image.network(
+                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width),
+              ),
+              IconButton(  icon: new Icon(Icons.arrow_back, color: Colors.white),
+  onPressed: () => Navigator.of(context).pop(),)],
+          ),
+                              ),
+  ),
+),              ///aa
                       ]
                       ),
-                    )]
+                    ),
+                                     Padding(
+                   padding: const EdgeInsets.all(12),
+                   child: SizedBox(
+                    height: dev_height/15,
+                    width: dev_width/4,
+                     child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(37, 37, 37, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                   ),
+                 ),]
     ),));
   }
 }
