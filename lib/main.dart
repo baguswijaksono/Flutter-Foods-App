@@ -1,5 +1,3 @@
-//import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -25,6 +23,8 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+
+
 class _MyHomePageState extends State<MyHomePage> {
 
 //nulis kode disini
@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
     int _selectedIndex =0;
     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
+  
     return Scaffold(
       backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
       bottomNavigationBar: Padding(
@@ -64,8 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.favorite_rounded,
                 text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),
-                
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
               // ignore: unused_element
@@ -86,8 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
-                        Padding(padding: const EdgeInsets.all(15.0),
-            
+                        Padding(padding: const EdgeInsets.all(15.0),            
             child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   //mainAxisSize: MainAxisSize.max,
@@ -103,29 +102,71 @@ class _MyHomePageState extends State<MyHomePage> {
 Padding(
   padding: const EdgeInsets.all(15.0),
   child:   GestureDetector(
-  
                 onTap:() {Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) => detailScreen()));},
-  
-                                              child: ClipRRect(
-                              
-                              
+                                              child: ClipRRect(  
                               borderRadius: BorderRadius.circular(10),
-                                      child: Stack(
+                                      child: Stack(             
             children: <Widget>[
               Container(
-                
                 alignment: Alignment.center,
                 child: Image.network(
                 'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width),
               ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 100),
+                        child: Container(
+                          alignment: Alignment.centerRight,
+                          child: Text(
+      "wkwkkwwwkkwkw.",
+      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.green),
+    ),
+                        ),
+                      ),                                     Padding(
+                       padding: const EdgeInsets.all(12),
+                       child: Container(
+                        alignment: Alignment.centerRight,
+                         child: SizedBox(
+                          height: dev_height/15,
+                          width: dev_width/4,
+                           child: ElevatedButton(
+      child: Text(
+        "Buy now",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(37, 37, 37, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                         ),
+                       ),
+                 ),
+                    ],
+                  ),
               
             ],
           ),
                               ),
-  
   ),
 ),                    
             Padding(padding: const EdgeInsets.all(15.0),
@@ -156,7 +197,6 @@ Padding(
     )
   ],
 ),
-
 ),
   ],
 ),
@@ -194,13 +234,11 @@ Padding(
                   alignment: Alignment.center,
                   child: Text(
                       'Indonesian',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
                   ),),
             ],
           ),
                                 ),
-
 ),
   ),
   Padding(
