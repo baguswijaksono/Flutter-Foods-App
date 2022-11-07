@@ -1076,7 +1076,7 @@ class detailScreen extends StatelessWidget{
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
                     SizedBox(
-                       height: dev_height-132,
+                       height: dev_height-79,
                     width: dev_width,
                     child: ListView(
                       scrollDirection: Axis.vertical,
@@ -1166,7 +1166,7 @@ class detailScreen extends StatelessWidget{
                 Padding(
                    padding: const EdgeInsets.all(12),
                    child: SizedBox(
-                    height: dev_height/15,
+                    height: 50,
                     width: dev_width/4,
                      child: ElevatedButton(
       child: Text(
@@ -1184,12 +1184,6 @@ class detailScreen extends StatelessWidget{
         ; // Defer to the widget's default.
       },
     ),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
       ),
       onPressed: () => null
     ),
