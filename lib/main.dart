@@ -1066,7 +1066,7 @@ class detailScreen extends StatelessWidget{
   Widget build(BuildContext context) {
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
-       final _selectedColor = Color(0xff1a73e8);
+       final _selectedColor =Color.fromRGBO(83, 232, 139, 1.0);
   final _unselectedColor = Color(0xff5f6368);
 
     return Scaffold(
@@ -1121,9 +1121,8 @@ class detailScreen extends StatelessWidget{
               Container(
                 child: TabBar(
                   indicator: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8)),
                     color: _selectedColor
-
                   ),
                   labelColor: Colors.white,
                   unselectedLabelColor: Colors.white,
@@ -1136,8 +1135,8 @@ class detailScreen extends StatelessWidget{
               ),
               Container(
                 height: 400, //height of TabBarView
-                decoration: BoxDecoration(color: Colors.grey.shade200,
-                  border: Border(top: BorderSide(color: Colors.grey, width: 0.5)),borderRadius: BorderRadius.circular(8.0),
+                decoration: BoxDecoration(color: Color.fromRGBO(83, 232, 139, 1.0),
+                  border: Border(top: BorderSide(color: Colors.grey, width: 0.5)),borderRadius: BorderRadius.only(bottomRight: Radius.circular(8),bottomLeft: Radius.circular(8)),
                 ),
                 child: TabBarView(children: <Widget>[
                   Container(
