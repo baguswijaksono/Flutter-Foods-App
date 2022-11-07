@@ -23,8 +23,6 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-
-
 class _MyHomePageState extends State<MyHomePage> {
 
 //nulis kode disini
@@ -118,7 +116,7 @@ Padding(
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 100),
+                        padding: const EdgeInsets.only(top:100),
                         child: Container(
                           alignment: Alignment.centerRight,
                           child: Text(
@@ -131,16 +129,16 @@ Padding(
                        child: Container(
                         alignment: Alignment.centerRight,
                          child: SizedBox(
-                          height: dev_height/15,
-                          width: dev_width/4,
+                          height: dev_height/19,
+                          width: dev_width/3,
                            child: ElevatedButton(
       child: Text(
-        "Buy now",
+        "See More",
         style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
       ),
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
         overlayColor: MaterialStateProperty.resolveWith<Color?>(
       (Set<MaterialState> states) {
         if (states.contains(MaterialState.pressed))
@@ -1031,10 +1029,7 @@ class list extends StatelessWidget{
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) => japan()));},
-
-                                                    child: ClipRRect(
-                                    
-                                    
+                                                    child: ClipRRect(                        
                                     borderRadius: BorderRadius.circular(12),
                                             child: Stack(
             children: <Widget>[
@@ -1049,35 +1044,31 @@ class list extends StatelessWidget{
                   alignment: Alignment.center,
                   child: Text(
                           'Japanesse',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                          
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),               
                   ),),
             ],
           ),
                                     ),
-
 ),
   ),
                         ],
                       ),
                       ]
-                      ),
-                      
+                      ),  
                     ),     //kotak scroll
           ],
           )),
-
     );
-
   }
-
 }
-
 class detailScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
+       final _selectedColor = Color(0xff1a73e8);
+  final _unselectedColor = Color(0xff5f6368);
+
     return Scaffold(
             backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
             body: SafeArea(
@@ -1093,16 +1084,10 @@ class detailScreen extends StatelessWidget{
                         Padding(
   padding: const EdgeInsets.only(bottom: 12),
   child:   GestureDetector(
-                onTap:() {Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => detailScreen()));},
-  
-                                              child: ClipRRect(
-                                      child: Stack(
+         child: ClipRRect(    
+             child: Stack(
             children: <Widget>[
               Container(
-                
                 alignment: Alignment.center,
                 child: Image.network(
                 'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width),
@@ -1112,12 +1097,18 @@ class detailScreen extends StatelessWidget{
           ),
                               ),
   ),
+),                              Container(
+                                padding: const EdgeInsets.all(8.0),
+                                child: const Text('Food name blablabla',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.white),
+),
 ),
                               Container(
                                 padding: const EdgeInsets.all(8.0),
                               
                                 child: const Text('Pantai Jatimalang adalah pantai kebanggan warga Purworejo, Jawa Tengah. Pantai ini banyak meninggalkan kenangan masa muda dulu, sering banget dulu jalan jalan ke pantai ini, selain pantai congot dan glagah. Pasir Hitam dan Ombak Besar adalah ciri khas pantai selatan di sepanjang kulonprogo, purworejo dan kebumen, tak terkecuali Pantai Jatimalang.',
-                                textAlign: TextAlign.center,
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(fontFamily: 'Oxygen',fontWeight: FontWeight.w300,color: Colors.white),
 ),
 ), 
@@ -1129,19 +1120,24 @@ class detailScreen extends StatelessWidget{
             child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
               Container(
                 child: TabBar(
+                  indicator: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: _selectedColor
+
+                  ),
                   labelColor: Colors.white,
                   unselectedLabelColor: Colors.white,
                   tabs: [
-                    Tab(text: 'Tab 1'),
-                    Tab(text: 'Tab 2'),
-                    Tab(text: 'Tab 3'),
+                    Tab(text: 'Nutritions'),
+                    Tab(text: 'ingredients'),
+                    Tab(text: 'Recipe'),
                   ],
                 ),
               ),
               Container(
                 height: 400, //height of TabBarView
-                decoration: BoxDecoration(
-                  border: Border(top: BorderSide(color: Colors.grey, width: 0.5))
+                decoration: BoxDecoration(color: Colors.grey.shade200,
+                  border: Border(top: BorderSide(color: Colors.grey, width: 0.5)),borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: TabBarView(children: <Widget>[
                   Container(
@@ -1165,12 +1161,10 @@ class detailScreen extends StatelessWidget{
           ),
         ]),
       ),   //
-      
-                 ///aa
                       ]
                       ),
                     ),
-                                     Padding(
+                Padding(
                    padding: const EdgeInsets.all(12),
                    child: SizedBox(
                     height: dev_height/15,
