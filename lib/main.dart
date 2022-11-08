@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-
+import 'package:tab_container/tab_container.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -129,8 +129,8 @@ Padding(
                        child: Container(
                         alignment: Alignment.centerRight,
                          child: SizedBox(
-                          height: dev_height/19,
-                          width: dev_width/3,
+                          height: 45,
+                          width: 175,
                            child: ElevatedButton(
       child: Text(
         "See More",
@@ -1061,137 +1061,49 @@ class list extends StatelessWidget{
     );
   }
 }
+
 class detailScreen extends StatelessWidget{
+  const detailScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
-     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
-       final _selectedColor =Color.fromRGBO(83, 232, 139, 1.0);
-  final _unselectedColor = Color(0xff5f6368);
-
     return Scaffold(
-            backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
-            body: SafeArea(
-        child: Column(
-          crossAxisAlignment:CrossAxisAlignment.stretch, 
-          children: [ 
-                    SizedBox(
-                       height: dev_height-79,
-                    width: dev_width,
-                    child: ListView(
-                      scrollDirection: Axis.vertical,
-                      children: [   
-                        Padding(
-  padding: const EdgeInsets.only(bottom: 12),
-  child:   GestureDetector(
-         child: ClipRRect(    
-             child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.network(
-                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width),
-              ),
-              IconButton(  icon: new Icon(Icons.arrow_back, color: Colors.white),
-  onPressed: () => Navigator.of(context).pop(),)],
-          ),
-                              ),
-  ),
-),                              Container(
-                                padding: const EdgeInsets.all(8.0),
-                                child: const Text('Food name blablabla',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.white),
-),
-),
-                              Container(
-                                padding: const EdgeInsets.all(8.0),
-                              
-                                child: const Text('Pantai Jatimalang adalah pantai kebanggan warga Purworejo, Jawa Tengah. Pantai ini banyak meninggalkan kenangan masa muda dulu, sering banget dulu jalan jalan ke pantai ini, selain pantai congot dan glagah. Pasir Hitam dan Ombak Besar adalah ciri khas pantai selatan di sepanjang kulonprogo, purworejo dan kebumen, tak terkecuali Pantai Jatimalang.',
-                                textAlign: TextAlign.justify,
-                                style: TextStyle(fontFamily: 'Oxygen',fontWeight: FontWeight.w300,color: Colors.white),
-),
-), 
-      Container(
-        child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
-          DefaultTabController(
-            length: 3, // length of tabs
-            initialIndex: 0,
-            child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
-              Container(
-                child: TabBar(
-                  indicator: BoxDecoration(
-                    borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8)),
-                    color: _selectedColor
-                  ),
-                  labelColor: Colors.white,
-                  unselectedLabelColor: Colors.white,
-                  tabs: [
-                    Tab(text: 'Nutritions'),
-                    Tab(text: 'ingredients'),
-                    Tab(text: 'Recipe'),
-                  ],
-                ),
-              ),
-              Container(
-                height: 400, //height of TabBarView
-                decoration: BoxDecoration(color: Color.fromRGBO(83, 232, 139, 1.0),
-                  border: Border(top: BorderSide(color: Colors.grey, width: 0.5)),borderRadius: BorderRadius.only(bottomRight: Radius.circular(8),bottomLeft: Radius.circular(8)),
-                ),
-                child: TabBarView(children: <Widget>[
-                  Container(
-                    child: Center(
-                      child: Text('Display Tab 1', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-                    ),
-                  ),
-                  Container(
-                    child: Center(
-                      child: Text('Display Tab 2', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-                    ),
-                  ),
-                  Container(
-                    child: Center(
-                      child: Text('Display Tab 3', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-                    ),
-                  ),
-                ])
-              )
-            ])
-          ),
-        ]),
-      ),   //
-                      ]
-                      ),
-                    ),
-                Padding(
-                   padding: const EdgeInsets.all(12),
-                   child: SizedBox(
-                    height: 50,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              expandedHeight: 300.0,
+              floating: false,
+              pinned: true,
+              stretch: true,
+              flexibleSpace: FlexibleSpaceBar(
+                  centerTitle: true,
+                  collapseMode: CollapseMode.parallax,
+                  title: const Text("Collapsing Appbar",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0,
+                      )),
+                  background: Image.network(
+                    "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    fit: BoxFit.cover,
+                  )),
+            ),
+          ];
+        },
+        body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (BuildContext context, int index) {
+            return ListTile(
+                title: Text("Item $index", textAlign: TextAlign.center));
+          },
+        ),
       ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
-        overlayColor: MaterialStateProperty.resolveWith<Color?>(
-      (Set<MaterialState> states) {
-        if (states.contains(MaterialState.pressed))
-          return Color.fromRGBO(37, 37, 37, 1.0); 
-          return null
-        ; // Defer to the widget's default.
-      },
-    ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),]
-    ),));
+    );
   }
 }
+
+
 
 class searchPage extends StatelessWidget{
   @override
