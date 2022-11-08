@@ -3,7 +3,8 @@ import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
-import 'package:flutter_application_akhir/screen/chart.dart';
+import 'package:flutter_application_akhir/screen/chart_kalori.dart';
+import 'package:flutter_application_akhir/screen/chart_nutrisi.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
 import 'package:flutter_application_akhir/src/china.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.favorite_rounded,
                 text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>BarChartSample1()));}),                
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PieChartSample2()));}),                
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
               // ignore: unused_element
