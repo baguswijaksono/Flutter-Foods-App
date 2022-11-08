@@ -1070,10 +1070,12 @@ class detailScreen extends StatelessWidget{
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
         body: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
               SliverAppBar(
+                backgroundColor: const Color(0xff6ae792),
                 expandedHeight: 300.0,
                 floating: false,
                 pinned: true,
@@ -1093,9 +1095,10 @@ class detailScreen extends StatelessWidget{
               ),
               SliverPersistentHeader(
                 delegate: _SliverAppBarDelegate(
-                  const TabBar(
+                   TabBar(
                     indicatorSize: TabBarIndicatorSize.label,
-                    labelColor: Colors.purple,
+                    indicatorColor: Colors.black,
+                    labelColor: Colors.purple,              
                     unselectedLabelColor: Colors.grey,
                     tabs: _tabs,
                   ),
