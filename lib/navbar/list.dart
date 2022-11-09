@@ -13,7 +13,8 @@ class list extends StatelessWidget{
   Widget build(BuildContext context) {
         double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
-    return Scaffold(backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Container(
@@ -56,163 +57,88 @@ class list extends StatelessWidget{
         ),
       ),
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment:CrossAxisAlignment.stretch, 
-          children: [ 
-            
-                    SizedBox(
-                    height: dev_height-78,
-                    width: dev_width,
-                    child: ListView(
-                      scrollDirection: Axis.vertical,
-                      children: [
-                      Row(
-                        children: [
-                          Padding(
-    padding: const EdgeInsets.all(4),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) => japan()));},
-
-                                                    child: ClipRRect(
-                                    
-                                    
-                                    borderRadius: BorderRadius.circular(12),
-                                            child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.topLeft,
-                child: Image.network(
-                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                ),
-              ),
-              Container(
-                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                  alignment: Alignment.center,
-                  child: Text(
-                          'Japanesse',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                          
-                  ),),
-            ],
-          ),
-                                    ),
-
-),
-  ),
-                            Padding(
-    padding: const EdgeInsets.only(top: 4,bottom: 4,right: 3),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) => japan()));},
-
-                                                    child: ClipRRect(
-                                    
-                                    
-                                    borderRadius: BorderRadius.circular(12),
-                                            child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.topLeft,
-                child: Image.network(
-                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                ),
-              ),
-              Container(
-                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                  alignment: Alignment.center,
-                  child: Text(
-                          'Japanesse',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                          
-                  ),),
-            ],
-          ),
-                                    ),
-
-),
-  ),
-                        ],
+                child: Container(
+          constraints: const BoxConstraints(maxWidth: 500),
+          child: ListView.builder(
+            itemCount: _images.length,
+            itemBuilder: (BuildContext context, int index) {
+              return InkWell(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => SecondPage(heroTag: index)));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Hero(
+                        tag: index,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.network(
+                            _images[index],
+                            width: 200,
+                          ),
+                        ),
                       ),
-                      Row(
-                        children: [
-                          Padding(
-    padding: const EdgeInsets.only(left: 4,bottom: 4,right: 4),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) => japan()));},
-
-                                                    child: ClipRRect(
-                                    
-                                    
-                                    borderRadius: BorderRadius.circular(12),
-                                            child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.topLeft,
-                child: Image.network(
-                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
+                      const SizedBox(width: 10),
+                      Expanded(
+                          child: Text(
+                        'Title: $index',
+                        style: Theme.of(context).textTheme.headline6,
+                      )),
+                    ],
+                  ),
                 ),
-              ),
-              Container(
-                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                  alignment: Alignment.center,
-                  child: Text(
-                          'Japanesse',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                          
-                  ),),
-            ],
+              );
+            },
           ),
-                                    ),
-
-),
-  ),
-                            Padding(
-    padding: const EdgeInsets.only(bottom: 4,right: 3),
-    child: GestureDetector(
-                onTap:() {Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) => japan()));},
-                                                    child: ClipRRect(                        
-                                    borderRadius: BorderRadius.circular(12),
-                                            child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.topLeft,
-                child: Image.network(
-                'https://cf.shopee.co.id/file/7cffeac9f9326369f87ab3b84ebe2853',width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                ),
-              ),
-              Container(
-                width: (dev_width/2)-8 ,height: (dev_width/2)-8,
-                  alignment: Alignment.center,
-                  child: Text(
-                          'Japanesse',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),               
-                  ),),
-            ],
-          ),
-                                    ),
-),
-  ),
-                        ],
-                      ),
-                      ]
-                      ),  
-                    ),     //kotak scroll
-          ],
-          )),
+        ),
+       ),
     );
   }
 }
+
+
+class SecondPage extends StatelessWidget {
+  final int heroTag;
+
+  const SecondPage({Key? key, required this.heroTag}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Hero ListView Page 2")),
+      body: Column(
+        children: [
+          Expanded(
+            child: Center(
+              child: Hero(
+                tag: heroTag,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.network(_images[heroTag]),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Text(
+              "Content goes here",
+              style: Theme.of(context).textTheme.headline5,
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+final List<String> _images = [
+  'https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  'https://images.pexels.com/photos/273935/pexels-photo-273935.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  'https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+];
