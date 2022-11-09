@@ -3,6 +3,7 @@ import 'package:flutter_application_akhir/main.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
+import 'package:flutter_application_akhir/screen/chart_kalori.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class user extends StatelessWidget{
@@ -54,20 +55,132 @@ class user extends StatelessWidget{
           ),
         ),
       ),
-            body: SafeArea(
-        child: Column(
-          crossAxisAlignment:CrossAxisAlignment.stretch, 
-          children: [ 
-                    SizedBox(
-                       height: dev_height-78,
-                    width: dev_width,
-                    child: ListView(
-                      scrollDirection: Axis.vertical,
-                      children: [
-                          ///aa
-                      ]
-                      ),
-                    )]
-    ),));
+      body: Column(
+        children: [
+          const Expanded(flex: 2, child: _TopPortion()),
+          Expanded(
+            flex: 8,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text(
+                    "Buagus",
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline6
+                        ?.copyWith(fontWeight: FontWeight.bold,color: Colors.white),
+                  ),
+                  const _ProfileInfoRow(),
+                  const BarChartSample1()
+                ],
+              ),
+            ),
+          ),
+        ],
+      ), );
+  }
+}
+
+
+class _ProfileInfoRow extends StatelessWidget {
+  const _ProfileInfoRow({Key? key}) : super(key: key);
+
+  final List<ProfileInfoItem> _items = const [
+    ProfileInfoItem("Food Consummed", 12),
+    ProfileInfoItem("Food Coocked", 20),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 80,
+      constraints: const BoxConstraints(maxWidth: 400),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: _items
+            .map((item) => Expanded(
+                    child: Row(
+                  children: [
+                    if (_items.indexOf(item) != 0) const VerticalDivider(),
+                    Expanded(child: _singleItem(context, item)),
+                  ],
+                )))
+            .toList(),
+      ),
+    );
+  }
+
+  Widget _singleItem(BuildContext context, ProfileInfoItem item) => Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              item.value.toString(),
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+          Text(
+            item.title,
+              style: const TextStyle(
+              color: Colors.white,
+              ),
+          )
+        ],
+      );
+}
+
+class ProfileInfoItem {
+  final String title;
+  final int value;
+  const ProfileInfoItem(this.title, this.value);
+}
+
+class _TopPortion extends StatelessWidget {
+  const _TopPortion({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        Container(
+          margin: const EdgeInsets.only(bottom: 12),
+          decoration: const BoxDecoration(
+            color: Color.fromRGBO(83, 232, 139, 1.0),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(50),
+                bottomRight: Radius.circular(0),
+              )),
+        ),
+        Align(
+          alignment: Alignment.topCenter,
+          child: SizedBox(
+            width: 150,
+            height: 150,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                            'https://ww.9anime-tv.com/wp-content/uploads/2022/10/BOCCHI-THE-ROCK.png')),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        )
+      ],
+    );
   }
 }
