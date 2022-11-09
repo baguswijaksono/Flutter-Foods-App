@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
-import 'package:flutter_application_akhir/navbar/user_profile.dart';
 import 'package:flutter_application_akhir/screen/chart_nutrisi.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
 import 'package:flutter_application_akhir/screen/signin.dart';
@@ -54,11 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.search_rounded,
                   text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>SignInPage2()));}),
                 GButton(icon: Icons.list_rounded,
-                 text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
+                 text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
+                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PieChartSample2()));}),                
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
               // ignore: unused_element
@@ -198,7 +197,7 @@ Padding(
                     Padding(
                       padding: const EdgeInsets.only(left: 15),
                       child: SizedBox(
-                      height: 150,
+                      height: 300,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
@@ -217,13 +216,13 @@ Padding(
             children: <Widget>[
               Container(
                 alignment: Alignment.center,
-                child: Image.network(
-                'https://i.redd.it/ggpa4kmy9mo81.jpg',
+                child: Image.asset(
+                'images/ina.jpg',
                 fit: BoxFit.fill,
                 ),
               ),
               Container(
-                width: 210,
+                width: 200,
                   alignment: Alignment.center,
                   child: Text(
                       'Indonesian',
@@ -251,8 +250,8 @@ Padding(
             children: <Widget>[
               Container(
                 alignment: Alignment.center,
-                child: Image.network(
-                'https://mediaformasi.com/content/images/wordpress/2020/07/1594351009-picsay.jpg',
+                child: Image.asset(
+                'images/jpn.jpg',
                 ),
               ),
               Container(
@@ -286,8 +285,8 @@ Padding(
             children: <Widget>[
               Container(
                 alignment: Alignment.center,
-                child: Image.network(
-                'https://animeanime.global/wp-content/uploads/2019/12/279605.jpg',
+                child: Image.asset(
+                'images/chn.jpg',
                 ),
               ),
               Container(
@@ -319,15 +318,15 @@ Padding(
             children: <Widget>[
               Container(
                 alignment: Alignment.center,
-                child: Image.network(
-                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+                child: Image.asset(
+                'images/italy.jpg',
                 ),
               ),
               Container(
                 width: 210,
                   alignment: Alignment.center,
                   child: Text(
-                      'Indonesian',
+                      'Italyan',
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
                       
                   ),),
