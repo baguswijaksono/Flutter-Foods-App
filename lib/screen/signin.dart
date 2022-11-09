@@ -42,11 +42,11 @@ class _Logo extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        FlutterLogo(size: _isSmallScreen ? 100 : 200),
+        //(size: _isSmallScreen ? 100 : 200),
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: Text(
-            "Welcome to Flutter!",
+            "Welcome to Mbadogtify!",
             textAlign: TextAlign.center,
             style: _isSmallScreen
                 ? Theme.of(context).textTheme.headline5

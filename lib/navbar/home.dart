@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
-import 'package:flutter_application_akhir/navbar/user_profile.dart';
 import 'package:flutter_application_akhir/screen/chart_nutrisi.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
+import 'package:flutter_application_akhir/screen/signin.dart';
 import 'package:flutter_application_akhir/src/china.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
 import 'package:flutter_application_akhir/src/japan.dart';
@@ -51,13 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.home,
                   text: 'Home',textStyle: TextStyle(color: Colors.white,),),
                 GButton(icon: Icons.search_rounded,
-                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
+                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>SignInPage2()));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
                 GButton(icon: Icons.favorite_rounded,
                 text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
+                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PieChartSample2()));}),                
             ],selectedIndex: _selectedIndex,
             onTabChange:(index){
               // ignore: unused_element
