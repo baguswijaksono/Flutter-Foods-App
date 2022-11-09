@@ -26,6 +26,11 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+  assets:
+     - images/ina.jpg
+     - images/jpn.jpg
+     - images/chn.jpg
+     - images/italy.jpg
 
   fonts:
      - family: BentonSans
