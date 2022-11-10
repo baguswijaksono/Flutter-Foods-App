@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
-import 'package:flutter_application_akhir/navbar/search.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
-import 'package:flutter_application_akhir/screen/chart_nutrisi.dart';
+import 'package:flutter_application_akhir/pie.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
 import 'package:flutter_application_akhir/screen/signin.dart';
 import 'package:flutter_application_akhir/src/china.dart';
@@ -383,7 +382,15 @@ Padding(
       style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
     ),
   ],
-),),
+),
+),Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Center(child: const piechart()),
+                ],
+              ),
+            ),
                       ]
                       ),   
                     ),         //kotak scroll
