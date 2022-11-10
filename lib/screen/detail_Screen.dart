@@ -18,7 +18,7 @@ class detailScreen extends StatelessWidget{
                 expandedHeight: 300.0,
                 floating: false,
                 pinned: true,
-                stretch: true,
+                stretch: false,
                 flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
                     collapseMode: CollapseMode.parallax,
@@ -42,20 +42,24 @@ class detailScreen extends StatelessWidget{
                     tabs: _tabs,
                   ),
                 ),
-                pinned: true,
+               // pinned: true,
+                floating: true,
               ),
             ];
           },
           body: TabBarView(
             children: [
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Center(child: const piechart()),
-                ],
-              ),
+             Center(
+               child: Padding(
+                padding: const EdgeInsets.only(top: 60),
+                child: Column(
+                  children: [
+                    Text('eeeeee'),
+                    Center(child: const piechart()),
+                  ],
+                ),
             ),
+             ),
                          Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(

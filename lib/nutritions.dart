@@ -55,8 +55,7 @@ class piechartState extends State<piechart> {
   bool _showLegendsInRow = true;
   bool _showLegends = true;
   bool _showChartValues = true;
-  bool _showChartValuesInPercentage = false;
-
+  bool _showChartValuesInPercentage = true;
 
   LegendShape? _legendShape = LegendShape.circle;
   LegendPosition? _legendPosition = LegendPosition.top;
@@ -82,6 +81,7 @@ class piechartState extends State<piechart> {
             ? BoxShape.circle
             : BoxShape.rectangle,
         legendTextStyle: const TextStyle(
+          color: Colors.white,
           fontWeight: FontWeight.bold,
         ),
       ),

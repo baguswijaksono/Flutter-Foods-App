@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
-import 'package:flutter_application_akhir/pie.dart';
+import 'package:flutter_application_akhir/nutritions.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
 import 'package:flutter_application_akhir/screen/signin.dart';
 import 'package:flutter_application_akhir/src/china.dart';
