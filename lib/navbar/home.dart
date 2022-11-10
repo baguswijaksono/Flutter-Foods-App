@@ -336,6 +336,38 @@ Padding(
                                 ),
 ),
   ),
+    Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/krn.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Korean',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
                             ],
                         ),
                       ),

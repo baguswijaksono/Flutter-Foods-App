@@ -32,6 +32,7 @@ flutter:
      - images/jpn.jpg
      - images/chn.jpg
      - images/italy.jpg
+     - images/krn.jpg
 
   fonts:
      - family: BentonSans
