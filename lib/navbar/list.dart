@@ -83,10 +83,17 @@ class list extends StatelessWidget{
                       ),
                       const SizedBox(width: 10),
                       Expanded(
-                          child: Text(
-                        'Title: $index',
-                        style: Theme.of(context).textTheme.headline6,
-                      )),
+                          child: Text.rich(
+    TextSpan(
+      style: TextStyle(color: Colors.white), //apply style to all
+      children: [
+      TextSpan(text: 'Food title goes here brrr \n', style: TextStyle(fontSize: 15)),
+      TextSpan(text: ' \n'),
+      TextSpan(text: 'to learn Flutter.', style: TextStyle(fontSize: 12))
+    ]
+  )
+)),
+                      
                     ],
                   ),
                 ),
@@ -108,7 +115,6 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Hero ListView Page 2")),
       body: Column(
         children: [
           Expanded(
@@ -125,7 +131,10 @@ class SecondPage extends StatelessWidget {
           Expanded(
             child: Text(
               "Content goes here",
-              style: Theme.of(context).textTheme.headline5,
+              style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                        )
             ),
           )
         ],
