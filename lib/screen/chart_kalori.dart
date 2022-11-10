@@ -5,16 +5,6 @@ import 'package:flutter/material.dart';
 
 class BarChartSample1 extends StatefulWidget {
   const BarChartSample1({super.key});
-
-  List<Color> get availableColors => const <Color>[
-        Colors.purpleAccent,
-        Colors.yellow,
-        Colors.lightBlue,
-        Colors.orange,
-        Colors.pink,
-        Colors.redAccent,
-      ];
-
   @override
   State<StatefulWidget> createState() => BarChartSample1State();
 }
@@ -29,9 +19,9 @@ class BarChartSample1State extends State<BarChartSample1> {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 1.2,
-      child: Card(
+    return SizedBox(
+      height: 300,
+            child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
         color: const Color.fromRGBO(83, 232, 139, 1.0),
         child: Stack(
@@ -78,29 +68,11 @@ class BarChartSample1State extends State<BarChartSample1> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Align(
-                alignment: Alignment.topRight,
-                child: IconButton(
-                  icon: Icon(
-                    isPlaying ? Icons.pause : Icons.play_arrow,
-                    color: const Color(0xff0f4a3c),
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      isPlaying = !isPlaying;
-                      if (isPlaying) {
-                        refreshState();
-                      }
-                    });
-                  },
-                ),
-              ),
-            )
           ],
         ),
       ),
+      
+
     );
   }
 
@@ -109,7 +81,7 @@ class BarChartSample1State extends State<BarChartSample1> {
     double y, {
     bool isTouched = false,
     Color barColor = Colors.white,
-    double width = 22,
+    double width = 11,
     List<int> showTooltips = const [],
   }) {
     return BarChartGroupData(
@@ -320,63 +292,8 @@ class BarChartSample1State extends State<BarChartSample1> {
       borderData: FlBorderData(
         show: false,
       ),
-      barGroups: List.generate(7, (i) {
-        switch (i) {
-          case 0:
-            return makeGroupData(
-              0,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          case 1:
-            return makeGroupData(
-              1,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          case 2:
-            return makeGroupData(
-              2,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          case 3:
-            return makeGroupData(
-              3,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          case 4:
-            return makeGroupData(
-              4,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          case 5:
-            return makeGroupData(
-              5,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          case 6:
-            return makeGroupData(
-              6,
-              Random().nextInt(15).toDouble() + 6,
-              barColor: widget.availableColors[
-                  Random().nextInt(widget.availableColors.length)],
-            );
-          default:
-            return throw Error();
-        }
-      }),
-      gridData: FlGridData(show: false),
-    );
+ );
+
   }
 
   Future<dynamic> refreshState() async {

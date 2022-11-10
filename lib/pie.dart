@@ -109,7 +109,6 @@ class piechartState extends State<piechart> {
           } 
         }
 
- 
 class piechart2 extends StatelessWidget {
   piechart2({Key? key}) : super(key: key);
 
@@ -118,7 +117,7 @@ class piechart2 extends StatelessWidget {
   };
 
   final colorList = <Color>[
-    Colors.greenAccent,
+    Colors.white,
   ];
 
   @override

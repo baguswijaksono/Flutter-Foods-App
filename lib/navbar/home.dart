@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
   ],
 ),),
 Padding(
-  padding: const EdgeInsets.all(15.0),
+  padding: const EdgeInsets.all(0.0),
   child:   GestureDetector(
                 onTap:() {Navigator.push(
                                         context,
@@ -104,27 +104,32 @@ Padding(
             children: <Widget>[
               Container(
                 alignment: Alignment.center,
-                child: Image.network(
-                'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',width: dev_width),
+                child: Image.asset(
+                'images/Frame.png',height: 250,),
+              ),              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/Image.png',height: 250,),
               ),
+
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top:100),
+                        padding: const EdgeInsets.only(top:8),
                         child: Container(
                           alignment: Alignment.centerRight,
                           child: Text(
       "wkwkkwwwkkwkw.",
-      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.green),
+      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.black),
     ),
                         ),
                       ),                                     Padding(
-                       padding: const EdgeInsets.all(12),
+                       padding: const EdgeInsets.all(15),
                        child: Container(
                         alignment: Alignment.centerRight,
                          child: SizedBox(
-                          height: 45,
-                          width: 175,
+                          height: 40,
+                          width: 110,
                            child: ElevatedButton(
       child: Text(
         "See More",
