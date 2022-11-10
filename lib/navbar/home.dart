@@ -383,14 +383,7 @@ Padding(
     ),
   ],
 ),
-),Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Center(child: const piechart()),
-                ],
-              ),
-            ),
+),
                       ]
                       ),   
                     ),         //kotak scroll

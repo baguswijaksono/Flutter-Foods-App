@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/pie.dart';
 
 class detailScreen extends StatelessWidget{
   const detailScreen({Key? key}) : super(key: key);
@@ -46,11 +47,32 @@ class detailScreen extends StatelessWidget{
             ];
           },
           body: TabBarView(
-              children: _tabs
-                  .map((e) => Center(
-                        child: Text("${e.text}", textAlign: TextAlign.center),
-                      ))
-                  .toList()),
+            children: [
+             Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Center(child: const piechart()),
+                ],
+              ),
+            ),
+                         Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Center(child: const piechart()),
+                ],
+              ),
+            ),
+                         Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Center(child: const piechart()),
+                ],
+              ),
+            ),
+            ],),
         ),
       ),
     );
