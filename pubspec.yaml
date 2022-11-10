@@ -17,6 +17,7 @@ dependencies:
   common_ui_toolkit: ^0.2.6
   filter_list: ^1.0.2
   calendar_appbar: ^0.0.6
+  pie_chart: ^5.3.2
 
 dev_dependencies:
   flutter_test:
