@@ -3,9 +3,7 @@ import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
-import 'package:flutter_application_akhir/nutritions.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
-import 'package:flutter_application_akhir/screen/signin.dart';
 import 'package:flutter_application_akhir/src/china.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
 import 'package:flutter_application_akhir/src/japan.dart';
@@ -24,6 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     int _selectedIndex =0;
+    // ignore: unused_local_variable
     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
   
@@ -184,7 +183,7 @@ Padding(
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
     Text(
-      "Food Classify",
+      "Food Classify by Region",
       textAlign: TextAlign.left,
       style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
     ),
@@ -202,7 +201,7 @@ Padding(
       "View More",
       textDirection: TextDirection.ltr,
       textAlign: TextAlign.right,
-      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.orange),
+      style: TextStyle(fontWeight: FontWeight.w500,color: Colors.orange),
     )
   ],
 ),
@@ -384,24 +383,207 @@ Padding(
                                 ),
 ),
   ),
-                            ],
-                        ),
-                      ),
-                    ),      
+ ],
+         ),
+      ),
+  ),      
     Padding(padding: const EdgeInsets.all(15.0),
             child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
     Text(
-      "Reccomendations",
+      "Foods Type",
+      textAlign: TextAlign.left,
+      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+    ),
+        Text(
+      "See More",
       textAlign: TextAlign.left,
       style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
     ),
   ],
 ),
 ),
-                      ]
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15),
+                      child: SizedBox(
+                      height: 300,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+        
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/ina.jpg',
+                fit: BoxFit.fill,
+                ),
+              ),
+              Container(
+                width: 200,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Indonesian',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => japan()));},
+
+                                                child: ClipRRect(
+                                
+                                
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/jpn.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Japanesse',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => chinese()));},
+
+                                                child: ClipRRect(
+                                
+                                
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/chn.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Chinesse',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/italy.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Italyan',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
+    Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/krn.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Korean',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
+ ],
+         ),
+      ),
+  ), 
+
+ ]
                       ),   
                     ),         //kotak scroll
           ],
