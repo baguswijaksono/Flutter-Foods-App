@@ -3,6 +3,7 @@ import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
+import 'package:flutter_application_akhir/screen/cookstep.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
 import 'package:flutter_application_akhir/src/china.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
@@ -53,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.search_rounded,
                   text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
                 GButton(icon: Icons.list_rounded,
-                 text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
+                 text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>cookstep(),));}),
                 GButton(icon: Icons.favorite_rounded,
                 text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
@@ -408,7 +409,7 @@ Padding(
                     Padding(
                       padding: const EdgeInsets.only(left: 15),
                       child: SizedBox(
-                      height: 300,
+                      height: 125,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
@@ -428,7 +429,7 @@ Padding(
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/ina.jpg',
+                'images/boil.jpg',
                 fit: BoxFit.fill,
                 ),
               ),
@@ -436,7 +437,7 @@ Padding(
                 width: 200,
                   alignment: Alignment.center,
                   child: Text(
-                      'Indonesian',
+                      'Boiled',
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
                   ),),
             ],
@@ -462,14 +463,14 @@ Padding(
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/jpn.jpg',
+                'images/grill.jpg',
                 ),
               ),
               Container(
                 width: 210,
                   alignment: Alignment.center,
                   child: Text(
-                      'Japanesse',
+                      'Grilled',
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
                       
                   ),),
@@ -497,14 +498,14 @@ Padding(
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/chn.jpg',
+                'images/saute.jpg',
                 ),
               ),
               Container(
                 width: 210,
                   alignment: Alignment.center,
                   child: Text(
-                      'Chinesse',
+                      'Sauted',
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
                       
                   ),),
@@ -530,14 +531,14 @@ Padding(
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/italy.jpg',
+                'images/steam.jpg',
                 ),
               ),
               Container(
                 width: 210,
                   alignment: Alignment.center,
                   child: Text(
-                      'Italyan',
+                      'Steamed',
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
                       
                   ),),
@@ -562,14 +563,14 @@ Padding(
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/krn.jpg',
+                'images/deepfry.jpg',
                 ),
               ),
               Container(
                 width: 210,
                   alignment: Alignment.center,
                   child: Text(
-                      'Korean',
+                      'Deepfried',
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
                       
                   ),),
