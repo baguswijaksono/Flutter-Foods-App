@@ -78,17 +78,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
-                        Padding(padding: const EdgeInsets.all(15.0),            
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        Padding(padding: const EdgeInsets.all(0.0),            
+            child: Stack(
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
-    
-    Text(
-      "Temukan Makanan \nFavoritmu disini.",
-      textAlign: TextAlign.left,
-      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.white),
-    ),
+    Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: Text(
+        "Temukan Makanan \nFavoritmu disini.",
+        textAlign: TextAlign.left,
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.white),
+      ),
+    ),Align(
+    alignment: Alignment.topRight,
+      child: Image.asset("images/Pattern.png",height: 150,))
   ],
 ),),
 Padding(
@@ -105,22 +108,22 @@ Padding(
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/Frame.png',height: 250,),
+                'images/Frame.png',height: 150,width: 325,),
               ),              Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/Image.png',height: 250,),
+                'images/Image.png',height: 150,width: 325,),
               ),
-
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top:8),
+                        padding: const EdgeInsets.only(top:0),
                         child: Container(
+                          
                           alignment: Alignment.centerRight,
                           child: Text(
       "wkwkkwwwkkwkw.",
-      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.black),
+      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.white),
     ),
                         ),
                       ),                                     Padding(

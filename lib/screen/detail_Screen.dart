@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/pie.dart';
+import 'package:flutter_application_akhir/nutritions.dart';
 
 class detailScreen extends StatelessWidget{
   const detailScreen({Key? key}) : super(key: key);
