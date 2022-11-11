@@ -106,10 +106,14 @@ Padding(
                                       child: Stack(             
             children: <Widget>[
               Container(
+                height: 150,
+                width: 325,
                 alignment: Alignment.center,
                 child: Image.asset(
                 'images/Frame.png',height: 150,width: 325,),
               ),              Container(
+                height: 150,
+                width: 325,
                 alignment: Alignment.center,
                 child: Image.asset(
                 'images/Image.png',height: 150,width: 325,),
@@ -119,7 +123,6 @@ Padding(
                       Padding(
                         padding: const EdgeInsets.only(top:0),
                         child: Container(
-                          
                           alignment: Alignment.centerRight,
                           child: Text(
       "wkwkkwwwkkwkw.",
