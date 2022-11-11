@@ -100,7 +100,7 @@ class detailScreen extends StatelessWidget{
                         width: 150,
                         child: ElevatedButton(
       child: Text(
-        "Up Vote",
+        "Up Down Vote",
         style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
       ),
       style: ButtonStyle(
@@ -127,6 +127,35 @@ class detailScreen extends StatelessWidget{
     
                     ],
                   ),
+                      Container(
+                        height: 50,
+                        width: 500,
+                        child: ElevatedButton(
+      child: Text(
+        "Start Cook",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(37, 37, 37, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                      ),
                                   ],
               ),
             ),
@@ -146,7 +175,7 @@ class detailScreen extends StatelessWidget{
 }
 
 const _tabs = [
-  Tab(text: "Home"),
+  Tab(text: "Nutritions"),
   Tab(text: "Cart"),
   Tab(text: "Profile"),
 ];
