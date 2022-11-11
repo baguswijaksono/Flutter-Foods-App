@@ -63,9 +63,15 @@ class detailScreen extends StatelessWidget{
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  ElevatedButton(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 150,
+                        child: ElevatedButton(
       child: Text(
-        "See More",
+        "Up Vote",
         style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
       ),
       style: ButtonStyle(
@@ -88,7 +94,40 @@ class detailScreen extends StatelessWidget{
       ),
       onPressed: () => null
     ),
-                ],
+                      ),
+                            Container(
+                        height: 50,
+                        width: 150,
+                        child: ElevatedButton(
+      child: Text(
+        "Up Vote",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(37, 37, 37, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                      ),
+    
+                    ],
+                  ),
+                                  ],
               ),
             ),
             Padding(
