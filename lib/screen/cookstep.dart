@@ -5,11 +5,12 @@ class cookstep extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'CodeWithHussain.com',
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.green,
       ),
       home: const HomeScreen(),
     );
@@ -69,40 +70,77 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stepper(
-        elevation: 0, //Horizontal Impact
-        // margin: const EdgeInsets.all(20), //vertical impact
-        controlsBuilder: controlBuilders,
-        type: StepperType.vertical,
-        physics: const ScrollPhysics(),
-        onStepTapped: onStepTapped,
-        onStepContinue: continueStep,
-        onStepCancel: cancelStep,
-        currentStep: currentStep, //0, 1, 2
-        steps: [
-          Step(
-              title: const Text('Step 1'),
-              content: Column(
-                children: const [
-                  Text('This is the first step.'),
-                ],
-              ),
+            backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
+            
+      body: SafeArea(
+                                child: Column(
+                                  children: [
+                                    Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container( child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                                    child: IconButton(
+                                      icon: const Icon(
+                                        Icons.navigate_before,
+                                        color: Colors.white,),
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                          },
+                                          ),
+                                          ),
+                                          ),
+                              Container( child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                                    child: IconButton(
+                                      icon: const Icon(
+                                        Icons.search_sharp,
+                                        color: Colors.white,),
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                          },
+                                          ),
+                                          ),
+                                          ),
+                          ],
+                        ),
+                                Stepper(
+          elevation: 0, 
+          controlsBuilder: controlBuilders,
+          type: StepperType.vertical,
+          physics: const ScrollPhysics(),
+          onStepTapped: onStepTapped,
+          onStepContinue: continueStep,
+          onStepCancel: cancelStep,
+          currentStep: currentStep, //0, 1, 2
+          steps: [
+            Step(
+                title: const Text('Step 1'),
+                content: Column(
+                  children: const [
+                    Text('This is the first step.'),
+                  ],
+                ),
+                isActive: currentStep >= 0,
+                state:
+                    currentStep >= 0 ? StepState.complete : StepState.disabled),
+            Step(
+              title: const Text('Step 2'),
+              content: const Text('This is the Second step.'),
               isActive: currentStep >= 0,
-              state:
-                  currentStep >= 0 ? StepState.complete : StepState.disabled),
-          Step(
-            title: const Text('Step 2'),
-            content: const Text('This is the Second step.'),
-            isActive: currentStep >= 0,
-            state: currentStep >= 1 ? StepState.complete : StepState.disabled,
-          ),
-          Step(
-            title: const Text('Step 3'),
-            content: const Text('This is the Third step.'),
-            isActive: currentStep >= 0,
-            state: currentStep >= 2 ? StepState.complete : StepState.disabled,
-          ),
-        ],
+              state: currentStep >= 1 ? StepState.complete : StepState.disabled,
+            ),
+            Step(
+              title: const Text('Step 3'),
+              content: const Text('This is the Third step.'),
+              isActive: currentStep >= 0,
+              state: currentStep >= 2 ? StepState.complete : StepState.disabled,
+            ),
+          ],
+        ),
+                                  ],
+                                ),
+
       ),
     );
   }
