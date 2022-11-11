@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
+import 'package:flutter_application_akhir/navbar/search.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
 import 'package:flutter_application_akhir/nutritions.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
@@ -51,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.home,
                   text: 'Home',textStyle: TextStyle(color: Colors.white,),),
                 GButton(icon: Icons.search_rounded,
-                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>SignInPage2()));}),
+                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchPage()));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
                 GButton(icon: Icons.favorite_rounded,
@@ -103,14 +104,15 @@ Padding(
                                             builder: (context) => detailScreen()));},
                                               child: ClipRRect(  
                               borderRadius: BorderRadius.circular(10),
-                                      child: Stack(             
+                                      child: Center(
+                                        child: Stack(             
             children: <Widget>[
               Container(
                 height: 150,
                 width: 325,
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/Frame.png',height: 150,width: 325,),
+                'images/Frame.png',height: 150,width: 325, ),
               ),              Container(
                 height: 150,
                 width: 325,
@@ -118,19 +120,22 @@ Padding(
                 child: Image.asset(
                 'images/Image.png',height: 150,width: 325,),
               ),
-                  Column(
+                               Container(
+                                height: 150,
+                                width: 325,
+                                 child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top:0),
+                        padding: const EdgeInsets.all(15),
                         child: Container(
                           alignment: Alignment.centerRight,
                           child: Text(
-      "wkwkkwwwkkwkw.",
-      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.white),
+      "Randomtext here blablabla.",textAlign: TextAlign.right,
+      style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25,color: Colors.white,),
     ),
                         ),
                       ),                                     Padding(
-                       padding: const EdgeInsets.all(15),
+                       padding: const EdgeInsets.only(right: 15),
                        child: Container(
                         alignment: Alignment.centerRight,
                          child: SizedBox(
@@ -166,9 +171,10 @@ Padding(
                  ),
                     ],
                   ),
-              
+                               ),
             ],
           ),
+                                      ),
                               ),
   ),
 ),                    

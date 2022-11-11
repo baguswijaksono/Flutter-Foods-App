@@ -51,14 +51,13 @@ class piechartState extends State<piechart> {
   ChartType? _chartType = ChartType.disc;
   double? _ringStrokeWidth = 32;
   double? _chartLegendSpacing = 32;
-
   bool _showLegendsInRow = true;
   bool _showLegends = true;
   bool _showChartValues = true;
   bool _showChartValuesInPercentage = true;
-
   LegendShape? _legendShape = LegendShape.circle;
   LegendPosition? _legendPosition = LegendPosition.top;
+  
 
   int key = 0;
 
@@ -86,6 +85,7 @@ class piechartState extends State<piechart> {
         ),
       ),
       chartValuesOptions: ChartValuesOptions(
+        showChartValueBackground: false,
         showChartValues: _showChartValues,
         showChartValuesInPercentage: _showChartValuesInPercentage,
       ),
@@ -135,6 +135,7 @@ class piechart2 extends StatelessWidget {
           colorList: colorList,
           chartValuesOptions: const ChartValuesOptions(
             showChartValuesInPercentage: true,
+            
           ),
           totalValue: 20,
         ),

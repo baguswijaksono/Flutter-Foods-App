@@ -3,7 +3,6 @@ import 'package:flutter_application_akhir/main.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
 import 'package:flutter_application_akhir/navbar/user_profile.dart';
-import 'package:flutter_application_akhir/src/japan.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class list extends StatelessWidget{
@@ -81,7 +80,7 @@ class list extends StatelessWidget{
                           ),
                         ),
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 0),
                       Expanded(
                           child: Text.rich(
     TextSpan(
@@ -108,35 +107,69 @@ class list extends StatelessWidget{
 
 
 class SecondPage extends StatelessWidget {
+  
   final int heroTag;
 
   const SecondPage({Key? key, required this.heroTag}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+         double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
+     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Expanded(
-            child: Center(
+             Center(
               child: Hero(
                 tag: heroTag,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
                   child: Image.network(_images[heroTag]),
                 ),
               ),
             ),
-          ),
+      
           Expanded(
             child: Text(
               "Content goes here",
               style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontSize: 16.0,
                         )
             ),
-          )
+          ),Container(
+            padding: EdgeInsets.all(12),
+                        alignment: Alignment.centerRight,
+                         child: SizedBox(
+                          height: 40,
+                          width: dev_width,
+                           child: ElevatedButton(
+      child: Text(
+        "Lihat Lebih Lanjut",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(37, 37, 37, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
+                         ),
+                       ),
         ],
       ),
     );

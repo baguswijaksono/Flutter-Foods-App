@@ -51,10 +51,9 @@ class detailScreen extends StatelessWidget{
             children: [
              Center(
                child: Padding(
-                padding: const EdgeInsets.only(top: 60),
+                padding: const EdgeInsets.only(top: 8),
                 child: Column(
                   children: [
-                    Text('eeeeee'),
                     Center(child: const piechart()),
                   ],
                 ),
@@ -64,11 +63,35 @@ class detailScreen extends StatelessWidget{
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Center(child: const piechart()),
+                  ElevatedButton(
+      child: Text(
+        "See More",
+        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
+      ),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+      (Set<MaterialState> states) {
+        if (states.contains(MaterialState.pressed))
+          return Color.fromRGBO(37, 37, 37, 1.0); 
+          return null
+        ; // Defer to the widget's default.
+      },
+    ),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            
+          ),
+        ),
+      ),
+      onPressed: () => null
+    ),
                 ],
               ),
             ),
-                         Padding(
+            Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
