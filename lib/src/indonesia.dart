@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/components/image_grid/grid.dart';
 
 class indonesian extends StatelessWidget{
   @override
@@ -36,7 +37,7 @@ class indonesian extends StatelessWidget{
                               padding: const EdgeInsets.all(8.0),
                                 child: IconButton(
                                   icon: const Icon(
-                                    Icons.search_sharp,
+                                    Icons.navigate_next,
                                     color: Colors.white,),
                                     onPressed: () {
                                       Navigator.pop(context);
@@ -65,7 +66,10 @@ class indonesian extends StatelessWidget{
                             ],
                           )])
                           ///aa
-                    )]
+                    ),
+                    Grid()
+                    
+                    ], 
                       ),
                     )]
     ),));
