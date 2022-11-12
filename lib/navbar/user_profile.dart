@@ -1,12 +1,11 @@
-// ignore_for_file: unused_local_variable
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/main.dart';
 import 'package:flutter_application_akhir/navbar/favorite.dart';
 import 'package:flutter_application_akhir/navbar/list.dart';
 import 'package:flutter_application_akhir/navbar/search.dart';
-import 'package:flutter_application_akhir/screen/chart_kalori.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+
+import '../screensComponents/bar_chart/chart_kalori.dart';
 
 class user extends StatelessWidget{
   @override

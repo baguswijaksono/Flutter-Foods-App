@@ -1,9 +1,7 @@
 import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_application_akhir/components/time_frame.dart';
-
 import 'package:flutter_timer_countdown/flutter_timer_countdown.dart';
+import '../../screensComponents/countdown_timer/time_frame.dart';
 
 class TimerBasic extends StatelessWidget {
   final CountDownTimerFormat format;
