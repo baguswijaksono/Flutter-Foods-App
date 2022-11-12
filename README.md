@@ -12,9 +12,12 @@ Hi Fella, I'm Bagus. I'm a student who comes from a small town in the province o
 
 ## IA 
 Information architecture provides the blueprint of the design; it is the foundation of the user experience. UX needs information architecture in order to create an interface that is pleasant to interact with. Put another way: UX aims at making a user comfortable, while information architecture tries to understand a user’s desires.
-![alt text](https://user-images.githubusercontent.com/106671990/199673682-a3bb1dd8-eb7a-4887-b05a-4c6ba0b34b39.svg)
 
 ## Dependency
+```yaml
+dependencies:
+  pie_chart: <latest version>
+```
 https://spoonacular.com/food-api
 
 ## Installation
