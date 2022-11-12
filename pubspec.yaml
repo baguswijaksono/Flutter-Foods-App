@@ -43,6 +43,7 @@ flutter:
      - images/steam.jpg
      - images/deepfry.jpg
      - images/grill.jpg
+     - images/brush.png
 
   fonts:
      - family: BentonSans
@@ -52,4 +53,7 @@ flutter:
      - family: HeyNov
        fonts:      
          - asset: fonts/Hey_November.ttf
+     - family: Raleway
+       fonts:      
+         - asset: fonts/Raleway-Bold.ttf
     

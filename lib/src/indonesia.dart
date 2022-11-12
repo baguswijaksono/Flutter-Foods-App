@@ -51,11 +51,21 @@ class indonesian extends StatelessWidget{
                             children: [
                               Text('REGIONAL\nFOODS',style: TextStyle(color: Colors.white,)),
                               Text('of',style: TextStyle(color: Colors.white,)),
-                              Text('Indonesian',style: TextStyle(color: Colors.white,fontFamily: 'HeyNov',fontSize: 67)),
+                              Stack(children: <Widget>[ Container(
+                  height: 150,
+                width: dev_width,
+                alignment: Alignment.topCenter,
+                child: Image.asset(
+                'images/brush.png',height: 100,width: 325, ),
+              ), 
+              Container(
+                height: 150,
+                width: dev_width,
+                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
                             ],
-                          ))
+                          )])
                           ///aa
-                      ]
+                    )]
                       ),
                     )]
     ),));
