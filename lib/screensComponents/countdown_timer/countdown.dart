@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_application_akhir/components/time_basic.dart';
-import 'package:flutter_application_akhir/components/time_frame.dart';
+import 'package:flutter_application_akhir/screensComponents/countdown_timer/time_basic.dart';
+import 'package:flutter_application_akhir/screensComponents/countdown_timer/time_frame.dart';
 import 'package:flutter_timer_countdown/flutter_timer_countdown.dart';
-
-
 
 class Countdown extends StatelessWidget {
   @override

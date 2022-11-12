@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/favorite.dart';
+import 'package:flutter_application_akhir/list.dart';
 import 'package:flutter_application_akhir/main.dart';
-import 'package:flutter_application_akhir/navbar/favorite.dart';
-import 'package:flutter_application_akhir/navbar/list.dart';
-import 'package:flutter_application_akhir/navbar/user_profile.dart';
+import 'package:flutter_application_akhir/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class searchPage extends StatelessWidget{

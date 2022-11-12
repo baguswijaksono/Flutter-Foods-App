@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/navbar/favorite.dart';
-import 'package:flutter_application_akhir/navbar/list.dart';
-import 'package:flutter_application_akhir/navbar/search.dart';
-import 'package:flutter_application_akhir/navbar/user_profile.dart';
+import 'package:flutter_application_akhir/favorite.dart';
+import 'package:flutter_application_akhir/list.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
+import 'package:flutter_application_akhir/search.dart';
 import 'package:flutter_application_akhir/src/china.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
 import 'package:flutter_application_akhir/src/japan.dart';
+import 'package:flutter_application_akhir/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
     int _selectedIndex =0;
     // ignore: unused_local_variable
     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
-     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
+    double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
   
     return Scaffold(
       backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
