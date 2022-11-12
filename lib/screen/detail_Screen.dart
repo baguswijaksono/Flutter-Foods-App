@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/nutritions.dart';
+import 'package:flutter_application_akhir/screen/cookstep.dart';
+import 'package:flutter_application_akhir/screen/onboardpage1.dart';
 
 class detailScreen extends StatelessWidget{
   const detailScreen({Key? key}) : super(key: key);
@@ -153,7 +155,7 @@ class detailScreen extends StatelessWidget{
           ),
         ),
       ),
-      onPressed: () => null
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=>OnboardingPage1()))}
     ),
                       ),
                                   ],
