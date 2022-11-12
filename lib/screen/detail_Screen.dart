@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/screensComponents/pie_chart/nutritions.dart';
+import 'package:flutter_application_akhir/components/pie_chart/nutritions.dart';
 import 'package:flutter_application_akhir/screen/cookstep.dart';
 import 'package:flutter_application_akhir/screen/onboardpage1.dart';
 

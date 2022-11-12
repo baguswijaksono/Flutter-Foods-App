@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/components/bar_chart/chart_kalori.dart';
 import 'package:flutter_application_akhir/favorite.dart';
 import 'package:flutter_application_akhir/list.dart';
 import 'package:flutter_application_akhir/main.dart';
 import 'package:flutter_application_akhir/search.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-import '../screensComponents/bar_chart/chart_kalori.dart';
 
 class user extends StatelessWidget{
   @override
