@@ -49,7 +49,7 @@ class indonesian extends StatelessWidget{
                         Container(
                           child: Column(
                             children: [
-                              Text('REGIONAL\nFOODS',style: TextStyle(color: Colors.white,)),
+                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontFamily: 'Raleway',fontSize: 30)),
                               Text('of',style: TextStyle(color: Colors.white,)),
                               Stack(children: <Widget>[ Container(
                   height: 150,
@@ -69,6 +69,5 @@ class indonesian extends StatelessWidget{
                       ),
                     )]
     ),));
-
   }
 }
