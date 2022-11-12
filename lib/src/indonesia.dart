@@ -51,7 +51,7 @@ class indonesian extends StatelessWidget{
                             children: [
                               Text('REGIONAL\nFOODS',style: TextStyle(color: Colors.white,)),
                               Text('of',style: TextStyle(color: Colors.white,)),
-                              Text('Indonesian',style: TextStyle(color: Colors.white,)),
+                              Text('Indonesian',style: TextStyle(color: Colors.white,fontFamily: 'HeyNov',fontSize: 67)),
                             ],
                           ))
                           ///aa

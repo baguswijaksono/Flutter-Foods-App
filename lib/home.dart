@@ -86,6 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
       padding: const EdgeInsets.all(15.0),
       child: Text(
         "Temukan Makanan \nFavoritmu disini.",
+        
         textAlign: TextAlign.left,
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.white),
       ),

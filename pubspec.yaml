@@ -49,3 +49,7 @@ flutter:
        fonts:
          - asset: fonts/BentonSans-Black.otf
          - asset: fonts/BentonSans-Thin.otf
+     - family: HeyNov
+       fonts:      
+         - asset: fonts/Hey_November.ttf
+    
