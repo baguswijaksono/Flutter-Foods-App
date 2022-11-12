@@ -16,7 +16,16 @@ Information architecture provides the blueprint of the design; it is the foundat
 ## Dependency
 ```yaml
 dependencies:
-  pie_chart: <latest version>
+  http: ^0.13.1
+  fl_chart: ^0.55.2
+  common_ui_toolkit: ^0.2.6
+  filter_list: ^1.0.2
+  calendar_appbar: ^0.0.6
+  pie_chart: ^5.3.2
+  cupertino_stepper: ^0.2.1
+  flutter_timer_countdown: ^1.0.5
+  google_nav_bar: ^5.0.6
+
 ```
 https://spoonacular.com/food-api
 
