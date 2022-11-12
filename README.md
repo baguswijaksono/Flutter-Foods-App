@@ -14,6 +14,8 @@ Hi Fella, I'm Bagus. I'm a student who comes from a small town in the province o
 Information architecture provides the blueprint of the design; it is the foundation of the user experience. UX needs information architecture in order to create an interface that is pleasant to interact with. Put another way: UX aims at making a user comfortable, while information architecture tries to understand a user’s desires.
 
 ## Dependency
+We use some package from [pub.dev](https://pub.dev/) official package repository for Dart and Flutter apps.
+
 ```yaml
 dependencies:
   http: ^0.13.1
@@ -25,8 +27,8 @@ dependencies:
   cupertino_stepper: ^0.2.1
   flutter_timer_countdown: ^1.0.5
   google_nav_bar: ^5.0.6
-
 ```
+
 https://spoonacular.com/food-api
 
 ## Installation
