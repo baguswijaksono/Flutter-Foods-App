@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/components/pie_chart/nutritions.dart';
+import 'package:flutter_application_akhir/components/pie_chart/pie.dart';
 import 'package:flutter_application_akhir/screen/cookstep.dart';
 import 'package:flutter_application_akhir/screen/onboardpage1.dart';
 
@@ -52,14 +52,11 @@ class detailScreen extends StatelessWidget{
           body: TabBarView(
             children: [
              Center(
-               child: Padding(
-                padding: const EdgeInsets.only(top: 8),
                 child: Column(
                   children: [
-                    Center(child: const piechart()),
+                    pie_chart()
                   ],
                 ),
-            ),
              ),
                          Padding(
               padding: const EdgeInsets.all(8.0),
@@ -163,10 +160,12 @@ class detailScreen extends StatelessWidget{
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Center(child: const piechart()),
-                ],
+              child: SizedBox(
+                height: 400,
+                child: Column(
+                  children: [
+                  ],
+                ),
               ),
             ),
             ],),
