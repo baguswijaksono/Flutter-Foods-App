@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/pie_chart/pie.dart';
 import 'package:flutter_application_akhir/list.dart';
+import 'package:flutter_application_akhir/screen/method_list.dart';
 
 class detailScreen extends StatelessWidget{
   const detailScreen({Key? key}) : super(key: key);
@@ -164,6 +165,7 @@ class detailScreen extends StatelessWidget{
                 height: 400,
                 child: Column(
                   children: [
+                    list_method()
                   ],
                 ),
               ),
