@@ -1,15 +1,15 @@
-import 'package:cool_stepper/cool_stepper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/components/stepper/cool_stepper.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, this.title}) : super(key: key);
+class cookStep extends StatefulWidget {
+  cookStep({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _cookStepState createState() => _cookStepState();
 }
-class _MyHomePageState extends State<MyHomePage> {
+class _cookStepState extends State<cookStep> {
   @override
   Widget build(BuildContext context) {
     final steps = [
@@ -19,112 +19,59 @@ class _MyHomePageState extends State<MyHomePage> {
         subtitle: '',
         content:Container(
                           child: Column(
-                            children: [
-                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30)),
-                              Text('of',style: TextStyle(color: Colors.black,)),
-                              Stack(children: <Widget>[ Container(
-                  height: 150,
-                width: 300,
-                alignment: Alignment.topCenter,
-                child: Image.asset(
-                'images/brush.png',height: 100,width: 325, ),
-              ), 
-              Container(
-                height: 150,
-                width: 300,
-                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
-                            ],
-                          )])
+                                                      children: [
+                            Container( child: Padding(
+                              padding: const EdgeInsets.only(top: 15),
+                                child: IconButton(
+                                  icon: const Icon(
+                                    Icons.navigate_before,
+                                    color: Colors.white,),
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                      },
+                                      ),
+                                      ),
+                                      ),
+                          ],
+                            
+                          )
                           ///aa
                     ),
                             validation: () {
           return null;
         },
+        
      
       ),
-      CoolStep(
-        isHeaderEnabled: false,
-        title: 'Select your role',
-        subtitle: 'Choose a role that better defines you',
-        content: Container(
-                          child: Column(
-                            children: [
-                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30)),
-                              Text('of',style: TextStyle(color: Colors.black,)),
-                              Stack(children: <Widget>[ Container(
-                  height: 150,
-                width: 300,
-                alignment: Alignment.topCenter,
-                child: Image.asset(
-                'images/brush.png',height: 100,width: 325, ),
-              ), 
-              Container(
-                height: 150,
-                width: 300,
-                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
-                            ],
-                          )])
-                          ///aa
-                    ),
-                            validation: () {
-          return null;
-        },
-      ),
             CoolStep(
         isHeaderEnabled: false,
-        title: 'Select your role',
-        subtitle: 'Choose a role that better defines you',
-        content: Container(
+        title: '',
+        subtitle: '',
+        content:Container(
                           child: Column(
-                            children: [
-                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30)),
-                              Text('of',style: TextStyle(color: Colors.black,)),
-                              Stack(children: <Widget>[ Container(
-                  height: 150,
-                width: 300,
-                alignment: Alignment.topCenter,
-                child: Image.asset(
-                'images/brush.png',height: 100,width: 325, ),
-              ), 
-              Container(
-                height: 150,
-                width: 300,
-                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
-                            ],
-                          )])
+                                                      children: [
+                            Container( child: Padding(
+                              padding: const EdgeInsets.only(top: 15),
+                                child: IconButton(
+                                  icon: const Icon(
+                                    Icons.navigate_before,
+                                    color: Colors.white,),
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                      },
+                                      ),
+                                      ),
+                                      ),
+                          ],
+                            
+                          )
                           ///aa
                     ),
                             validation: () {
           return null;
         },
-      ),
-            CoolStep(
-        isHeaderEnabled: false,
-        title: 'Select your role',
-        subtitle: 'Choose a role that better defines you',
-        content: Container(
-                          child: Column(
-                            children: [
-                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30)),
-                              Text('of',style: TextStyle(color: Colors.black,)),
-                              Stack(children: <Widget>[ Container(
-                  height: 150,
-                width: 300,
-                alignment: Alignment.topCenter,
-                child: Image.asset(
-                'images/brush.png',height: 100,width: 325, ),
-              ), 
-              Container(
-                height: 150,
-                width: 300,
-                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
-                            ],
-                          )])
-                          ///aa
-                    ),
-                            validation: () {
-          return null;
-        },
+        
+     
       ),
     ];
 
@@ -135,16 +82,24 @@ class _MyHomePageState extends State<MyHomePage> {
       },
       steps: steps,
       config: CoolStepperConfig(
-        backText: 'PREV',
+        backText: 'Prev',
+        finalText: 'Finish',
+        nextText: 'Next'
       ),
     );
 
     return Scaffold(
-      body: Container(
+            backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
+      body: SafeArea(
         child: stepper,
       ),
     );
+
+
+
+
+
+
+    
   }
-
-
 }

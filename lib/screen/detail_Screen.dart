@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/pie_chart/pie.dart';
 import 'package:flutter_application_akhir/list.dart';
+import 'package:flutter_application_akhir/screen/cookstep.dart';
 import 'package:flutter_application_akhir/screen/method_list.dart';
 
 class detailScreen extends StatelessWidget{
@@ -153,7 +154,7 @@ class detailScreen extends StatelessWidget{
           ),
         ),
       ),
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=>list()))}
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=>cookStep()))}
     ),
                       ),
                                   ],
