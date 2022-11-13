@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/pie_chart/pie.dart';
-import 'package:flutter_application_akhir/screen/cookstep.dart';
-import 'package:flutter_application_akhir/screen/onboardpage1.dart';
+import 'package:flutter_application_akhir/list.dart';
 
 class detailScreen extends StatelessWidget{
   const detailScreen({Key? key}) : super(key: key);
@@ -37,9 +36,10 @@ class detailScreen extends StatelessWidget{
               SliverPersistentHeader(
                 delegate: _SliverAppBarDelegate(
                    TabBar(
+                    splashBorderRadius: BorderRadius.circular(22),
                     indicatorSize: TabBarIndicatorSize.label,
-                    indicatorColor: Colors.black,
-                    labelColor: Colors.purple,              
+                    indicatorColor: Colors.white,
+                    labelColor: Colors.white,              
                     unselectedLabelColor: Colors.grey,
                     tabs: _tabs,
                   ),
@@ -152,7 +152,7 @@ class detailScreen extends StatelessWidget{
           ),
         ),
       ),
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=>OnboardingPage1()))}
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=>list()))}
     ),
                       ),
                                   ],
@@ -177,8 +177,8 @@ class detailScreen extends StatelessWidget{
 
 const _tabs = [
   Tab(text: "Nutritions"),
-  Tab(text: "Cart"),
-  Tab(text: "Profile"),
+  Tab(text: "Method"),
+  Tab(text: "Inggridients"),
 ];
 
 class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {

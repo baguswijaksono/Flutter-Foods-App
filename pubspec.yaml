@@ -14,11 +14,10 @@ dependencies:
   http: ^0.13.1
   fl_chart: ^0.55.2
   common_ui_toolkit: ^0.2.6
-  filter_list: ^1.0.2
-  calendar_appbar: ^0.0.6
-  cupertino_stepper: ^0.2.1
   flutter_timer_countdown: ^1.0.5
   d_chart: ^0.1.0
+  cool_stepper: ^1.2.1
+  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:

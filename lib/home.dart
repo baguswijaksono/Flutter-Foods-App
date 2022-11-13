@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/components/image_grid/grid.dart';
 import 'package:flutter_application_akhir/favorite.dart';
 import 'package:flutter_application_akhir/list.dart';
 import 'package:flutter_application_akhir/screen/detail_Screen.dart';
@@ -10,14 +9,14 @@ import 'package:flutter_application_akhir/src/japan.dart';
 import 'package:flutter_application_akhir/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class homepagegweh extends StatefulWidget {
+  const homepagegweh({super.key, required this.title});
   final String title;
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<homepagegweh> createState() => _homepagegwehState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _homepagegwehState extends State<homepagegweh> {
 
 //nulis kode disini
   @override
@@ -56,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list(),));}),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>Grid()));}),
+                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
                 text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
             ],selectedIndex: _selectedIndex,
