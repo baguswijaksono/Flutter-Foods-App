@@ -13,7 +13,7 @@ class indonesian extends StatelessWidget{
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
                     SizedBox(
-                       height: dev_height,
+                       height: dev_height-34,
                     width: dev_width,
                     child: ListView(
                       scrollDirection: Axis.vertical,

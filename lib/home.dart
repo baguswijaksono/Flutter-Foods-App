@@ -74,7 +74,7 @@ class _homepagegwehState extends State<homepagegweh> {
           children: [ 
             
                     SizedBox(
-                    height: dev_height-78,
+                    height: dev_height-112,
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
@@ -579,10 +579,207 @@ Padding(
                                 ),
 ),
   ),
+  
  ],
          ),
       ),
   ), 
+      Padding(padding: const EdgeInsets.all(15.0),
+            child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //mainAxisSize: MainAxisSize.max,
+  children: <Widget>[
+    Text(
+      "Foods Type",
+      textAlign: TextAlign.left,
+      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+    ),
+        Text(
+      "See More",
+      textAlign: TextAlign.left,
+      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+    ),
+  ],
+),
+),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15),
+                      child: SizedBox(
+                      height: 125,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+        
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/boil.jpg',
+                fit: BoxFit.fill,
+                ),
+              ),
+              Container(
+                width: 200,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Gurih',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => japan()));},
+
+                                                child: ClipRRect(
+                                
+                                
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/grill.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Manis',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => chinese()));},
+
+                                                child: ClipRRect(
+                                
+                                
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/saute.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Asam',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+
+),
+  ),
+  Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/steam.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Steamed',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
+    Padding(
+    padding: const EdgeInsets.all(4.0),
+    child: GestureDetector(
+
+                onTap:() {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => indonesian()));},
+
+                                                child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                        child: Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/deepfry.jpg',
+                ),
+              ),
+              Container(
+                width: 210,
+                  alignment: Alignment.center,
+                  child: Text(
+                      'Deepfried',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
+                      
+                  ),),
+            ],
+          ),
+                                ),
+),
+  ),
+  
+ ],
+         ),
+      ),
+  ),
 
  ]
                       ),   
