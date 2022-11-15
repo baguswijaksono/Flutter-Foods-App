@@ -19,6 +19,7 @@ dependencies:
   cool_stepper: ^1.2.1
   google_fonts: ^3.0.1
   vertical_card_pager: ^1.5.0
+  flappy_search_bar_ns: ^2.0.2
 
 dev_dependencies:
   flutter_test:

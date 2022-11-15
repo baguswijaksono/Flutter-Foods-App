@@ -1,355 +1,123 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/favorite.dart';
-import 'package:flutter_application_akhir/list.dart';
-import 'package:flutter_application_akhir/main.dart';
-import 'package:flutter_application_akhir/user_profile.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 
-class searchPage extends StatelessWidget{
+import 'dart:math';
+
+import 'package:flappy_search_bar_ns/flappy_search_bar_ns.dart';
+import 'package:flutter/material.dart';
+
+class Post {
+  final String title;
+  final String body;
+
+  Post(this.title, this.body);
+}
+
+class searchpage extends StatefulWidget {
+  @override
+  _searchpageState createState() => _searchpageState();
+}
+
+class _searchpageState extends State<searchpage> {
+  final SearchBarController<Post> _searchBarController = SearchBarController();
+  bool isReplay = false;
+
+  Future<List<Post>> _getALlPosts(String? text) async {
+    await Future.delayed(Duration(seconds: text!.length == 4 ? 10 : 1));
+    if (isReplay) return [Post("Replaying !", "Replaying body")];
+    if (text.length == 5) throw Error();
+    if (text.length == 6) return [];
+    List<Post> posts = [];
+
+    var random = new Random();
+    for (int i = 0; i < 10; i++) {
+      posts.add(
+        Post("$text $i", "body random number : ${random.nextInt(100)}"),
+      );
+    }
+    return posts;
+  }
+
   @override
   Widget build(BuildContext context) {
-        int _selectedIndex =1;
-     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
-     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
-      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
-            bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
-        child: Container(
-          decoration: BoxDecoration(                                                   
-    borderRadius:BorderRadius.circular(15),            
-    boxShadow: [                                                               
-        BoxShadow(color: Color.fromRGBO(37, 37, 37, 1.0),),       
-    ],                                                                         
-  ),     
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal:12, vertical: 12 ),//padding container  bottom navbar
-            child: GNav(
-              tabBorderRadius: 12,
-              backgroundColor: Colors.transparent,
-              color: Colors.white,
-              activeColor: Color.fromRGBO(83, 232, 139, 1.0),
-              tabBackgroundColor: Color.fromRGBO(38, 54, 46, 1.0),
-              padding: EdgeInsets.all(10),
-              gap: 20,
-              tabs: [
-                GButton(icon: Icons.home,
-                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));}),
-                GButton(icon: Icons.search_rounded,
-                  text: 'Search',textStyle: TextStyle(color: Colors.white,),),
-                GButton(icon: Icons.list_rounded,
-                 text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list()));}),
-                GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
-                GButton(icon: Icons.person_rounded,
-                text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),
-            ],selectedIndex: _selectedIndex,
-            onTabChange:(index){
-              // ignore: unused_element
-              setState(){
-                _selectedIndex =index;
-              }
-            },),
+      body: SafeArea(
+        child: SearchBar<Post>(
+          searchBarPadding: EdgeInsets.symmetric(horizontal: 10),
+          headerPadding: EdgeInsets.symmetric(horizontal: 10),
+          listPadding: EdgeInsets.symmetric(horizontal: 10),
+          onSearch: _getALlPosts,
+          searchBarController: _searchBarController,
+          onError: (error) => Text('ERROR: ${error.toString()}'),
+          placeHolder: Text("placeholder"),
+          cancellationWidget: Text("Cancel"),
+          emptyWidget: Text("empty"),
+          indexedScaledTileBuilder: (int index) =>
+              ScaledTile.count(1, index.isEven ? 2 : 1),
+          header: Row(
+            children: <Widget>[
+              TextButton(
+                child: Text("sort"),
+                onPressed: () {
+                  _searchBarController.sortList((Post a, Post b) {
+                    return a.body.compareTo(b.body);
+                  });
+                },
+              ),
+              TextButton(
+                child: Text("Desort"),
+                onPressed: () {
+                  _searchBarController.removeSort();
+                },
+              ),
+              TextButton(
+                child: Text("Replay"),
+                onPressed: () {
+                  isReplay = !isReplay;
+                  _searchBarController.replayLastSearch();
+                },
+              ),
+            ],
           ),
+          onCancelled: () {
+            print("Cancelled triggered");
+          },
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          crossAxisCount: 2,
+          onItemFound: (Post? post, int index) {
+            return Container(
+              color: Colors.lightBlue,
+              child: ListTile(
+                title: Text(post!.title),
+                isThreeLine: true,
+                subtitle: Text(post.body),
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Detail()));
+                },
+              ),
+            );
+          },
         ),
       ),
-            body: SafeArea(
-        child: Column(
-          crossAxisAlignment:CrossAxisAlignment.stretch, 
-          children: [ 
-                    SizedBox(
-                       height: dev_height-78,
-                    width: dev_width,
-                    child: ListView(
-                      scrollDirection: Axis.vertical,
-                      children: [
-                            Padding(padding: const EdgeInsets.all(15.0),
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-    Text(
-      "Food Classify",
-      textAlign: TextAlign.left,
-      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
-    ),
-
-  ],
-),               
-     ),
-    Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-               children: [
-                 Padding(
-                   padding: const EdgeInsets.only(left: 15),
-                   child: SizedBox(
-                    height: dev_height/27,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        overlayColor: MaterialStateProperty.resolveWith<Color?>(
-      (Set<MaterialState> states) {
-        if (states.contains(MaterialState.pressed))
-          return Color.fromRGBO(83, 232, 139, 1.0); 
-          return null
-        ; // Defer to the widget's default.
-      },
-    ),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),
-                     Padding(
-                   padding: const EdgeInsets.only(left: 8),
-                   child: SizedBox(
-                    height: dev_height/27,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),
-                         Padding(
-                   padding: const EdgeInsets.only(left: 8),
-                   child: SizedBox(
-                    height: dev_height/27,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),      
-               ],
-             ),
-                              Padding(padding: const EdgeInsets.all(15.0),
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-    Text(
-      "Food Classify",
-      textAlign: TextAlign.left,
-      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
-    ),
-
-  ],
-),               
-     ),
-         Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-               children: [
-                 Padding(
-                   padding: const EdgeInsets.only(left: 15),
-                   child: SizedBox(
-                    height: dev_height/27,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),
-                     Padding(
-                   padding: const EdgeInsets.only(left: 8),
-                   child: SizedBox(
-                    height: dev_height/27,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),
-                         Padding(
-                   padding: const EdgeInsets.only(left: 8),
-                   child: SizedBox(
-                    height: dev_height/27,
-                    width: dev_width/4,
-                     child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                   ),
-                 ),      
-               ],
-             ),
-                 Padding(
-                   padding: const EdgeInsets.only(top: 9),
-                   child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-               children: [
-                   Padding(
-                     padding: const EdgeInsets.only(left: 15),
-                     child: SizedBox(
-                      height: dev_height/27,
-                      width: dev_width/4,
-                       child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                     ),
-                   ),
-                       Padding(
-                     padding: const EdgeInsets.only(left: 8),
-                     child: SizedBox(
-                      height: dev_height/27,
-                      width: dev_width/4,
-                       child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                     ),
-                   ),
-                           Padding(
-                     padding: const EdgeInsets.only(left: 8),
-                     child: SizedBox(
-                      height: dev_height/27,
-                      width: dev_width/4,
-                       child: ElevatedButton(
-      child: Text(
-        "Buy now",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(37, 37, 37, 1.0)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                     ),
-                   ),      
-               ],
-             ),
-                 ),
-     
-                      ]
-                      ),
-                    ),
-                    
-                       ]
-    )
-    ,));
+    );
   }
 }
 
-
-
-
-
-
-
-
-
-
-
+class Detail extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            Text("Detail"),
+          ],
+        ),
+      ),
+    );
+  }
+}

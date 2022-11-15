@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/pie_chart/pie.dart';
-import 'package:flutter_application_akhir/list.dart';
 import 'package:flutter_application_akhir/screen/cookstep.dart';
 import 'package:flutter_application_akhir/screen/method_list.dart';
 
