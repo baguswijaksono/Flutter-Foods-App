@@ -82,19 +82,24 @@ class _homepagegwehState extends State<homepagegweh> {
             child: Stack(
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
-    Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: Text(
-        "Temukan Makanan \nFavoritmu disini.",
-        
-        textAlign: TextAlign.left,
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.white),
-      ),
+    Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Text(
+            "Temukan Makanan \nFavoritmu disini.",       
+            textAlign: TextAlign.left,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.white),
+          ),
+        ),
+        searchpage()
+      ],
     ),Align(
     alignment: Alignment.topRight,
       child: Image.asset("images/Pattern.png",height: 150,))
   ],
 ),),
+
 Padding(
   padding: const EdgeInsets.all(0.0),
   child:   GestureDetector(
@@ -288,15 +293,12 @@ Padding(
   Padding(
     padding: const EdgeInsets.all(4.0),
     child: GestureDetector(
-
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) => chinese()));},
 
-                                                child: ClipRRect(
-                                
-                                
+                                                child: ClipRRect(                                
                                 borderRadius: BorderRadius.circular(10),
                                         child: Stack(
             children: <Widget>[
@@ -448,7 +450,6 @@ Padding(
   Padding(
     padding: const EdgeInsets.all(4.0),
     child: GestureDetector(
-
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
@@ -477,21 +478,16 @@ Padding(
             ],
           ),
                                 ),
-
 ),
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
     child: GestureDetector(
-
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) => chinese()));},
-
                                                 child: ClipRRect(
-                                
-                                
                                 borderRadius: BorderRadius.circular(10),
                                         child: Stack(
             children: <Widget>[

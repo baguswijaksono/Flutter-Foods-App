@@ -59,6 +59,7 @@ class _CoolStepperState extends State<CoolStepper> {
       duration: const Duration(milliseconds: 300),
       curve: Curves.ease,
     );
+    return null;
   }
 
   bool _isFirst(int index) {

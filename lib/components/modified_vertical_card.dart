@@ -1,7 +1,5 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 typedef PageChangedCallback = void Function(double? page);
 typedef PageSelectedCallback = void Function(int index);

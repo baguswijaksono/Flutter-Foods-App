@@ -1,5 +1,4 @@
 // ignore_for_file: unused_local_variable
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/bar_chart/chart_kalori.dart';
 import 'package:flutter_application_akhir/favorite.dart';
