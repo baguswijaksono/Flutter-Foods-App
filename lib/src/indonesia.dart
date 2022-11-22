@@ -7,7 +7,7 @@ class indonesian extends StatelessWidget{
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
-            backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
+            backgroundColor: Colors.white,
             body: SafeArea(
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.stretch, 
@@ -26,7 +26,7 @@ class indonesian extends StatelessWidget{
                                 child: IconButton(
                                   icon: const Icon(
                                     Icons.navigate_before,
-                                    color: Colors.white,),
+                                    color: Colors.black,),
                                     onPressed: () {
                                       Navigator.pop(context);
                                       },
@@ -38,7 +38,7 @@ class indonesian extends StatelessWidget{
                                 child: IconButton(
                                   icon: const Icon(
                                     Icons.navigate_next,
-                                    color: Colors.white,),
+                                    color: Colors.black,),
                                     onPressed: () {
                                       Navigator.pop(context);
                                       },
@@ -50,8 +50,8 @@ class indonesian extends StatelessWidget{
                         Container(
                           child: Column(
                             children: [
-                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontFamily: 'Raleway',fontSize: 30)),
-                              Text('of',style: TextStyle(color: Colors.white,)),
+                              Text('REGIONAL\nFOODS',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30)),
+                              Text('of',style: TextStyle(color: Colors.black,)),
                               Stack(children: <Widget>[ Container(
                   height: 150,
                 width: dev_width,
@@ -62,7 +62,7 @@ class indonesian extends StatelessWidget{
               Container(
                 height: 150,
                 width: dev_width,
-                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
+                child: Text('Indonesia',textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontFamily: 'HeyNov',fontSize: 67,letterSpacing: 5,fontWeight: FontWeight.w500))),
                             ],
                           )])
                           ///aa

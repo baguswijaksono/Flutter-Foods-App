@@ -27,7 +27,7 @@ class _homepagegwehState extends State<homepagegweh> {
     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
   
     return Scaffold(
-      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
+      backgroundColor: Colors.white,
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Container(
@@ -89,7 +89,7 @@ class _homepagegwehState extends State<homepagegweh> {
           child: Text(
             "Temukan Makanan \nFavoritmu disini.",       
             textAlign: TextAlign.left,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.white),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.black),
           ),
         ),
         searchpage()
@@ -191,7 +191,7 @@ Padding(
     Text(
       "Food Classify by Region",
       textAlign: TextAlign.left,
-      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
+      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
     ),
   GestureDetector(
 
@@ -398,12 +398,12 @@ Padding(
     Text(
       "Foods Type",
       textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
     ),
         Text(
       "See More",
       textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
     ),
   ],
 ),
@@ -588,7 +588,7 @@ Padding(
     Text(
       "Foods Type",
       textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
     ),
         Text(
       "See More",

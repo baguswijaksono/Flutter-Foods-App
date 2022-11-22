@@ -15,7 +15,7 @@ class user extends StatelessWidget{
      double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
      double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
     return Scaffold(
-      backgroundColor: Color.fromRGBO(13, 13, 13, 1.0),
+      backgroundColor: Colors.white,
             bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
         child: Container(
@@ -124,7 +124,7 @@ class _ProfileInfoRow extends StatelessWidget {
               child: Text(
                 item.value.toString(),
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
@@ -134,7 +134,7 @@ class _ProfileInfoRow extends StatelessWidget {
           Text(
             item.title,
               style: const TextStyle(
-              color: Colors.white,
+              color: Colors.black,
               ),
           )
         ],
