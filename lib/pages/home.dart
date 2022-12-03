@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
 import 'package:flutter_application_akhir/components/regioncard.dart';
+import 'package:flutter_application_akhir/components/typecard.dart';
 import 'package:flutter_application_akhir/pages/search.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
@@ -246,162 +247,23 @@ Padding(
         
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/boil.jpg',
-                fit: BoxFit.fill,
-                ),
-              ),
-              Container(
-                width: 200,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Boiled',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: typecard()
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                
-                                
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/grill.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Grilled',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: typecard()
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/saute.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Sauted',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-
-),
+    child: typecard()
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/steam.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Steamed',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: typecard()
   ),
     Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/deepfry.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Deepfried',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: typecard()
   ),
   
  ],
