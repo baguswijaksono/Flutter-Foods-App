@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/components/bannercard.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
+import 'package:flutter_application_akhir/components/recomendations.dart';
 import 'package:flutter_application_akhir/components/regioncard.dart';
+import 'package:flutter_application_akhir/components/regionviewmore.dart';
 import 'package:flutter_application_akhir/components/typecard.dart';
 import 'package:flutter_application_akhir/pages/search.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
-import 'package:flutter_application_akhir/src/indonesia.dart';
 
 class homepagegweh extends StatefulWidget {
   const homepagegweh({super.key, required this.title});
@@ -63,7 +65,6 @@ class _homepagegwehState extends State<homepagegweh> {
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.black),
           ),
         ),
-        searchpage()
       ],
     ),Align(
     alignment: Alignment.topRight,
@@ -73,118 +74,10 @@ class _homepagegwehState extends State<homepagegweh> {
 
 Padding(
   padding: const EdgeInsets.all(0.0),
-  child:   GestureDetector(
-                onTap:() {Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => detail_screen()));},
-                                              child: ClipRRect(  
-                              borderRadius: BorderRadius.circular(10),
-                                      child: Center(
-                                        child: Stack(             
-            children: <Widget>[
-              Container(
-                height: 150,
-                width: 325,
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/Frame.png',height: 150,width: 325, ),
-              ),              Container(
-                height: 150,
-                width: 325,
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/Image.png',height: 150,width: 325,),
-              ),
-                               Container(
-                                height: 150,
-                                width: 325,
-                                 child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15),
-                        child: Container(
-                          alignment: Alignment.centerRight,
-                          child: Text(
-      "Randomtext here blablabla.",textAlign: TextAlign.right,
-      style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25,color: Colors.white,),
-    ),
-                        ),
-                      ),                                     Padding(
-                       padding: const EdgeInsets.only(right: 15),
-                       child: Container(
-                        alignment: Alignment.centerRight,
-                         child: SizedBox(
-                          height: 40,
-                          width: 110,
-                           child: ElevatedButton(
-      child: Text(
-        "See More",
-        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)
-      ),
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(83, 232, 139, 1.0)),
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        overlayColor: MaterialStateProperty.resolveWith<Color?>(
-      (Set<MaterialState> states) {
-        if (states.contains(MaterialState.pressed))
-          return Color.fromRGBO(37, 37, 37, 1.0); 
-          return null
-        ; // Defer to the widget's default.
-      },
-    ),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-            
-          ),
-        ),
-      ),
-      onPressed: () => null
-    ),
-                         ),
-                       ),
-                 ),
-                    ],
-                  ),
-                               ),
-            ],
-          ),
-                                      ),
-                              ),
-  ),
+  child:   banner()
 ),                    
             Padding(padding: const EdgeInsets.all(15.0),
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-    Text(
-      "Food Classify by Region",
-      textAlign: TextAlign.left,
-      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
-    ),
-  GestureDetector(
-
-              onTap:() {Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => detail_screen()));},
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-    Text(
-      "View More",
-      textDirection: TextDirection.ltr,
-      textAlign: TextAlign.right,
-      style: TextStyle(fontWeight: FontWeight.w500,color: Colors.orange),
-    )
-  ],
-),
-),
-  ],
-),
+            child: region_view_more_text()
             ),
 // nuslis interface disini
                     Padding(
@@ -220,22 +113,7 @@ Padding(
       ),
   ),      
     Padding(padding: const EdgeInsets.all(15.0),
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-    Text(
-      "Foods Type",
-      textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
-    ),
-        Text(
-      "See More",
-      textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
-    ),
-  ],
-),
+            child: region_view_more_text()
 ),
                     Padding(
                       padding: const EdgeInsets.only(left: 15),
@@ -271,203 +149,11 @@ Padding(
       ),
   ), 
       Padding(padding: const EdgeInsets.all(15.0),
-            child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-    Text(
-      "Foods Type",
-      textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
-    ),
-        Text(
-      "See More",
-      textAlign: TextAlign.left,
-      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-    ),
-  ],
+            child: region_view_more_text()
 ),
-),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15),
-                      child: SizedBox(
-                      height: 125,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: [
-        
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/boil.jpg',
-                fit: BoxFit.fill,
-                ),
-              ),
-              Container(
-                width: 200,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Gurih',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
-                  ),),
-            ],
-          ),
-                                ),
-),
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                
-                                
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/grill.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Manis',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-
-),
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                
-                                
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/saute.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Asam',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-
-),
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/steam.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Steamed',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
-  ),
-    Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/deepfry.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Deepfried',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
-  ),
-  
- ],
-         ),
-      ),
-  ),
+recomendations()
  ]
-                      ),   
+ ),   
                     ),         //kotak scroll
           ],
           )
