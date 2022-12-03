@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/favorite.dart';
-import 'package:flutter_application_akhir/list.dart';
+import 'package:flutter_application_akhir/pages/favorite.dart';
+import 'package:flutter_application_akhir/pages/list.dart';
+import 'package:flutter_application_akhir/pages/search.dart';
+import 'package:flutter_application_akhir/pages/user_profile.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
-import 'package:flutter_application_akhir/search.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
-import 'package:flutter_application_akhir/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class homepagegweh extends StatefulWidget {
