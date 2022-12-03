@@ -1,5 +1,4 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:common_ui_toolkit/index.dart';
 
 class searchpage
  extends StatelessWidget {
@@ -8,6 +7,8 @@ class searchpage
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+    );
   }
 }

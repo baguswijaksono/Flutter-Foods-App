@@ -5,8 +5,6 @@ import 'package:flutter_application_akhir/components/recomendations.dart';
 import 'package:flutter_application_akhir/components/regioncard.dart';
 import 'package:flutter_application_akhir/components/regionviewmore.dart';
 import 'package:flutter_application_akhir/components/typecard.dart';
-import 'package:flutter_application_akhir/pages/search.dart';
-import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 
 class homepagegweh extends StatefulWidget {
   const homepagegweh({super.key, required this.title});
