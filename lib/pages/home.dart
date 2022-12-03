@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
+import 'package:flutter_application_akhir/components/regioncard.dart';
 import 'package:flutter_application_akhir/pages/search.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
@@ -195,165 +196,23 @@ Padding(
         
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/ina.jpg',
-                fit: BoxFit.fill,
-                ),
-              ),
-              Container(
-                width: 200,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Indonesian',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: regioncard()
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                
-                                
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/jpn.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Japanesse',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-
-),
+    child: regioncard()
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(                                
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/chn.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Chinesse',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-
-),
+    child: regioncard()
   ),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/italy.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Italyan',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: regioncard()
   ),
     Padding(
     padding: const EdgeInsets.all(4.0),
-    child: GestureDetector(
-
-                onTap:() {Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => indonesian()));},
-
-                                                child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                        child: Stack(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                'images/krn.jpg',
-                ),
-              ),
-              Container(
-                width: 210,
-                  alignment: Alignment.center,
-                  child: Text(
-                      'Korean',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),
-                      
-                  ),),
-            ],
-          ),
-                                ),
-),
+    child: regioncard()
   ),
  ],
          ),
