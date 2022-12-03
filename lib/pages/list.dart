@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
-import 'package:flutter_application_akhir/components/listpagecard.dart';
+import 'package:flutter_application_akhir/components/recomendations.dart';
 
 class list extends StatelessWidget {
   const list({super.key});
@@ -24,19 +24,15 @@ class list extends StatelessWidget {
           ),
         ),
       ),
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment:CrossAxisAlignment.stretch, 
-          children: [ 
-            
-            SizedBox(
-              height: 150,
-              child: food_page_list())
-                //kotak scroll
-          ],
-          )
+      body: ListView(
+  padding: const EdgeInsets.all(8),
+  children: <Widget>[
+    for (var i = 0; i < 5; i++)
+recomendations()
+  ],
+)
           
-          ),
-    );
+          );
+    
   }
 }

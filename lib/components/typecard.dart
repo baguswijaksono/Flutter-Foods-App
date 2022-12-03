@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import '../src/indonesia.dart';
 
+// ignore: must_be_immutable
 class typecard extends StatelessWidget {
-  const typecard({super.key});
+   typecard({super.key, required this.imgurls , required this.typnm,});
+  var imgurls;
+  var typnm;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,7 @@ class typecard extends StatelessWidget {
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/boil.jpg',
+                imgurls,
                 fit: BoxFit.fill,
                 ),
               ),
@@ -27,7 +30,7 @@ class typecard extends StatelessWidget {
                 width: 200,
                   alignment: Alignment.center,
                   child: Text(
-                      'Boiled',
+                      typnm,
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
                   ),),
             ],

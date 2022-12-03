@@ -39,13 +39,13 @@ flutter:
      - images/Frame.png
      - images/Image.png
      - images/Pattern.png
-     - images/Flat/SVG/
      - images/boil.jpg
      - images/saute.jpg
      - images/steam.jpg
      - images/deepfry.jpg
      - images/grill.jpg
      - images/brush.png
+     - images/layer.png
 
   fonts:
      - family: BentonSans

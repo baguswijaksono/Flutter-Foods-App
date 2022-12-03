@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
 
+// ignore: must_be_immutable
 class regioncard extends StatelessWidget {
-  const regioncard({super.key});
+  var imgurl;
+  var regnm;
+
+  regioncard({super.key,required this.imgurl,required this.regnm});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
@@ -19,7 +22,7 @@ class regioncard extends StatelessWidget {
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/ina.jpg',
+                imgurl,
                 fit: BoxFit.fill,
                 ),
               ),
@@ -27,7 +30,7 @@ class regioncard extends StatelessWidget {
                 width: 200,
                   alignment: Alignment.center,
                   child: Text(
-                      'Indonesian',
+                      regnm,
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
                   ),),
             ],

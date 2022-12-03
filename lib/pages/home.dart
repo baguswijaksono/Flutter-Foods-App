@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/bannercard.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
-import 'package:flutter_application_akhir/components/recomendations.dart';
 import 'package:flutter_application_akhir/components/regioncard.dart';
 import 'package:flutter_application_akhir/components/regionviewmore.dart';
 import 'package:flutter_application_akhir/components/typecard.dart';
@@ -21,7 +20,8 @@ class _homepagegwehState extends State<homepagegweh> {
     // ignore: unused_local_variable
     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
-  
+    var region_name = ['Jawa Tengah','Jawa Barat','Jawa Timur']; 
+    var img_url = ['images/ina.jpg','images/chn.jpg','images/krn.jpg']; 
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: Padding(
@@ -85,27 +85,11 @@ Padding(
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-        
+  for( int i = 0 ; i <= region_name.length-1; i++ )...[
   Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: regioncard()
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: regioncard()
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: regioncard()
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: regioncard()
-  ),
-    Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: regioncard()
-  ),
+    padding: EdgeInsets.all(4.0),
+    child: regioncard(imgurl: img_url[i], regnm: region_name[i],)
+  ),]
  ],
          ),
       ),
@@ -120,28 +104,11 @@ Padding(
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-        
+  for( int i = 0 ; i <= region_name.length-1; i++ )...[
   Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: typecard()
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: typecard()
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: typecard()
-  ),
-  Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: typecard()
-  ),
-    Padding(
-    padding: const EdgeInsets.all(4.0),
-    child: typecard()
-  ),
-  
+    padding: EdgeInsets.all(4.0),
+    child: typecard(typnm: region_name[i], imgurls: img_url[i])
+  ),]
  ],
          ),
       ),
@@ -149,7 +116,7 @@ Padding(
       Padding(padding: const EdgeInsets.all(15.0),
             child: region_view_more_text()
 ),
-recomendations()
+
  ]
  ),   
                     ),         //kotak scroll
