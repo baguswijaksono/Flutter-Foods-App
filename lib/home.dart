@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/favorite.dart';
 import 'package:flutter_application_akhir/list.dart';
-import 'package:flutter_application_akhir/screen/detail_Screen.dart';
+import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 import 'package:flutter_application_akhir/search.dart';
-import 'package:flutter_application_akhir/src/china.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
-import 'package:flutter_application_akhir/src/japan.dart';
 import 'package:flutter_application_akhir/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -106,7 +104,7 @@ Padding(
                 onTap:() {Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => detailScreen()));},
+                                            builder: (context) => detail_screen()));},
                                               child: ClipRRect(  
                               borderRadius: BorderRadius.circular(10),
                                       child: Center(
@@ -198,7 +196,7 @@ Padding(
               onTap:() {Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => detailScreen()));},
+                                          builder: (context) => detail_screen()));},
             child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   //mainAxisSize: MainAxisSize.max,
@@ -262,7 +260,7 @@ Padding(
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => japan()));},
+                                              builder: (context) => indonesian()));},
 
                                                 child: ClipRRect(
                                 
@@ -296,7 +294,7 @@ Padding(
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => chinese()));},
+                                              builder: (context) => indonesian()));},
 
                                                 child: ClipRRect(                                
                                 borderRadius: BorderRadius.circular(10),
@@ -453,7 +451,7 @@ Padding(
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => japan()));},
+                                              builder: (context) => indonesian()));},
 
                                                 child: ClipRRect(
                                 
@@ -486,7 +484,7 @@ Padding(
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => chinese()));},
+                                              builder: (context) => indonesian()));},
                                                 child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                         child: Stack(
@@ -644,7 +642,7 @@ Padding(
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => japan()));},
+                                              builder: (context) => indonesian()));},
 
                                                 child: ClipRRect(
                                 
@@ -679,7 +677,7 @@ Padding(
                 onTap:() {Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => chinese()));},
+                                              builder: (context) => indonesian()));},
 
                                                 child: ClipRRect(
                                 
@@ -776,7 +774,6 @@ Padding(
          ),
       ),
   ),
-
  ]
                       ),   
                     ),         //kotak scroll
