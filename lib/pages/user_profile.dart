@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
+import 'package:flutter_application_akhir/components/calorieschart.dart';
 
 class user extends StatelessWidget {
   const user({super.key});
@@ -28,6 +29,10 @@ class user extends StatelessWidget {
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
+            
+            SizedBox(
+              height: 250,
+              child: calories())
                 //kotak scroll
           ],
           )
