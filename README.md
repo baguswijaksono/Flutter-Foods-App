@@ -28,8 +28,9 @@ dependencies:
   flutter_timer_countdown: ^1.0.5
   google_nav_bar: ^5.0.6
 ```
+## Api
 
-https://spoonacular.com/food-api
+https://api.jsonbin.io/v3/b/638c7418a3c728450edf31ff?meta=false
 
 ## Installation
 
