@@ -41,6 +41,7 @@ flutter:
      - images/grill.jpg
      - images/brush.png
      - images/layer.png
+     - images/dark.png
 
   fonts:
      - family: BentonSans

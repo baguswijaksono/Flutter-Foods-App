@@ -3,8 +3,7 @@ import 'package:flutter_application_akhir/components/bannercard.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
 import 'package:flutter_application_akhir/components/regioncard.dart';
 import 'package:flutter_application_akhir/components/regionviewmore.dart';
-import 'package:flutter_application_akhir/components/typecard.dart';
-import 'package:http/http.dart' as http;
+
 
 class homepagegweh extends StatefulWidget {
   const homepagegweh({super.key, required this.title});
@@ -21,8 +20,8 @@ class _homepagegwehState extends State<homepagegweh> {
     // ignore: unused_local_variable
     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
-    var region_name = ['Jawa Tengah','Jawa Barat','Jawa Timur']; 
-    var img_url = ['images/ina.jpg','images/chn.jpg','images/krn.jpg']; 
+    
+
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: Padding(
@@ -84,13 +83,10 @@ Padding(
                       child: SizedBox(
                       height: 300,
                       child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: [
-  for( int i = 0 ; i <= region_name.length-1; i++ )...[
-  Padding(
-    padding: EdgeInsets.all(4.0),
-    child: regioncard(imgurl: img_url[i], regnm: region_name[i],)
-  ),]
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        for (int i = 0; i < 5; i++)...[
+                                                  regioncard(imgurlnum: i, regnmsnum: i)]
  ],
          ),
       ),
@@ -105,11 +101,7 @@ Padding(
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-  for( int i = 0 ; i <= region_name.length-1; i++ )...[
-  Padding(
-    padding: EdgeInsets.all(4.0),
-    child: typecard(typnm: region_name[i], imgurls: img_url[i])
-  ),]
+                          regioncard(imgurlnum: 1, regnmsnum: 1)
  ],
          ),
       ),

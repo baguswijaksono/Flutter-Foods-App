@@ -34,7 +34,6 @@ dependencies:
 
 [Region card api](https://api.jsonbin.io/v3/b/638ce0bca3c728450edf79ab?meta=false)
 
-https://api.jsonbin.io/v3/b/638ce0bca3c728450edf79ab?meta=false
 
 ## Installation
 
