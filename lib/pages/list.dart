@@ -28,7 +28,7 @@ class list extends StatelessWidget {
   padding: const EdgeInsets.all(8),
   children: <Widget>[
     for (var i = 0; i < 5; i++)
-recomendations()
+recomendations(indeximg: i, indextxt: i,)
   ],
 )
           

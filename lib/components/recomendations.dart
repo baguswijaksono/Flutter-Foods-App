@@ -1,12 +1,31 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
 
+// ignore: must_be_immutable
 class recomendations extends StatelessWidget {
-  const recomendations({super.key});
+  var indeximg;
+  
+  var indextxt;
+
+ recomendations({super.key,required this.indeximg, required this.indextxt});
+    final String regapiUrl = "https://api.jsonbin.io/v3/b/638d5f5ea3c728450edfcf1c?meta=false";
+    Future<List<dynamic>> _fecthListQuotes() async {
+    final result = await http.get(Uri.parse(regapiUrl));
+    return json.decode(result.body);
+  }
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+     
+    return FutureBuilder<List<dynamic>>(
+        future: _fecthListQuotes(),
+        builder: (BuildContext context, AsyncSnapshot snapshot) {
+          if (snapshot.hasData) {
+            return Padding(
+              padding: const EdgeInsets.all(0),
+              child:     GestureDetector(
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
@@ -16,30 +35,38 @@ class recomendations extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: 140,
-                  alignment: Alignment.centerLeft,
-                  child: Image.network(
-                  'https://hips.hearstapps.com/hmg-prod/images/delish-202210-soupdumplings-205-2-1665605391.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=640:*',
-                  fit: BoxFit.fill,
-                  ),
+                  alignment: Alignment.center,
+                  child: Image.network(snapshot.data[indeximg]['imgurl'].toString(),fit: BoxFit.fill,
+                  )
                 ),
                   Container(
                     height: 140,
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
                   child: Image.asset(
-                  'images/layer.png',
+                  'images/region_dark.png',
                   fit: BoxFit.fill,
                   ),
                 ),
                 Container(
                     height: 140,
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                       child: Text(
-                          'Boiled',
+                          snapshot.data[indextxt]['fdnm'].toString(),
                           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
                       ),),
               ],
             ),
                                   ),
-);
+)
+            );
+          } else {
+            return const Center(child: CircularProgressIndicator());
+          }
+        },
+      );
+    
+    
+    
+
   }
 }

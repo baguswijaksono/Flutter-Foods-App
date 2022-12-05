@@ -40,8 +40,8 @@ flutter:
      - images/deepfry.jpg
      - images/grill.jpg
      - images/brush.png
-     - images/layer.png
      - images/dark.png
+     - images/region_dark.png
 
   fonts:
      - family: BentonSans
