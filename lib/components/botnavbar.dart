@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/pages/favorite.dart';
 import 'package:flutter_application_akhir/pages/list.dart';
@@ -6,11 +8,12 @@ import 'package:flutter_application_akhir/pages/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class bottom_navigation_bar extends StatelessWidget {
-  const bottom_navigation_bar({super.key});
+var numindex;
+
+   bottom_navigation_bar({super.key, required this.numindex});
 
   @override
   Widget build(BuildContext context) {
-    var _selectedIndex=0;
     return GNav(
               tabBorderRadius: 12,
               backgroundColor: Colors.transparent,
@@ -30,11 +33,11 @@ class bottom_navigation_bar extends StatelessWidget {
                 text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
                 text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
-            ],selectedIndex: _selectedIndex,
+            ],selectedIndex: numindex,
             onTabChange:(index){
               // ignore: unused_element
               setState(){
-                _selectedIndex =index;
+                numindex =index;
               }
             },);
   }

@@ -20,7 +20,7 @@ class list extends StatelessWidget {
   ),     
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal:12, vertical: 12 ),//padding container  bottom navbar
-            child: bottom_navigation_bar()
+            child: bottom_navigation_bar(numindex: 2,)
           ),
         ),
       ),
