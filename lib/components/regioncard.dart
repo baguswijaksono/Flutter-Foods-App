@@ -15,7 +15,7 @@ class regioncard extends StatelessWidget {
     return json.decode(result.body);
   }
 
-  regioncard({super.key,required this.imgurlnum,required this.regnmsnum,});
+  regioncard({super.key,required this.imgurlnum,required this.regnmsnum,required this.regurlnum});
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<dynamic>>(
@@ -28,7 +28,7 @@ class regioncard extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => region_list(specifyapiurl: snapshot.data[0]['regurl'].toString())));},
+                                                builder: (context) => region_list(specifyapiurl: snapshot.data[regurlnum]['regurl'].toString())));},
                                                   child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                           child: Stack(

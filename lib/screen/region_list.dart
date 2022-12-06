@@ -18,7 +18,9 @@ final String specifyapiurl;
         future: _fecthListQuotes(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
-            return Padding(
+            return Scaffold(
+              backgroundColor: Colors.white,
+              body: Padding(
               padding: const EdgeInsets.all(0),
               child:  GestureDetector(
                   onTap:() {Navigator.push(
@@ -53,6 +55,7 @@ final String specifyapiurl;
             ),
                                   ),
 )
+            ),
             );
           } else {
             return CardLoading(

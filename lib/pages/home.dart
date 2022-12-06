@@ -86,7 +86,7 @@ Padding(
                       scrollDirection: Axis.horizontal,
                       children: [
                         for (int i = 0; i < 5; i++)...[
-                                      regioncard(imgurlnum: 1, regnmsnum: 1)]
+                                      regioncard(imgurlnum: i, regnmsnum: i,regurlnum: i,)]
  ],
          ),
       ),
