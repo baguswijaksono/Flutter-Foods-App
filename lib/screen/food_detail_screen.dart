@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/components/nutritions_chart.dart';
 
 class detail_screen extends StatelessWidget {
   const detail_screen({Key? key}) : super(key: key);
@@ -141,6 +142,7 @@ class detail_screen extends StatelessWidget {
                       height: 4,
                     ),
                   ),
+                  PieChartSample1(),
                   Text(
                     "Ingredients",
                     style: Theme.of(context).textTheme.headline4,
@@ -173,6 +175,25 @@ class detail_screen extends StatelessWidget {
                     itemCount: 3,
                     itemBuilder: (context, index) => steps(context, index),
                   ),
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.all(15),
+                                    child: ElevatedButton(
+          child: Text('Elevated Button'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.green,
+          ),
+          onPressed: () {},
+        ),),Padding(padding: EdgeInsets.all(15),
+                                    child: ElevatedButton(
+          child: Text('Elevated Button'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.green,
+          ),
+          onPressed: () {},
+        ),),
+                    ],
+                  )
                 ],
               ),
             ),
@@ -234,6 +255,7 @@ class detail_screen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
+
             ],
           )
         ],
