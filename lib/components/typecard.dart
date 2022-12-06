@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import '../src/indonesia.dart';
+import 'package:flutter_application_akhir/pages/user_profile.dart';
 import 'package:http/http.dart' as http;
 
 // ignore: must_be_immutable
@@ -26,7 +26,7 @@ class typecard extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => indonesian()));},
+                                                builder: (context) => user()));},
                                                   child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                           child: Stack(

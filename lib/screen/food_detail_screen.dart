@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/nutritions_chart.dart';
 
 class detail_screen extends StatelessWidget {
-  const detail_screen({Key? key}) : super(key: key);
-
+  const detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl}) : super(key: key);
+  final String fdnm;
+  final String desc;
+  final String imgurl;
   @override
   Widget build(BuildContext context) {
     return SafeArea(

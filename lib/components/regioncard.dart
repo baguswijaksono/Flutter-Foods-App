@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/src/indonesia.dart';
+import 'package:flutter_application_akhir/screen/region_list.dart';
 import 'package:http/http.dart' as http;
 
 // ignore: must_be_immutable
@@ -27,7 +27,7 @@ class regioncard extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => indonesian()));},
+                                                builder: (context) => region_list(regionName: 'semarang')));},
                                                   child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                           child: Stack(

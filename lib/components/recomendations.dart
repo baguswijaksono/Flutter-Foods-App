@@ -1,7 +1,8 @@
 import 'dart:convert';
+import 'package:flutter_application_akhir/pages/home.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/src/indonesia.dart';
+
 
 // ignore: must_be_immutable
 class recomendations extends StatelessWidget {
@@ -29,7 +30,7 @@ class recomendations extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => indonesian()));},
+                                                builder: (context) => homepagegweh(title: '1',)));},
                                                   child: ClipRRect(
                                           child: Stack(
               children: <Widget>[

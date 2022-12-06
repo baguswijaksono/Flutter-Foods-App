@@ -18,10 +18,7 @@ class region_view_more_text extends StatelessWidget {
     ),
   GestureDetector(
 
-              onTap:() {Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => detail_screen()));},
+              onTap:() {},
             child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   //mainAxisSize: MainAxisSize.max,
