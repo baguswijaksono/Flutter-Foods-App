@@ -29,10 +29,9 @@ class user extends StatelessWidget {
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
-            
             SizedBox(
-              height: 250,
-              child: calories())
+              height: 300,
+              child: BarChartSample2())
                 //kotak scroll
           ],
           )
