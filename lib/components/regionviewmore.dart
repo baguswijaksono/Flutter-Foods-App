@@ -1,7 +1,5 @@
 import 'package:common_ui_toolkit/index.dart';
 
-import '../screen/food_detail_screen.dart';
-
 class region_view_more_text extends StatelessWidget {
   const region_view_more_text({super.key});
 

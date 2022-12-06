@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 class regioncard extends StatelessWidget {
   var imgurlnum;
   var regnmsnum;
+  var regurlnum;
   final String regapiUrl = "https://api.jsonbin.io/v3/b/638ce0bca3c728450edf79ab?meta=false";
     Future<List<dynamic>> _fecthListQuotes() async {
     final result = await http.get(Uri.parse(regapiUrl));
@@ -27,7 +28,7 @@ class regioncard extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => region_list(regionName: 'semarang')));},
+                                                builder: (context) => region_list(specifyapiurl: snapshot.data[0]['regurl'].toString())));},
                                                   child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                           child: Stack(

@@ -1,0 +1,32 @@
+[
+    {
+      "fdnm": "Seblak Sunda",
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205943143-9e4225b3-0d2d-47ef-b112-f845e948d1cc.jpg",
+      "desc":"Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
+      "type":"berkuah"
+    },
+    {
+      "fdnm": "Karedok Sunda",
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205943442-728401d5-3e73-436b-ad20-011db087634f.jpg",
+      "desc":"Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
+      "type":"nonkuah"
+    },
+    {
+      "fdnm": "Lotek",
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205942533-1f7d81e1-924c-4231-8c39-ca8a5131f1ab.jpg",
+      "desc":"Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
+      "type":"berkuah"
+    },
+    {
+      "fdnm": "Nasi Timbel",
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205944138-feb460e8-d299-4426-8ade-b94f8c26cac8.jpg",
+      "desc":"Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
+      "type":"goreng"
+    },
+    {
+      "fdnm": "Batagor",
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205944496-2f0350be-1047-41f0-8cba-32b42bc59aa6.jpg",
+      "desc":"Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
+      "type":"goreng"
+    }
+]
