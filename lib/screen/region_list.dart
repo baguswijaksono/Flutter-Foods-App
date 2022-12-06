@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:card_loading/card_loading.dart';
-import 'package:flutter_application_akhir/pages/home.dart';
+import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
@@ -19,44 +19,48 @@ final String specifyapiurl;
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
             return Scaffold(
-              backgroundColor: Colors.white,
-              body: Padding(
-              padding: const EdgeInsets.all(0),
-              child:  GestureDetector(
-                  onTap:() {Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) => homepagegweh(title: '1',)));},
-                                                  child: ClipRRect(
-                                          child: Stack(
-              children: <Widget>[
-                Container(
-                  height: 160,
-                  alignment: Alignment.center,
-                  child: Image.network(snapshot.data[1]['imgurl'].toString(),fit: BoxFit.fill,
-                  )
-                ),
-                  Container(
-                    height: 160,
-                  alignment: Alignment.center,
-                  child: Image.asset(
-                  'images/region_dark.png',
-                  fit: BoxFit.fill,
-                  ),
-                ),
-                Container(
-                    height: 160,
-                    alignment: Alignment.center,
-                      child: Text(
-                          snapshot.data[1]['fdnm'].toString(),
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
-                      ),),
-              ],
-            ),
-                                  ),
+      backgroundColor: Colors.white,
+      body: ListView(
+  padding: const EdgeInsets.all(0),
+  children: <Widget>[
+    for (var i = 0; i < 5; i++)
+GestureDetector(
+onTap:() {Navigator.push(
+context,
+MaterialPageRoute(
+builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString())));},
+child: ClipRRect(
+child: Stack(
+children: [
+Container(
+height: 160,
+alignment: Alignment.center,
+child: Image.network(snapshot.data[i]['imgurl'].toString(),fit: BoxFit.fill,
 )
-            ),
-            );
+),
+Container(
+height: 160,
+alignment: Alignment.center,
+child: Image.asset(
+'images/region_dark.png',
+fit: BoxFit.fill,
+),
+),
+Container(
+height: 160,
+alignment: Alignment.center,
+child: Text(
+snapshot.data[i]['fdnm'].toString(),
+style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
+),),
+],
+),
+),
+)
+  ],
+)
+          
+          );
           } else {
             return CardLoading(
   height: 300,

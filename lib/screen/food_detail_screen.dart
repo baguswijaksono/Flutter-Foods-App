@@ -15,7 +15,7 @@ class detail_screen extends StatelessWidget {
         children: [
           SizedBox(
             width: double.infinity,
-            child: Image.network('https://media.gq.com.tw/photos/5f33cd9b75b14ede48dd60bc/16:9/w_2560%2Cc_limit/89860772_676985703118212_3455977052144901784_n.jpg'),
+            child: Image.network(imgurl),
           ),
           buttonArrow(context),
           scroll(),
@@ -92,7 +92,7 @@ class detail_screen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Cacao Maca Walnut Milk",
+                    fdnm,
                     style: Theme.of(context).textTheme.headline5,
                   ),
                   const SizedBox(
@@ -122,7 +122,7 @@ class detail_screen extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    'Your recipe has been uploaded, you can see it on your profile. Your recipe has been uploaded, you can see it on your',
+                    desc,
                     style: Theme.of(context)
                         .textTheme
                         .bodyText2!
