@@ -15,12 +15,9 @@ dependencies:
   fl_chart: ^0.55.2
   common_ui_toolkit: ^0.2.6
   flutter_timer_countdown: ^1.0.5
-  d_chart: ^0.1.0
-  cool_stepper: ^1.2.1
   google_fonts: ^3.0.1
-  vertical_card_pager: ^1.5.0
-  flappy_search_bar_ns: ^2.0.2
-  flutter_image_slideshow: ^0.1.4
+  card_loading: ^0.2.2
+  iconly: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -34,14 +31,10 @@ flutter:
      - images/Frame.png
      - images/Image.png
      - images/Pattern.png
-     - images/boil.jpg
-     - images/saute.jpg
-     - images/steam.jpg
-     - images/deepfry.jpg
-     - images/grill.jpg
      - images/brush.png
      - images/dark.png
      - images/region_dark.png
+     - images/type_dark.png
 
   fonts:
      - family: BentonSans

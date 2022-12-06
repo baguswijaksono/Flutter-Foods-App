@@ -34,13 +34,13 @@ class recomendations extends StatelessWidget {
                                           child: Stack(
               children: <Widget>[
                 Container(
-                  height: 140,
+                  height: 160,
                   alignment: Alignment.center,
                   child: Image.network(snapshot.data[indeximg]['imgurl'].toString(),fit: BoxFit.fill,
                   )
                 ),
                   Container(
-                    height: 140,
+                    height: 160,
                   alignment: Alignment.center,
                   child: Image.asset(
                   'images/region_dark.png',
@@ -48,7 +48,7 @@ class recomendations extends StatelessWidget {
                   ),
                 ),
                 Container(
-                    height: 140,
+                    height: 160,
                     alignment: Alignment.center,
                       child: Text(
                           snapshot.data[indextxt]['fdnm'].toString(),

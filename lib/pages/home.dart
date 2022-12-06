@@ -3,7 +3,7 @@ import 'package:flutter_application_akhir/components/bannercard.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
 import 'package:flutter_application_akhir/components/regioncard.dart';
 import 'package:flutter_application_akhir/components/regionviewmore.dart';
-
+import 'package:flutter_application_akhir/components/typecard.dart';
 
 class homepagegweh extends StatefulWidget {
   const homepagegweh({super.key, required this.title});
@@ -86,7 +86,7 @@ Padding(
                       scrollDirection: Axis.horizontal,
                       children: [
                         for (int i = 0; i < 5; i++)...[
-                                                  regioncard(imgurlnum: i, regnmsnum: i)]
+                                      regioncard(imgurlnum: i, regnmsnum: i)]
  ],
          ),
       ),
@@ -101,7 +101,8 @@ Padding(
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          regioncard(imgurlnum: 1, regnmsnum: 1)
+                          for (int i = 0; i < 3; i++)...[
+                          typecard(imgurls: i, typnm: i)]
  ],
          ),
       ),

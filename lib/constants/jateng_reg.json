@@ -1,22 +1,28 @@
 [
     {
       "fdnm": "Soto Kudus",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg",
+      "type":"berkuah"
     },
     {
       "fdnm": "Kupat Tahu Solo",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg",
+      "type":"nonkuah"
     },
     {
       "fdnm": "Mie Ongklok Wonosobo",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg",
+      "type":"berkuah"
     },
     {
       "fdnm": "Lumpia Semarang",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg",
+      "type":"goreng"
     },
     {
       "fdnm": "Mendoan Banyumas",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg",
+      "type":"goreng"
+
     }
 ]

@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/pages/favorite.dart';
+import 'package:flutter_application_akhir/pages/home.dart';
 import 'package:flutter_application_akhir/pages/list.dart';
-import 'package:flutter_application_akhir/pages/search.dart';
 import 'package:flutter_application_akhir/pages/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -24,9 +24,7 @@ var numindex;
               gap: 20,
               tabs: [
                 GButton(icon: Icons.home,
-                  text: 'Home',textStyle: TextStyle(color: Colors.white,),),
-                GButton(icon: Icons.search_rounded,
-                  text: 'Search',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>searchpage()));}),
+                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>homepagegweh(title: 'easy',)));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list(),));}),
                 GButton(icon: Icons.favorite_rounded,

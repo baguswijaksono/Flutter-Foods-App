@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/src/indonesia.dart';
 import 'package:http/http.dart' as http;
@@ -16,8 +17,6 @@ class regioncard extends StatelessWidget {
   regioncard({super.key,required this.imgurlnum,required this.regnmsnum,});
   @override
   Widget build(BuildContext context) {
-    
-
     return FutureBuilder<List<dynamic>>(
         future: _fecthListQuotes(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -54,7 +53,11 @@ class regioncard extends StatelessWidget {
 ),
             );
           } else {
-            return const Center(child: CircularProgressIndicator());
+            return CardLoading(
+  height: 300,
+  borderRadius: BorderRadius.all(Radius.circular(10)),
+  margin: EdgeInsets.only(bottom: 10),
+);
           }
         },
       );
