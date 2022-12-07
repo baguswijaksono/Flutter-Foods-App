@@ -11,14 +11,17 @@
     },
     {
       "rgnm": "Jawa Timur",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205507131-a72a2041-33a7-4c3f-8d8c-db986d0dd7a6.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205507131-a72a2041-33a7-4c3f-8d8c-db986d0dd7a6.jpg",
+      "regurl": ""
     },
     {
       "rgnm": "Bali",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205507215-173e30ff-deb4-4a29-b0b7-1914583f4c29.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205507215-173e30ff-deb4-4a29-b0b7-1914583f4c29.jpg",
+      "regurl": ""
     },
     {
       "rgnm": "Papua",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205507081-26c2ca21-62e7-49c2-97f6-58160d80f67a.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205507081-26c2ca21-62e7-49c2-97f6-58160d80f67a.jpg",
+      "regurl": ""
     }
   ]
