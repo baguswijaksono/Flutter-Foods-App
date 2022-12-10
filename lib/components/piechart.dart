@@ -3,18 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/nutritions_chart_color_extension.dart';
 import 'package:flutter_application_akhir/components/nutritions_chart_indicator.dart';
 
-class PieChartSample1 extends StatefulWidget {
-  const PieChartSample1({super.key});
+// ignore: must_be_immutable
+class piechart extends StatelessWidget {
+  double kal;
+  
+  double prtn;
+  
+  double lmk;
+  
+  double vtmn;
+        int touchedIndex = -1;
 
-  @override
-  State<StatefulWidget> createState() => PieChartSample1State();
-}
-
-class PieChartSample1State extends State {
-  int touchedIndex = -1;
+  piechart({super.key, required this.kal, required this.lmk , required this.vtmn ,required this.prtn});
 
   @override
   Widget build(BuildContext context) {
+
     return AspectRatio(
       aspectRatio: 1.3,
       child: Card(
@@ -66,18 +70,6 @@ class PieChartSample1State extends State {
                 child: PieChart(
                   PieChartData(
                     pieTouchData: PieTouchData(
-                      touchCallback: (FlTouchEvent event, pieTouchResponse) {
-                        setState(() {
-                          if (!event.isInterestedForInteractions ||
-                              pieTouchResponse == null ||
-                              pieTouchResponse.touchedSection == null) {
-                            touchedIndex = -1;
-                            return;
-                          }
-                          touchedIndex = pieTouchResponse
-                              .touchedSection!.touchedSectionIndex;
-                        });
-                      },
                     ),
                     startDegreeOffset: 180,
                     borderData: FlBorderData(
@@ -95,8 +87,7 @@ class PieChartSample1State extends State {
       ),
     );
   }
-
-  List<PieChartSectionData> showingSections() {
+   List<PieChartSectionData> showingSections() {
     return List.generate(
       4,
       (i) {
@@ -112,14 +103,9 @@ class PieChartSample1State extends State {
           case 0:
             return PieChartSectionData(
               color: color0.withOpacity(opacity),
-              value: 25,
+              value: 45,
               title: '',
-              radius: 80,
-              titleStyle: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Color(0xff044d7c),
-              ),
+              radius: 70,
               titlePositionPercentageOffset: 0.55,
               borderSide: isTouched
                   ? BorderSide(color: color0.darken(), width: 6)
@@ -130,7 +116,7 @@ class PieChartSample1State extends State {
               color: color1.withOpacity(opacity),
               value: 25,
               title: '',
-              radius: 65,
+              radius: 70,
               titleStyle: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -146,7 +132,7 @@ class PieChartSample1State extends State {
               color: color2.withOpacity(opacity),
               value: 25,
               title: '',
-              radius: 60,
+              radius: 70,
               titleStyle: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

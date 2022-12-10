@@ -102,7 +102,7 @@ Padding(
                         scrollDirection: Axis.horizontal,
                         children: [
                           for (int i = 0; i < 3; i++)...[
-                          typecard(imgurls: i, typnm: i)]
+                          typecard(imgurls: i, typnm: i, typeindex: i,)]
  ],
          ),
       ),

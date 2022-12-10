@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/components/nutritions_chart.dart';
+import 'package:flutter_application_akhir/components/piechart.dart';
 
 class detail_screen extends StatelessWidget {
   const detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl}) : super(key: key);
@@ -99,7 +99,7 @@ class detail_screen extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    "Food .60 min",
+                    "Kabupaten",
                     style: Theme.of(context)
                         .textTheme
                         .bodyText2!
@@ -115,7 +115,7 @@ class detail_screen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Description",
+                    "Deskripsi",
                     style: Theme.of(context).textTheme.headline4,
                   ),
                   const SizedBox(
@@ -135,7 +135,7 @@ class detail_screen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Nutritions Fact",
+                    "Infromasi Nutrisi",
                     style: Theme.of(context).textTheme.headline4,
                   ),
                   const Padding(
@@ -144,9 +144,9 @@ class detail_screen extends StatelessWidget {
                       height: 4,
                     ),
                   ),
-                  PieChartSample1(),
+piechart(kal: 22 ,lmk: 12, prtn: 12, vtmn: 80,),
                   Text(
-                    "Ingredients",
+                    "Bahan Makanan",
                     style: Theme.of(context).textTheme.headline4,
                   ),
                   const SizedBox(

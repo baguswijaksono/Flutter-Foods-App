@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
-import 'package:flutter_application_akhir/components/recomendations.dart';
 
 class list extends StatelessWidget {
   const list({super.key});
@@ -27,8 +26,7 @@ class list extends StatelessWidget {
       body: ListView(
   padding: const EdgeInsets.all(0),
   children: <Widget>[
-    for (var i = 0; i < 5; i++)
-recomendations(indeximg: i, indextxt: i,)
+
   ],
 )
           

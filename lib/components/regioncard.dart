@@ -28,7 +28,7 @@ class regioncard extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => region_list(specifyapiurl: snapshot.data[regurlnum]['regurl'].toString())));},
+                                                builder: (context) => region_list(specifyapiurl: snapshot.data[regurlnum]['regurl'].toString(), regionname: snapshot.data[regurlnum]['rgnm'].toString(),)));},
                                                   child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                           child: Stack(

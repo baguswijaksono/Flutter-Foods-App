@@ -1,15 +1,18 @@
-import 'dart:convert';
-import 'package:card_loading/card_loading.dart';
-import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
-import 'package:http/http.dart' as http;
-import 'package:flutter/material.dart';
+// ignore_for_file: must_be_immutable
 
-class region_list extends StatelessWidget {
-  const region_list({super.key, required this.specifyapiurl, required this.regionname});
-final String specifyapiurl;
-final String regionname;
-    Future<List<dynamic>> _fecthListQuotes() async {
-    final result = await http.get(Uri.parse(specifyapiurl));
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:card_loading/card_loading.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
+
+class foodtype extends StatelessWidget {
+   foodtype({super.key, required this.allpirul,required this.typeindex});
+  final String allpirul;
+    final int typeindex;
+    var arr = ['berkuah','nonkuah','goreng'];
+      Future<List<dynamic>> _fecthListQuotes() async {
+    final result = await http.get(Uri.parse(allpirul));
     return json.decode(result.body);
   }
 
@@ -22,8 +25,6 @@ final String regionname;
             return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
-  
-
   padding: const EdgeInsets.all(0),
   children: <Widget>[
     SizedBox(
@@ -33,31 +34,29 @@ final String regionname;
     Column(
       children: [
         Container(
-          padding: EdgeInsets.only(top: 80),
 alignment: Alignment.center,
-child: Text('Makanan Daerah',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 35.0, ), 
+child: Text('Regional Foods ',
+style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
 ),),
     Container(
 alignment: Alignment.center,
-child: Text('dari',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 12.0, ), 
+child: Text('of ',
+style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
 ),),
     Container(
 alignment: Alignment.center,
-child: Text(regionname,
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30.0, ), 
+child: Text('regionname',
+style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
 ),)
       ],
     ),
-
-  
   ],
 )
 
     ),
 
-    for (var i = 0; i < 5; i++)
+for (var i = 0; i < 20; i++)
+if (snapshot.data[i]['type'].toString()==arr[typeindex])
 GestureDetector(
 onTap:() {Navigator.push(
 context,
@@ -92,8 +91,7 @@ style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.
 ),
 )
   ],
-)
-          
+)     
           );
           } else {
             return CardLoading(
@@ -104,7 +102,5 @@ style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.
           }
         },
       );
-    
-    
   }
 }
