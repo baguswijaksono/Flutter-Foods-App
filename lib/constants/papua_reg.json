@@ -1,32 +1,52 @@
 [
-    {
-      "fdnm": "Papeda",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg",
-      "desc":"Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
-      "type":"berkuah"
-    },
-    {
-      "fdnm": "Udang Selingkuh",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg",
-      "desc":"Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
-      "type":"nonkuah"
-    },
-    {
-      "fdnm": "Aunu Senebre",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg",
-      "desc":"Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
-      "type":"berkuah"
-    },
-    {
-      "fdnm": "Ikan Bakar Manokwari",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg",
-      "desc":"Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
-      "type":"goreng"
-    },
-    {
-      "fdnm": "Jukut Urap",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg",
-      "desc":"Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
-      "type":"goreng"
-    }
+  {
+    "fdnm": "Bandeng Kuah Kuning",
+    "imgurl": "https://img-global.cpcdn.com/recipes/75c8c5cecf84f413/1200x630cq70/photo.jpg",
+    "desc":"ikan kuah kuning dengan bahan bandeng ini menjadi salah satu kuliner yang biasa disajikan dengan papeda. Bahan baku ikan bandeng ini sama dengan kuliner Papua lain, yaitu ikan bungkus. Bedanya pengolahan ikan bungkus dimasak dengan cara dipepes.",
+    "type":"berkuah",
+    "Kalori":"619",
+    "Protein":"20,53",
+    "Lemak":"6,73",
+    "Karbohidrat":"10"
+  },
+  {
+    "fdnm": "Papeda",
+    "imgurl": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1638945512/vpcpzm6didjyctkzmr1u.jpg",
+    "desc":"Papeda adalah makanan berupa bubur sagu khas Maluku dan Papua yang biasanya disajikan dengan ikan tongkol atau bubara yang dibumbui dengan kunyit. Papeda berwarna putih dan bertekstur lengket seperti lem dengan rasa yang tawar.",
+    "type":"berkuah",
+    "Kalori":"209",
+    "Protein":"0,3",
+    "Lemak":"0,2",
+    "Karbohidrat":"51,6"
+  },
+  {
+    "fdnm": "Aunuve Habre",
+    "imgurl": "https://t-2.tstatic.net/tribunnewswiki/foto/bank/images/Ilustrasi-Aunuve-Habre-khas-Papua2.jpg",
+    "desc":"Aunuve Habre adalah makanan khas Papua yaitu ikan sakalang yang dipotong-potong dibungkus daun talas dan dimasak dengan air dan garam diatas wajan.",
+    "type":"berkuah",
+    "Kalori":"619",
+    "Protein":"20,53",
+    "Lemak":"6,73",
+    "Karbohidrat":"8"
+  },
+  {
+    "fdnm": "Kue Lontar",
+    "imgurl": "https://asset.kompas.com/crops/Omq_RKy0VkXdqlDyvPl4noBESF0=/84x0:674x393/750x500/data/photo/2021/10/02/6157c779718b6.jpg",
+    "desc":"Kue lontar punya tekstur lembut di bagian dalam dan renyah pada kulit luarnya. Unsur susu menjadi faktor utama dari lembutnya rasa kue dan menambah kelezatannya. Di Papua, kue lontar umumnya dibuat berukuran cukup besar dengan diameter bisa mencapai 20 sentimeter dan memerlukan sebuah cetakan kue khusus.",
+    "type":"berkuah",
+    "Kalori":"230",
+    "Protein":"8,5",
+    "Lemak":"9,1",
+    "Karbohidrat":"50,85"
+  },
+  {
+    "fdnm": "Tahu Campur",
+    "imgurl": "https://asset.kompas.com/crops/Nv5RHVAQ4Qk2Q3BdCm-nk2QXtMI=/194x35:960x545/750x500/data/photo/2018/09/19/1428271598.jpg",
+    "desc":"Abon Gulung merupakan makanan ringan khas Manokwari yang kerap ditemui di setiap bandara yang ada di Papua maupun Papua Barat. Abon gulung sebenarnya adalah roti gulung yang di tengahnya berisi abon. Namun entah mengapa kelembutan roti ini yang biasanya berasa manis berganti menjadi rasa gurih. Sehingga sangat cocok untuk dijadikan hidangan utama bukan hidangan pembuka. Roti ini hanya diproduksi oleh satu pabrik roti bernama Hawai Bakery yang terletak di Manokwari.",
+    "type":"berkuah",
+    "Kalori":"70",
+    "Protein":"18",
+    "Lemak":"10,6",
+    "Karbohidrat":"59,3"
+  }
 ]

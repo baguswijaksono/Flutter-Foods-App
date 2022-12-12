@@ -1,32 +1,52 @@
 [
-    {
-      "fdnm": "Rawon",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg",
-      "desc":"Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
-      "type":"berkuah"
-    },
-    {
-      "fdnm": "Bakso Malang",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg",
-      "desc":"Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
-      "type":"nonkuah"
-    },
-    {
-      "fdnm": "Gado Gado",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg",
-      "desc":"Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
-      "type":"berkuah"
-    },
-    {
-      "fdnm": "Nasi Krawu",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg",
-      "desc":"Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
-      "type":"goreng"
-    },
-    {
-      "fdnm": "Bebek Songkem",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg",
-      "desc":"Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
-      "type":"goreng"
-    }
+  {
+    "fdnm": "Soto Lamongan",
+    "imgurl": "https://cdn1.katadata.co.id/media/images/thumb/2021/11/12/Soto_ayam_Lamongan-2021_11_12-07_11_23_a43683d33b40f413228d54e3c6ed4a2f_400x267_thumb.jpg",
+    "desc":"Soto Lamongan adalah sajian makanan soto ayam yang khas dari daerah Lamongan, Jawa Timur. Salah satu ciri khas dari Soto Lamongan ini terletak pada serbuk krupuk udangnya yang sering disebut koya atau poya.",
+    "type":"berkuah",
+    "Kalori":"312",
+    "Protein":"24,01",
+    "Lemak":"14,92",
+    "Karbohidrat":"19,55"
+  },
+  {
+    "fdnm": "Soto Rawon",
+    "imgurl": "https://www.masakapahariini.com/wp-content/uploads/2018/04/resep-rawon-daging-780x440.jpg",
+    "desc":"Rawon merupakan salah satu makanan khas Jawa Timur yang mudah didapatkan di mana saja, mulai dari warung-warung kecil hingga restoran-restoran besar. Rawon terbuat dari daging dan kuah daging sapi yang ditambah bumbu-bumbu untuk mendapatkan citarasa khas rawon. Bumbu rawon terdiri dari berbagai macam rempah-rempah, seperti bawang merah, bawang putih, kemiri, cabe merah, dan kluwak.",
+    "type":"berkuah",
+    "Kalori":"60",
+    "Protein":"5,4",
+    "Lemak":"2,5",
+    "Karbohidrat":"4"
+  },
+  {
+    "fdnm": "Bakso Malang",
+    "imgurl": "https://asset.kompas.com/crops/WsUxzVKuLHaWTO3vge_sPMpj90I=/0x129:1000x796/375x240/data/photo/2020/03/03/5e5e292daa840.jpg",
+    "desc":"Bakso Malang adalah hidangan bakso yang banyak ditemui di seluruh belahan Kota Malang dan Kabupaten Malang, Jawa Timur. Mirip dengan hidangan bakso lainnya, hidangan tersebut terdiri dari daging yang dibentuk bundar dan mi. Bedanya ada pada penambahan kulit pangsit yang digoreng dan tahu yang digoreng.",
+    "type":"berkuah",
+    "Kalori":"57",
+    "Protein":"3,74",
+    "Lemak":"3,69",
+    "Karbohidrat":"2,12"
+  },
+  {
+    "fdnm": "Gethuk Pisang",
+    "imgurl": "https://suarakonsumen.co/asset/foto_berita/IMG20201126084156.jpg",
+    "desc":"Gethuk pisang merupakan makanan khas dari Kediri yang terbuat dari bahan dasar pisang dan disajikan dengan cara dibungkus daun pisang. Gethuk pisang terbuat dari pisang khusus yaitu jenis pisang raja nangka.",
+    "type":"berkuah",
+    "Kalori":"144",
+    "Protein":"1,1",
+    "Lemak":"0,4",
+    "Karbohidrat":"34,1"
+  },
+  {
+    "fdnm": "Tahu Campur",
+    "imgurl": "https://kbu-cdn.com/dk/wp-content/uploads/tahu-campur.jpg",
+    "desc":"Tahu campur adalah salah satu makanan khas Jawa Timur, tepatnya dari kota Lamongan. Tahu campur terdiri dari sop daging sapi kenyal, kikil sapi, tahu goreng, perkedel singkong, taoge segar, selada air segar, mi kuning, dan kerupuk udang. Semua ini kemudian dicampurkan ke bumbu petis, bawang goreng, dan sambal. Masakan ini banyak dijual di warung kaki lima dengan label Tahu Campur Lamongan.",
+    "type":"berkuah",
+    "Kalori":"80",
+    "Protein":"10,9",
+    "Lemak":"4,7",
+    "Karbohidrat":"0,8"
+  }
 ]
