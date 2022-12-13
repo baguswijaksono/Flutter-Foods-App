@@ -6,15 +6,11 @@ import 'package:flutter_application_akhir/components/regionviewmore.dart';
 import 'package:flutter_application_akhir/components/typecard.dart';
 
 class homepagegweh extends StatefulWidget {
-  const homepagegweh({super.key, required this.title});
-  final String title;
+  const homepagegweh({super.key,});
   @override
   State<homepagegweh> createState() => _homepagegwehState();
 }
-
 class _homepagegwehState extends State<homepagegweh> {
-
-//nulis kode disini
   @override
   Widget build(BuildContext context) {
     // ignore: unused_local_variable

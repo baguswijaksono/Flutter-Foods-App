@@ -11,7 +11,7 @@ class regview extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => homepagegweh(title: '1',)));},
+                                                builder: (context) => homepagegweh()));},
                                                   child: ClipRRect(
                                           child: Stack(
               children: <Widget>[

@@ -10,7 +10,7 @@ class foodtype extends StatelessWidget {
    foodtype({super.key, required this.allpirul,required this.typeindex});
   final String allpirul;
     final int typeindex;
-    var arr = ['berkuah','nonkuah','goreng'];
+    var arr = ['goreng','berkuah','nonkuah'];
       Future<List<dynamic>> _fecthListQuotes() async {
     final result = await http.get(Uri.parse(allpirul));
     return json.decode(result.body);

@@ -9,7 +9,7 @@ class typecard extends StatelessWidget {
   var imgurls;
   var typnm;
   final int typeindex;
-    final String regapiUrl = "https://api.jsonbin.io/v3/b/6392030fc5b3a64f1bc6ab28?meta=false";
+    final String regapiUrl = "https://api.jsonbin.io/v3/b/638e261372ad6d6ffb34e376?meta=false";
     Future<List<dynamic>> _fecthListQuotes() async {
     final result = await http.get(Uri.parse(regapiUrl));
     return json.decode(result.body);
@@ -26,7 +26,7 @@ class typecard extends StatelessWidget {
                   onTap:() {Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => foodtype(allpirul: regapiUrl,typeindex: typeindex,)));},
+                                                builder: (context) => foodtype(allpirul: snapshot.data[typeindex]['allfoodapi'].toString(),typeindex: typeindex,)));},
                                                   child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                           child: Stack(
@@ -48,7 +48,7 @@ class typecard extends StatelessWidget {
                   width: 200,
                     alignment: Alignment.center,
                     child: Text(
-                        'goreng',
+                        snapshot.data[typnm]['desc'].toString(),
                         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     
                     ),),
               ],

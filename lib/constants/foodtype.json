@@ -1,15 +1,17 @@
 [
     {
       "desc":"Gorengan",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205697523-baaf7e91-e1c1-4011-b179-0072d01f9053.jpg"
+      "imgurl": "https://user-images.githubusercontent.com/106671990/205697523-baaf7e91-e1c1-4011-b179-0072d01f9053.jpg",
+      "allfoodapi":"https://api.jsonbin.io/v3/b/6392030fc5b3a64f1bc6ab28?meta=false"
     },
     {
         "desc":"Berkuah",
-        "imgurl": "https://user-images.githubusercontent.com/106671990/205697782-c785b74d-0be4-443c-a846-d04f0635a174.jpg"
+        "imgurl": "https://user-images.githubusercontent.com/106671990/205697782-c785b74d-0be4-443c-a846-d04f0635a174.jpg",
+        "allfoodapi":"https://api.jsonbin.io/v3/b/6392030fc5b3a64f1bc6ab28?meta=false"
     },
     {
         "desc":"Tidak Berkuah",
-        "imgurl": "https://user-images.githubusercontent.com/106671990/205698024-9df76d2a-582d-4e29-b55f-40fc7cbc7bb4.jpg"
+        "imgurl": "https://user-images.githubusercontent.com/106671990/205698024-9df76d2a-582d-4e29-b55f-40fc7cbc7bb4.jpg",
+        "allfoodapi":"https://api.jsonbin.io/v3/b/6392030fc5b3a64f1bc6ab28?meta=false"
       }
   ]
-  

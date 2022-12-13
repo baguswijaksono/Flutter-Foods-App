@@ -24,7 +24,7 @@ var numindex;
               gap: 20,
               tabs: [
                 GButton(icon: Icons.home,
-                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>homepagegweh(title: 'easy',)));}),
+                  text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>homepagegweh()));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list(),));}),
                 GButton(icon: Icons.favorite_rounded,
