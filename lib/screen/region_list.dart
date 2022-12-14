@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:card_loading/card_loading.dart';
+import 'package:flutter_application_akhir/components/backbutton.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
@@ -22,18 +23,18 @@ final String regionname;
             return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
-  
-
   padding: const EdgeInsets.all(0),
   children: <Widget>[
     SizedBox(
+      
       height: 250,
       child: Stack(
   children: <Widget>[
+    backarrow(),
     Column(
       children: [
         Container(
-          padding: EdgeInsets.only(top: 80),
+padding: EdgeInsets.only(top: 80),
 alignment: Alignment.center,
 child: Text('Makanan Daerah',
 style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 35.0, ), 
@@ -50,15 +51,13 @@ style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30.
 ),)
       ],
     ),
-
-  
   ],
 )
 
     ),
 
     for (var i = 0; i < 5; i++)
-GestureDetector(
+    GestureDetector(
 onTap:() {Navigator.push(
 context,
 MaterialPageRoute(

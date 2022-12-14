@@ -33,28 +33,28 @@ class piechart extends StatelessWidget {
               children: <Widget>[
                 Indicator(
                   color: const Color(0xff0293ee),
-                  text: 'One',
+                  text: 'Kalori',
                   isSquare: false,
                   size: touchedIndex == 0 ? 18 : 16,
                   textColor: touchedIndex == 0 ? Colors.black : Colors.grey,
                 ),
                 Indicator(
                   color: const Color(0xfff8b250),
-                  text: 'Two',
+                  text: 'Lmak',
                   isSquare: false,
                   size: touchedIndex == 1 ? 18 : 16,
                   textColor: touchedIndex == 1 ? Colors.black : Colors.grey,
                 ),
                 Indicator(
                   color: const Color(0xff845bef),
-                  text: 'Three',
+                  text: 'Vitamin',
                   isSquare: false,
                   size: touchedIndex == 2 ? 18 : 16,
                   textColor: touchedIndex == 2 ? Colors.black : Colors.grey,
                 ),
                 Indicator(
                   color: const Color(0xff13d38e),
-                  text: 'Four',
+                  text: 'Protein',
                   isSquare: false,
                   size: touchedIndex == 3 ? 18 : 16,
                   textColor: touchedIndex == 3 ? Colors.black : Colors.grey,

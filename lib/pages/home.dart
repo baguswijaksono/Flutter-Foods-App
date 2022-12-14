@@ -41,7 +41,7 @@ class _homepagegwehState extends State<homepagegweh> {
           children: [ 
             
                     SizedBox(
-                    height: dev_height-112,
+                    height: dev_height-80,
                     child: ListView(
                       scrollDirection: Axis.vertical,
                       children: [
