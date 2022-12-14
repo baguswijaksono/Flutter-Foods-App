@@ -60,19 +60,15 @@ class BarChartSample2State extends State<BarChartSample2> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  makeTransactionsIcon(),
-                  const SizedBox(
-                    width: 38,
-                  ),
                   const Text(
-                    'Transactions',
+                    'Kalori',
                     style: TextStyle(color: Colors.white, fontSize: 22),
                   ),
                   const SizedBox(
                     width: 4,
                   ),
                   const Text(
-                    'state',
+                    'Mingguan',
                     style: TextStyle(color: Color(0xff77839a), fontSize: 16),
                   ),
                 ],
@@ -229,53 +225,6 @@ class BarChartSample2State extends State<BarChartSample2> {
           toY: y2,
           color: rightBarColor,
           width: width,
-        ),
-      ],
-    );
-  }
-
-  Widget makeTransactionsIcon() {
-    const width = 4.5;
-    const space = 3.5;
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Container(
-          width: width,
-          height: 10,
-          color: Colors.white.withOpacity(0.4),
-        ),
-        const SizedBox(
-          width: space,
-        ),
-        Container(
-          width: width,
-          height: 28,
-          color: Colors.white.withOpacity(0.8),
-        ),
-        const SizedBox(
-          width: space,
-        ),
-        Container(
-          width: width,
-          height: 42,
-          color: Colors.white.withOpacity(1),
-        ),
-        const SizedBox(
-          width: space,
-        ),
-        Container(
-          width: width,
-          height: 28,
-          color: Colors.white.withOpacity(0.8),
-        ),
-        const SizedBox(
-          width: space,
-        ),
-        Container(
-          width: width,
-          height: 10,
-          color: Colors.white.withOpacity(0.4),
         ),
       ],
     );

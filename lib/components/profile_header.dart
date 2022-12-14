@@ -38,7 +38,7 @@ class page extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                           color: Colors.orange.withOpacity(0.5),
-                          borderRadius: BorderRadius.circular(20)),
+                          borderRadius: BorderRadius.circular(12)),
                       child: Center(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -57,11 +57,11 @@ class page extends StatelessWidget {
         ),
         Padding(
           padding:
-              const EdgeInsets.only(left: 25, right: 25, top: 10, bottom: 20),
+              const EdgeInsets.only(left: 25, right: 25, top: 10, bottom: 10),
           child: Container(
             child: Text(
               "Thave 11 years commercial experience providing front-end development, producing responsive websites and exceptional user experience.",
-              style: TextStyle(color: Colors.grey, fontSize: 18),
+              style: TextStyle(color: Colors.grey, fontSize: 15),
             ),
           ),
         ),
