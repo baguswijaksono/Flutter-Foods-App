@@ -6,6 +6,8 @@ import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 
+import '../components/backbutton.dart';
+
 class foodtype extends StatelessWidget {
    foodtype({super.key, required this.allpirul,required this.typeindex});
   final String allpirul;
@@ -31,6 +33,7 @@ class foodtype extends StatelessWidget {
       height: 250,
       child: Stack(
   children: <Widget>[
+        backarrow(),
     Column(
       children: [
         Container(

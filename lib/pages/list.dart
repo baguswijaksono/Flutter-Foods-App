@@ -4,6 +4,7 @@ import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import '../components/botnavbar.dart';
 import '../screen/food_detail_screen.dart';
 // ignore: must_be_immutable
 class list extends StatelessWidget {
@@ -20,8 +21,23 @@ class list extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
             var d=snapshot.data.length ;
-            return Scaffold(
-      backgroundColor: Colors.white,
+            return Scaffold(     
+               bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
+        child: Container(
+          decoration: BoxDecoration(                                                   
+    borderRadius:BorderRadius.circular(15),            
+    boxShadow: [                                                               
+        BoxShadow(color: Color.fromRGBO(37, 37, 37, 1.0),),       
+    ],                                                                         
+  ),     
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal:12, vertical: 12 ),//padding container  bottom navbar
+            child: bottom_navigation_bar(numindex: 1,)
+          ),
+        ),
+      ),
+      backgroundColor: Colors.transparent,
       body: ListView(
   padding: const EdgeInsets.all(0),
   children: <Widget>[

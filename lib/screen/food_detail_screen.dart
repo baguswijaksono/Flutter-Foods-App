@@ -116,7 +116,7 @@ class detail_screen extends StatelessWidget {
                   ),
                   Text(
                     "Deskripsi",
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headline5,
                   ),
                   const SizedBox(
                     height: 10,
@@ -136,7 +136,7 @@ class detail_screen extends StatelessWidget {
                   ),
                   Text(
                     "Infromasi Nutrisi",
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headline5,
                   ),
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 15),
@@ -147,7 +147,7 @@ class detail_screen extends StatelessWidget {
 piechart(kal: 22 ,lmk: 12, prtn: 12, vtmn: 80,),
                   Text(
                     "Bahan Makanan",
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headline5,
                   ),
                   const SizedBox(
                     height: 10,
@@ -166,7 +166,7 @@ piechart(kal: 22 ,lmk: 12, prtn: 12, vtmn: 80,),
                   ),
                   Text(
                     "Steps",
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headline5,
                   ),
                   const SizedBox(
                     height: 10,
