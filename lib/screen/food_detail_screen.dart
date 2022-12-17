@@ -2,9 +2,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/piechart.dart';
 
+
 // ignore: must_be_immutable
 class detail_screen extends StatelessWidget {
-   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit}) : super(key: key);
+   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit, required this.bhn}) : super(key: key);
   final String fdnm;
   final String desc;
   final String imgurl;
@@ -12,6 +13,7 @@ class detail_screen extends StatelessWidget {
   final String lmk;
   final String prtn;
   final String vit;
+  final List bhn;
   @override
   Widget build(BuildContext context) {
 
@@ -168,12 +170,29 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   const SizedBox(
                     height: 10,
                   ),
-                  ListView.builder(
-                    physics: NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: 3,
-                    itemBuilder: (context, index) => ingredients(context),
-                  ),
+                  Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        children: [
+          const CircleAvatar(
+            radius: 10,
+            backgroundColor: Color(0xFFE3FFF8),
+            child: Icon(
+              Icons.done,
+              size: 15,
+              color: Color(0xFF1FCC79),
+            ),
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+          Text(
+            "4 Eggs",
+            style: Theme.of(context).textTheme.bodyText2,
+          ),
+        ],
+      ),
+    ),
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 15),
                     child: Divider(
@@ -187,12 +206,39 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   const SizedBox(
                     height: 10,
                   ),
-                  ListView.builder(
-                    physics: NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: 3,
-                    itemBuilder: (context, index) => steps(context, index),
-                  ),
+Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          CircleAvatar(
+            backgroundColor: Color(0xFF2E3E5C),
+            radius: 12,
+            child: Text("1"),
+          ),
+          Column(
+            children: [
+              SizedBox(
+                width: 270,
+                child: Text(
+                  "Your recipe has been uploaded, you can see it on your profile. Your recipe has been uploaded, you can see it on your",
+                  maxLines: 3,
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyText2!
+                      .copyWith(color: Color(0xFF2E3E5C)),
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+
+            ],
+          )
+        ],
+      ),
+    ),
                   Row(
                     children: [
                       Padding(padding: EdgeInsets.all(15),
@@ -219,65 +265,7 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
         });
   }
 
-  ingredients(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Row(
-        children: [
-          const CircleAvatar(
-            radius: 10,
-            backgroundColor: Color(0xFFE3FFF8),
-            child: Icon(
-              Icons.done,
-              size: 15,
-              color: Color(0xFF1FCC79),
-            ),
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Text(
-            "4 Eggs",
-            style: Theme.of(context).textTheme.bodyText2,
-          ),
-        ],
-      ),
-    );
-  }
 
-  steps(BuildContext context, int index) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          CircleAvatar(
-            backgroundColor: Color(0xFF2E3E5C),
-            radius: 12,
-            child: Text("${index + 1}"),
-          ),
-          Column(
-            children: [
-              SizedBox(
-                width: 270,
-                child: Text(
-                  "Your recipe has been uploaded, you can see it on your profile. Your recipe has been uploaded, you can see it on your",
-                  maxLines: 3,
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2!
-                      .copyWith(color: Color(0xFF2E3E5C)),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
 
-            ],
-          )
-        ],
-      ),
-    );
-  }
+
 }

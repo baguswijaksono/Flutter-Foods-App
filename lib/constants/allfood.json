@@ -1,215 +1,214 @@
 [
-    {
-      "fdnm": "Ayam Betutu",
-      "imgurl": "https://cdn-2.tstatic.net/travel/foto/bank/images/ayam-betutu-kuliner-enak-di-bali-untuk-makan-siang.jpg",
-      "desc":"Ayam betutu merupakan jenis lauk pauk yang dibuat dari daging ayam yang telah dibersihkan kemudian dibalurkan bumbu khas Bali yang dikenal dengan base genep di seluruh permukaan tubuh daging ayam dan sebagian lagi dimasukkan ke dalam rongga abdomennya.",
-      "type":"berkuah",
-      "Kalori":"425",
-      "Protein":"22,2",
-      "Lemak":"35,7",
-      "Karbohidrat":"58,8"
-    },
-    {
-      "fdnm": "Sate Lilit",
-      "imgurl": "https://www.piknikdong.com/wp-content/uploads/2022/05/Resep-Sate-Lilir-Ayam-Khas-Bali.jpg",
-      "desc":"Sate Lilit adalah sebuah varian sate asal Bali. Sate ini terbuat dari daging babi, ikan, ayam, daging sapi, atau bahkan kura-kura yang dicincang, kemudian dicampur dengan parutan kelapa, santan, jeruk nipis, bawang merah, dan merica.",
-      "type":"berkuah",
-      "Kalori":"250",
-      "Protein":"19",
-      "Lemak":"18",
-      "Karbohidrat":"3"
-    },
-    {
-      "fdnm": "Nasi Jinggo",
-      "imgurl": "https://asset.kompas.com/crops/_YD21zDcxeaR0JJSLTw4SpoorC4=/54x87:954x687/750x500/data/photo/2020/09/15/5f60c5c14dd30.jpg",
-      "desc":"Nasi jenggo (atau nasi jinggo) adalah makanan siap saji khas Bali yang dikemasan daun pisang dengan porsi kecil. Dalam bahasa Hokkien, jeng go memiliki arti seribu lima ratus. Kini, harga satu porsi nasi jenggo adalah sekitar Rp 5.000.",
-      "type":"berkuah",
-      "Kalori":"590",
-      "Protein":"26,94",
-      "Lemak":"21,41",
-      "Karbohidrat":"70,19"
-    },
-    {
-      "fdnm": "Nasi Tepeng",
-      "imgurl": "http://blog.sayurbox.com/wp-content/uploads/2020/09/witatourdenpasar.jpg",
-      "desc":"Nasi Tepeng adalah hidangan sarapan khas daerah Gianyar Bali yang terbuat dari campuran nasi dan rempah-rempah. Teksturnya memang agak lembek, namun mempunyai cita rasa yang berbeda. Untuk membuatnya, Bunda dapat mencampurkan beras dengan Kobe Bumbu Nasi Goreng Poll Ayaaam dan rempah-rempah.",
-      "type":"berkuah",
-      "Kalori":"104",
-      "Protein":"1,90",
-      "Lemak":"4,10",
-      "Karbohidrat":"15,10"
-    },
-    {
-      "fdnm": "Pie Susu",
-      "imgurl": "https://www.unileverfoodsolutions.co.id/dam/global-ufs/mcos/SEA/calcmenu/recipes/ID-recipes/desserts-&-bakery/milk-pie/main-header.jpg",
-      "desc":"Pai susu adalah sebuah pastri hidangan penutup tradisional Indonesia yang terbuat dari kue pastri yang diisi dengan kustar telur serta susu kental manis. Pastri tersebut sangat datar dengan isian hanya terdiri dari satu lapisan kustar yang sangat tipis. Asal pastri tersebut berasal dari Bali.",
-      "type":"berkuah",
-      "Kalori":"130",
-      "Protein":"1,9",
-      "Lemak":"10",
-      "Karbohidrat":"32"
-    },
-    
-        {
-          "fdnm": "Seblak Sunda",
-          "imgurl": "https://user-images.githubusercontent.com/106671990/205943143-9e4225b3-0d2d-47ef-b112-f845e948d1cc.jpg",
-          "desc":"Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
-          "type":"berkuah"
-        },
-        {
-          "fdnm": "Karedok Sunda",
-          "imgurl": "https://user-images.githubusercontent.com/106671990/205943442-728401d5-3e73-436b-ad20-011db087634f.jpg",
-          "desc":"Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
-          "type":"nonkuah"
-        },
-        {
-          "fdnm": "Lotek",
-          "imgurl": "https://user-images.githubusercontent.com/106671990/205942533-1f7d81e1-924c-4231-8c39-ca8a5131f1ab.jpg",
-          "desc":"Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
-          "type":"berkuah"
-        },
-        {
-          "fdnm": "Nasi Timbel",
-          "imgurl": "https://user-images.githubusercontent.com/106671990/205944138-feb460e8-d299-4426-8ade-b94f8c26cac8.jpg",
-          "desc":"Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
-          "type":"goreng"
-        },
-        {
-          "fdnm": "Batagor",
-          "imgurl": "https://user-images.githubusercontent.com/106671990/205944496-2f0350be-1047-41f0-8cba-32b42bc59aa6.jpg",
-          "desc":"Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
-          "type":"goreng"
-        },
-        
-            {
-              "fdnm": "Soto Kudus",
-              "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg",
-              "desc":"Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
-              "type":"berkuah"
-            },
-            {
-              "fdnm": "Kupat Tahu Solo",
-              "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg",
-              "desc":"Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
-              "type":"nonkuah"
-            },
-            {
-              "fdnm": "Mie Ongklok Wonosobo",
-              "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg",
-              "desc":"Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
-              "type":"berkuah"
-            },
-            {
-              "fdnm": "Lumpia Semarang",
-              "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg",
-              "desc":"Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
-              "type":"goreng"
-            },
-            {
-              "fdnm": "Mendoan Banyumas",
-              "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg",
-              "desc":"Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
-              "type":"goreng"
-            },
-            
-                {
-                  "fdnm": "Soto Lamongan",
-                  "imgurl": "https://cdn1.katadata.co.id/media/images/thumb/2021/11/12/Soto_ayam_Lamongan-2021_11_12-07_11_23_a43683d33b40f413228d54e3c6ed4a2f_400x267_thumb.jpg",
-                  "desc":"Soto Lamongan adalah sajian makanan soto ayam yang khas dari daerah Lamongan, Jawa Timur. Salah satu ciri khas dari Soto Lamongan ini terletak pada serbuk krupuk udangnya yang sering disebut koya atau poya.",
-                  "type":"berkuah",
-                  "Kalori":"312",
-                  "Protein":"24,01",
-                  "Lemak":"14,92",
-                  "Karbohidrat":"19,55"
-                },
-                {
-                  "fdnm": "Soto Rawon",
-                  "imgurl": "https://www.masakapahariini.com/wp-content/uploads/2018/04/resep-rawon-daging-780x440.jpg",
-                  "desc":"Rawon merupakan salah satu makanan khas Jawa Timur yang mudah didapatkan di mana saja, mulai dari warung-warung kecil hingga restoran-restoran besar. Rawon terbuat dari daging dan kuah daging sapi yang ditambah bumbu-bumbu untuk mendapatkan citarasa khas rawon. Bumbu rawon terdiri dari berbagai macam rempah-rempah, seperti bawang merah, bawang putih, kemiri, cabe merah, dan kluwak.",
-                  "type":"berkuah",
-                  "Kalori":"60",
-                  "Protein":"5,4",
-                  "Lemak":"2,5",
-                  "Karbohidrat":"4"
-                },
-                {
-                  "fdnm": "Bakso Malang",
-                  "imgurl": "https://asset.kompas.com/crops/WsUxzVKuLHaWTO3vge_sPMpj90I=/0x129:1000x796/375x240/data/photo/2020/03/03/5e5e292daa840.jpg",
-                  "desc":"Bakso Malang adalah hidangan bakso yang banyak ditemui di seluruh belahan Kota Malang dan Kabupaten Malang, Jawa Timur. Mirip dengan hidangan bakso lainnya, hidangan tersebut terdiri dari daging yang dibentuk bundar dan mi. Bedanya ada pada penambahan kulit pangsit yang digoreng dan tahu yang digoreng.",
-                  "type":"berkuah",
-                  "Kalori":"57",
-                  "Protein":"3,74",
-                  "Lemak":"3,69",
-                  "Karbohidrat":"2,12"
-                },
-                {
-                  "fdnm": "Gethuk Pisang",
-                  "imgurl": "https://suarakonsumen.co/asset/foto_berita/IMG20201126084156.jpg",
-                  "desc":"Gethuk pisang merupakan makanan khas dari Kediri yang terbuat dari bahan dasar pisang dan disajikan dengan cara dibungkus daun pisang. Gethuk pisang terbuat dari pisang khusus yaitu jenis pisang raja nangka.",
-                  "type":"berkuah",
-                  "Kalori":"144",
-                  "Protein":"1,1",
-                  "Lemak":"0,4",
-                  "Karbohidrat":"34,1"
-                },
-                {
-                  "fdnm": "Tahu Campur",
-                  "imgurl": "https://kbu-cdn.com/dk/wp-content/uploads/tahu-campur.jpg",
-                  "desc":"Tahu campur adalah salah satu makanan khas Jawa Timur, tepatnya dari kota Lamongan. Tahu campur terdiri dari sop daging sapi kenyal, kikil sapi, tahu goreng, perkedel singkong, taoge segar, selada air segar, mi kuning, dan kerupuk udang. Semua ini kemudian dicampurkan ke bumbu petis, bawang goreng, dan sambal. Masakan ini banyak dijual di warung kaki lima dengan label Tahu Campur Lamongan.",
-                  "type":"berkuah",
-                  "Kalori":"80",
-                  "Protein":"10,9",
-                  "Lemak":"4,7",
-                  "Karbohidrat":"0,8"
-                },
-              {
-                      "fdnm": "Bandeng Kuah Kuning",
-                      "imgurl": "https://img-global.cpcdn.com/recipes/75c8c5cecf84f413/1200x630cq70/photo.jpg",
-                      "desc":"ikan kuah kuning dengan bahan bandeng ini menjadi salah satu kuliner yang biasa disajikan dengan papeda. Bahan baku ikan bandeng ini sama dengan kuliner Papua lain, yaitu ikan bungkus. Bedanya pengolahan ikan bungkus dimasak dengan cara dipepes.",
-                      "type":"berkuah",
-                      "Kalori":"619",
-                      "Protein":"20,53",
-                      "Lemak":"6,73",
-                      "Karbohidrat":"10"
-                    },
-                    {
-                      "fdnm": "Papeda",
-                      "imgurl": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1638945512/vpcpzm6didjyctkzmr1u.jpg",
-                      "desc":"Papeda adalah makanan berupa bubur sagu khas Maluku dan Papua yang biasanya disajikan dengan ikan tongkol atau bubara yang dibumbui dengan kunyit. Papeda berwarna putih dan bertekstur lengket seperti lem dengan rasa yang tawar.",
-                      "type":"berkuah",
-                      "Kalori":"209",
-                      "Protein":"0,3",
-                      "Lemak":"0,2",
-                      "Karbohidrat":"51,6"
-                    },
-                    {
-                      "fdnm": "Aunuve Habre",
-                      "imgurl": "https://t-2.tstatic.net/tribunnewswiki/foto/bank/images/Ilustrasi-Aunuve-Habre-khas-Papua2.jpg",
-                      "desc":"Aunuve Habre adalah makanan khas Papua yaitu ikan sakalang yang dipotong-potong dibungkus daun talas dan dimasak dengan air dan garam diatas wajan.",
-                      "type":"berkuah",
-                      "Kalori":"619",
-                      "Protein":"20,53",
-                      "Lemak":"6,73",
-                      "Karbohidrat":"8"
-                    },
-                    {
-                      "fdnm": "Kue Lontar",
-                      "imgurl": "https://asset.kompas.com/crops/Omq_RKy0VkXdqlDyvPl4noBESF0=/84x0:674x393/750x500/data/photo/2021/10/02/6157c779718b6.jpg",
-                      "desc":"Kue lontar punya tekstur lembut di bagian dalam dan renyah pada kulit luarnya. Unsur susu menjadi faktor utama dari lembutnya rasa kue dan menambah kelezatannya. Di Papua, kue lontar umumnya dibuat berukuran cukup besar dengan diameter bisa mencapai 20 sentimeter dan memerlukan sebuah cetakan kue khusus.",
-                      "type":"berkuah",
-                      "Kalori":"230",
-                      "Protein":"8,5",
-                      "Lemak":"9,1",
-                      "Karbohidrat":"50,85"
-                    },
-                    {
-                      "fdnm": "Tahu Campur",
-                      "imgurl": "https://asset.kompas.com/crops/Nv5RHVAQ4Qk2Q3BdCm-nk2QXtMI=/194x35:960x545/750x500/data/photo/2018/09/19/1428271598.jpg",
-                      "desc":"Abon Gulung merupakan makanan ringan khas Manokwari yang kerap ditemui di setiap bandara yang ada di Papua maupun Papua Barat. Abon gulung sebenarnya adalah roti gulung yang di tengahnya berisi abon. Namun entah mengapa kelembutan roti ini yang biasanya berasa manis berganti menjadi rasa gurih. Sehingga sangat cocok untuk dijadikan hidangan utama bukan hidangan pembuka. Roti ini hanya diproduksi oleh satu pabrik roti bernama Hawai Bakery yang terletak di Manokwari.",
-                      "type":"berkuah",
-                      "Kalori":"70",
-                      "Protein":"18",
-                      "Lemak":"10,6",
-                      "Karbohidrat":"59,3"
-                    }
+  {
+    "fdnm": "Ayam Betutu",
+    "imgurl": "https://cdn-2.tstatic.net/travel/foto/bank/images/ayam-betutu-kuliner-enak-di-bali-untuk-makan-siang.jpg",
+    "desc": "Ayam betutu merupakan jenis lauk pauk yang dibuat dari daging ayam yang telah dibersihkan kemudian dibalurkan bumbu khas Bali yang dikenal dengan base genep di seluruh permukaan tubuh daging ayam dan sebagian lagi dimasukkan ke dalam rongga abdomennya.",
+    "type": "berkuah",
+    "Kalori": "425",
+    "Protein": "22",
+    "Lemak": "35",
+    "Karbohidrat": "58",
+    "Bahan": ["Bahan1", "Bahan2", "Bahan3"]
+
+  },
+  {
+    "fdnm": "Sate Lilit",
+    "imgurl": "https://www.piknikdong.com/wp-content/uploads/2022/05/Resep-Sate-Lilir-Ayam-Khas-Bali.jpg",
+    "desc": "Sate Lilit adalah sebuah varian sate asal Bali. Sate ini terbuat dari daging babi, ikan, ayam, daging sapi, atau bahkan kura-kura yang dicincang, kemudian dicampur dengan parutan kelapa, santan, jeruk nipis, bawang merah, dan merica.",
+    "type": "berkuah",
+    "Kalori": "250",
+    "Protein": "19",
+    "Lemak": "18",
+    "Karbohidrat": "3"
+  },
+  {
+    "fdnm": "Nasi Jinggo",
+    "imgurl": "https://asset.kompas.com/crops/_YD21zDcxeaR0JJSLTw4SpoorC4=/54x87:954x687/750x500/data/photo/2020/09/15/5f60c5c14dd30.jpg",
+    "desc": "Nasi jenggo (atau nasi jinggo) adalah makanan siap saji khas Bali yang dikemasan daun pisang dengan porsi kecil. Dalam bahasa Hokkien, jeng go memiliki arti seribu lima ratus. Kini, harga satu porsi nasi jenggo adalah sekitar Rp 5.000.",
+    "type": "berkuah",
+    "Kalori": "590",
+    "Protein": "26.94",
+    "Lemak": "21.41",
+    "Karbohidrat": "70.19"
+  },
+  {
+    "fdnm": "Nasi Tepeng",
+    "imgurl": "http://blog.sayurbox.com/wp-content/uploads/2020/09/witatourdenpasar.jpg",
+    "desc": "Nasi Tepeng adalah hidangan sarapan khas daerah Gianyar Bali yang terbuat dari campuran nasi dan rempah-rempah. Teksturnya memang agak lembek, namun mempunyai cita rasa yang berbeda. Untuk membuatnya, Bunda dapat mencampurkan beras dengan Kobe Bumbu Nasi Goreng Poll Ayaaam dan rempah-rempah.",
+    "type": "berkuah",
+    "Kalori": "104",
+    "Protein": "1.90",
+    "Lemak": "4.10",
+    "Karbohidrat": "15.10"
+  },
+  {
+    "fdnm": "Pie Susu",
+    "imgurl": "https://www.unileverfoodsolutions.co.id/dam/global-ufs/mcos/SEA/calcmenu/recipes/ID-recipes/desserts-&-bakery/milk-pie/main-header.jpg",
+    "desc": "Pai susu adalah sebuah pastri hidangan penutup tradisional Indonesia yang terbuat dari kue pastri yang diisi dengan kustar telur serta susu kental manis. Pastri tersebut sangat datar dengan isian hanya terdiri dari satu lapisan kustar yang sangat tipis. Asal pastri tersebut berasal dari Bali.",
+    "type": "berkuah",
+    "Kalori": "130",
+    "Protein": "1,9",
+    "Lemak": "10",
+    "Karbohidrat": "32"
+  },
+  {
+    "fdnm": "Seblak Sunda",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205943143-9e4225b3-0d2d-47ef-b112-f845e948d1cc.jpg",
+    "desc": "Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
+    "type": "berkuah"
+  },
+  {
+    "fdnm": "Karedok Sunda",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205943442-728401d5-3e73-436b-ad20-011db087634f.jpg",
+    "desc": "Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
+    "type": "nonkuah"
+  },
+  {
+    "fdnm": "Lotek",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205942533-1f7d81e1-924c-4231-8c39-ca8a5131f1ab.jpg",
+    "desc": "Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
+    "type": "berkuah"
+  },
+  {
+    "fdnm": "Nasi Timbel",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205944138-feb460e8-d299-4426-8ade-b94f8c26cac8.jpg",
+    "desc": "Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
+    "type": "goreng"
+  },
+  {
+    "fdnm": "Batagor",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205944496-2f0350be-1047-41f0-8cba-32b42bc59aa6.jpg",
+    "desc": "Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
+    "type": "goreng"
+  },
+  {
+    "fdnm": "Soto Kudus",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg",
+    "desc": "Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
+    "type": "berkuah"
+  },
+  {
+    "fdnm": "Kupat Tahu Solo",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg",
+    "desc": "Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
+    "type": "nonkuah"
+  },
+  {
+    "fdnm": "Mie Ongklok Wonosobo",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg",
+    "desc": "Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
+    "type": "berkuah"
+  },
+  {
+    "fdnm": "Lumpia Semarang",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg",
+    "desc": "Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
+    "type": "goreng"
+  },
+  {
+    "fdnm": "Mendoan Banyumas",
+    "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg",
+    "desc": "Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
+    "type": "goreng"
+  },
+  {
+    "fdnm": "Soto Lamongan",
+    "imgurl": "https://cdn1.katadata.co.id/media/images/thumb/2021/11/12/Soto_ayam_Lamongan-2021_11_12-07_11_23_a43683d33b40f413228d54e3c6ed4a2f_400x267_thumb.jpg",
+    "desc": "Soto Lamongan adalah sajian makanan soto ayam yang khas dari daerah Lamongan, Jawa Timur. Salah satu ciri khas dari Soto Lamongan ini terletak pada serbuk krupuk udangnya yang sering disebut koya atau poya.",
+    "type": "berkuah",
+    "Kalori": "312",
+    "Protein": "24,01",
+    "Lemak": "14,92",
+    "Karbohidrat": "19,55"
+  },
+  {
+    "fdnm": "Soto Rawon",
+    "imgurl": "https://www.masakapahariini.com/wp-content/uploads/2018/04/resep-rawon-daging-780x440.jpg",
+    "desc": "Rawon merupakan salah satu makanan khas Jawa Timur yang mudah didapatkan di mana saja, mulai dari warung-warung kecil hingga restoran-restoran besar. Rawon terbuat dari daging dan kuah daging sapi yang ditambah bumbu-bumbu untuk mendapatkan citarasa khas rawon. Bumbu rawon terdiri dari berbagai macam rempah-rempah, seperti bawang merah, bawang putih, kemiri, cabe merah, dan kluwak.",
+    "type": "berkuah",
+    "Kalori": "60",
+    "Protein": "5,4",
+    "Lemak": "2,5",
+    "Karbohidrat": "4"
+  },
+  {
+    "fdnm": "Bakso Malang",
+    "imgurl": "https://asset.kompas.com/crops/WsUxzVKuLHaWTO3vge_sPMpj90I=/0x129:1000x796/375x240/data/photo/2020/03/03/5e5e292daa840.jpg",
+    "desc": "Bakso Malang adalah hidangan bakso yang banyak ditemui di seluruh belahan Kota Malang dan Kabupaten Malang, Jawa Timur. Mirip dengan hidangan bakso lainnya, hidangan tersebut terdiri dari daging yang dibentuk bundar dan mi. Bedanya ada pada penambahan kulit pangsit yang digoreng dan tahu yang digoreng.",
+    "type": "berkuah",
+    "Kalori": "57",
+    "Protein": "3,74",
+    "Lemak": "3,69",
+    "Karbohidrat": "2,12"
+  },
+  {
+    "fdnm": "Gethuk Pisang",
+    "imgurl": "https://suarakonsumen.co/asset/foto_berita/IMG20201126084156.jpg",
+    "desc": "Gethuk pisang merupakan makanan khas dari Kediri yang terbuat dari bahan dasar pisang dan disajikan dengan cara dibungkus daun pisang. Gethuk pisang terbuat dari pisang khusus yaitu jenis pisang raja nangka.",
+    "type": "berkuah",
+    "Kalori": "144",
+    "Protein": "1,1",
+    "Lemak": "0,4",
+    "Karbohidrat": "34,1"
+  },
+  {
+    "fdnm": "Tahu Campur",
+    "imgurl": "https://kbu-cdn.com/dk/wp-content/uploads/tahu-campur.jpg",
+    "desc": "Tahu campur adalah salah satu makanan khas Jawa Timur, tepatnya dari kota Lamongan. Tahu campur terdiri dari sop daging sapi kenyal, kikil sapi, tahu goreng, perkedel singkong, taoge segar, selada air segar, mi kuning, dan kerupuk udang. Semua ini kemudian dicampurkan ke bumbu petis, bawang goreng, dan sambal. Masakan ini banyak dijual di warung kaki lima dengan label Tahu Campur Lamongan.",
+    "type": "berkuah",
+    "Kalori": "80",
+    "Protein": "10,9",
+    "Lemak": "4,7",
+    "Karbohidrat": "0,8"
+  },
+  {
+    "fdnm": "Bandeng Kuah Kuning",
+    "imgurl": "https://img-global.cpcdn.com/recipes/75c8c5cecf84f413/1200x630cq70/photo.jpg",
+    "desc": "ikan kuah kuning dengan bahan bandeng ini menjadi salah satu kuliner yang biasa disajikan dengan papeda. Bahan baku ikan bandeng ini sama dengan kuliner Papua lain, yaitu ikan bungkus. Bedanya pengolahan ikan bungkus dimasak dengan cara dipepes.",
+    "type": "berkuah",
+    "Kalori": "619",
+    "Protein": "20,53",
+    "Lemak": "6,73",
+    "Karbohidrat": "10"
+  },
+  {
+    "fdnm": "Papeda",
+    "imgurl": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1638945512/vpcpzm6didjyctkzmr1u.jpg",
+    "desc": "Papeda adalah makanan berupa bubur sagu khas Maluku dan Papua yang biasanya disajikan dengan ikan tongkol atau bubara yang dibumbui dengan kunyit. Papeda berwarna putih dan bertekstur lengket seperti lem dengan rasa yang tawar.",
+    "type": "berkuah",
+    "Kalori": "209",
+    "Protein": "0,3",
+    "Lemak": "0,2",
+    "Karbohidrat": "51,6"
+  },
+  {
+    "fdnm": "Aunuve Habre",
+    "imgurl": "https://t-2.tstatic.net/tribunnewswiki/foto/bank/images/Ilustrasi-Aunuve-Habre-khas-Papua2.jpg",
+    "desc": "Aunuve Habre adalah makanan khas Papua yaitu ikan sakalang yang dipotong-potong dibungkus daun talas dan dimasak dengan air dan garam diatas wajan.",
+    "type": "berkuah",
+    "Kalori": "619",
+    "Protein": "20,53",
+    "Lemak": "6,73",
+    "Karbohidrat": "8"
+  },
+  {
+    "fdnm": "Kue Lontar",
+    "imgurl": "https://asset.kompas.com/crops/Omq_RKy0VkXdqlDyvPl4noBESF0=/84x0:674x393/750x500/data/photo/2021/10/02/6157c779718b6.jpg",
+    "desc": "Kue lontar punya tekstur lembut di bagian dalam dan renyah pada kulit luarnya. Unsur susu menjadi faktor utama dari lembutnya rasa kue dan menambah kelezatannya. Di Papua, kue lontar umumnya dibuat berukuran cukup besar dengan diameter bisa mencapai 20 sentimeter dan memerlukan sebuah cetakan kue khusus.",
+    "type": "berkuah",
+    "Kalori": "230",
+    "Protein": "8,5",
+    "Lemak": "9,1",
+    "Karbohidrat": "50,85"
+  },
+  {
+    "fdnm": "Tahu Campur",
+    "imgurl": "https://asset.kompas.com/crops/Nv5RHVAQ4Qk2Q3BdCm-nk2QXtMI=/194x35:960x545/750x500/data/photo/2018/09/19/1428271598.jpg",
+    "desc": "Abon Gulung merupakan makanan ringan khas Manokwari yang kerap ditemui di setiap bandara yang ada di Papua maupun Papua Barat. Abon gulung sebenarnya adalah roti gulung yang di tengahnya berisi abon. Namun entah mengapa kelembutan roti ini yang biasanya berasa manis berganti menjadi rasa gurih. Sehingga sangat cocok untuk dijadikan hidangan utama bukan hidangan pembuka. Roti ini hanya diproduksi oleh satu pabrik roti bernama Hawai Bakery yang terletak di Manokwari.",
+    "type": "berkuah",
+    "Kalori": "70",
+    "Protein": "18",
+    "Lemak": "10,6",
+    "Karbohidrat": "59,3"
+  }
 ]
