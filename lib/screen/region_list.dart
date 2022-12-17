@@ -36,8 +36,7 @@ final String regionname;
         Container(
 padding: EdgeInsets.only(top: 80),
 alignment: Alignment.center,
-child: Text('Makanan Daerah',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 35.0, ), 
+child: Text('MAKANAN DAERAH',style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30), 
 ),),
     Container(
 alignment: Alignment.center,
