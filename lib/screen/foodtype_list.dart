@@ -64,7 +64,7 @@ GestureDetector(
 onTap:() {Navigator.push(
 context,
 MaterialPageRoute(
-builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString())));},
+builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString(), kal: snapshot.data[i]['Kalori'], lmk: snapshot.data[i]['Lemak'], prtn: snapshot.data[i]['Protein'], vit: snapshot.data[i]['Vitamin'],)));},
 child: ClipRRect(
 child: Stack(
 children: [

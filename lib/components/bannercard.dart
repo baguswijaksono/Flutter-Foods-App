@@ -10,7 +10,7 @@ class banner extends StatelessWidget {
                 onTap:() {Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => detail_screen(imgurl: '', desc: '', fdnm: '',)));},
+                                            builder: (context) => detail_screen(imgurl: '', desc: '', fdnm: '', kal: '22', lmk: '22' ,prtn: '22', vit: '22',)));},
                                               child: ClipRRect(  
                               borderRadius: BorderRadius.circular(10),
                                       child: Center(

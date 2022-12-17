@@ -12,7 +12,7 @@ class piechart extends StatelessWidget {
   double lmk;
   
   double vtmn;
-        int touchedIndex = -1;
+  int touchedIndex = -1;
 
   piechart({super.key, required this.kal, required this.lmk , required this.vtmn ,required this.prtn});
 
@@ -103,7 +103,7 @@ class piechart extends StatelessWidget {
           case 0:
             return PieChartSectionData(
               color: color0.withOpacity(opacity),
-              value: 45,
+              value: kal,
               title: '',
               radius: 70,
               titlePositionPercentageOffset: 0.55,
@@ -114,7 +114,7 @@ class piechart extends StatelessWidget {
           case 1:
             return PieChartSectionData(
               color: color1.withOpacity(opacity),
-              value: 25,
+              value: lmk,
               title: '',
               radius: 70,
               titleStyle: const TextStyle(
@@ -130,7 +130,7 @@ class piechart extends StatelessWidget {
           case 2:
             return PieChartSectionData(
               color: color2.withOpacity(opacity),
-              value: 25,
+              value: prtn,
               title: '',
               radius: 70,
               titleStyle: const TextStyle(
@@ -146,7 +146,7 @@ class piechart extends StatelessWidget {
           case 3:
             return PieChartSectionData(
               color: color3.withOpacity(opacity),
-              value: 25,
+              value: vtmn,
               title: '',
               radius: 70,
               titleStyle: const TextStyle(

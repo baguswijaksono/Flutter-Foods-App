@@ -46,7 +46,7 @@ class list extends StatelessWidget {
 onTap:() {Navigator.push(
 context,
 MaterialPageRoute(
-builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString())));},
+builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString(), kal:snapshot.data[i]['Kalori'].toString(), vit: snapshot.data[i]['Karbohidrat'].toString(), lmk: snapshot.data[i]['Lemak'].toString(), prtn: snapshot.data[i]['Protein'].toString(),)));},
 child: ClipRRect(
 child: Stack(
 children: [

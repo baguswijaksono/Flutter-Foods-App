@@ -2,15 +2,22 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/piechart.dart';
 
+// ignore: must_be_immutable
 class detail_screen extends StatelessWidget {
-  const detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl}) : super(key: key);
+   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit}) : super(key: key);
   final String fdnm;
   final String desc;
   final String imgurl;
+  final String kal;
+  final String lmk;
+  final String prtn;
+  final String vit;
   @override
   Widget build(BuildContext context) {
+
     return SafeArea(
         child: Scaffold(
+          
       body: Stack(
         children: [
           SizedBox(
@@ -59,6 +66,15 @@ class detail_screen extends StatelessWidget {
   }
 
   scroll() {
+double a = double.parse(kal);
+double b = double.parse(lmk);
+double c = double.parse(prtn);
+double d = double.parse(vit);
+      double e = a+b+c+d;
+      var pkal = (a/e)*100;
+      var plmk = (b/e)*100;
+      var pprtn = (c/e)*100;
+      var pvit = (d/e)*100;
     return DraggableScrollableSheet(
         initialChildSize: 0.6,
         maxChildSize: 1.0,
@@ -144,7 +160,7 @@ class detail_screen extends StatelessWidget {
                       height: 4,
                     ),
                   ),
-piechart(kal: 22 ,lmk: 12, prtn: 12, vtmn: 80,),
+piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   Text(
                     "Bahan Makanan",
                     style: Theme.of(context).textTheme.headline5,
