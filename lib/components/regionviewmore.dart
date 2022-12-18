@@ -1,8 +1,8 @@
 import 'package:common_ui_toolkit/index.dart';
 
 class region_view_more_text extends StatelessWidget {
-  const region_view_more_text({super.key});
-
+   region_view_more_text({super.key, required this.clasifier});
+final String clasifier;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -10,7 +10,7 @@ class region_view_more_text extends StatelessWidget {
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
     Text(
-      "Food Classify by Region",
+      "Food Classify by $clasifier",
       textAlign: TextAlign.left,
       style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
     ),

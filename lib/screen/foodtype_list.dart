@@ -37,6 +37,9 @@ class foodtype extends StatelessWidget {
     Column(
       children: [
         Container(
+          height: 75,
+        ),
+        Container(
 alignment: Alignment.center,
 child: Text('Regional Foods ',
 style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 

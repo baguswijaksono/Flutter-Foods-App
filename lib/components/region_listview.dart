@@ -31,7 +31,7 @@ class regview extends StatelessWidget {
                 ),
                 Container(
                     height: 160,
-                    alignment: Alignment.center,
+                    alignment: Alignment.bottomLeft,
                       child: Text(
                           fdnm,
                           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ),                     

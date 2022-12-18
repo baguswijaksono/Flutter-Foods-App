@@ -71,7 +71,7 @@ Padding(
   child:   banner()
 ),                    
             Padding(padding: const EdgeInsets.all(15.0),
-            child: region_view_more_text()
+            child: region_view_more_text(clasifier: 'region',)
             ),
 // nuslis interface disini
                     Padding(
@@ -88,7 +88,7 @@ Padding(
       ),
   ),      
     Padding(padding: const EdgeInsets.all(15.0),
-            child: region_view_more_text()
+            child: region_view_more_text(clasifier: 'type',)
 ),
                     Padding(
                       padding: const EdgeInsets.only(left: 15),
@@ -103,10 +103,6 @@ Padding(
          ),
       ),
   ), 
-      Padding(padding: const EdgeInsets.all(15.0),
-            child: region_view_more_text()
-),
-
  ]
  ),   
                     ),         //kotak scroll
