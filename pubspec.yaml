@@ -36,20 +36,8 @@ flutter:
      - images/Frame.png
      - images/Image.png
      - images/Pattern.png
-     - images/brush.png
      - images/dark.png
      - images/region_dark.png
      - images/type_dark.png
 
-  fonts:
-     - family: BentonSans
-       fonts:
-         - asset: fonts/BentonSans-Black.otf
-         - asset: fonts/BentonSans-Thin.otf
-     - family: HeyNov
-       fonts:      
-         - asset: fonts/Hey_November.ttf
-     - family: Raleway
-       fonts:      
-         - asset: fonts/Raleway-Bold.ttf
-    
+#  fonts:
