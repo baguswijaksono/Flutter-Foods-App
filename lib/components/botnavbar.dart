@@ -5,9 +5,9 @@ import 'package:flutter_application_akhir/pages/list.dart';
 import 'package:flutter_application_akhir/pages/user_profile.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+// ignore: must_be_immutable
 class bottom_navigation_bar extends StatelessWidget {
 var numindex;
-
   bottom_navigation_bar({super.key, required this.numindex});
 
   @override
@@ -25,8 +25,8 @@ var numindex;
                   text: 'Home',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>homepagegweh()));}),
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list(),));}),
-                GButton(icon: Icons.favorite_rounded,
-                text: 'Favorite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>info()));}),
+                GButton(icon: Icons.info_rounded,
+                text: 'About',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>info()));}),
                 GButton(icon: Icons.person_rounded,
                 text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
             ],selectedIndex: numindex,

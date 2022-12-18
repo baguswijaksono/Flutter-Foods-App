@@ -60,9 +60,15 @@ class _userState extends State<user> {
           ],
           )
           ),
-            floatingActionButton: FloatingActionButton(onPressed: (){
-        modalForm();
-      })
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {modalForm();
+          // Add your onPressed code here!
+        },
+        label: const Text('Edit'),
+        icon: const Icon(Icons.edit),
+        backgroundColor: Colors.green,
+        
+      ),
     );
       }
 
