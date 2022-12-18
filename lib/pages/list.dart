@@ -16,6 +16,7 @@ class list extends StatelessWidget {
   }
   @override
   Widget build(BuildContext context) {
+    double dev_width = MediaQuery.of(context).size.width;
     return FutureBuilder<List<dynamic>>(
         future: _fecthListQuotes(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -39,7 +40,7 @@ class list extends StatelessWidget {
       ),
       backgroundColor: Colors.transparent,
       body: ListView(
-  padding: const EdgeInsets.all(0),
+  padding: EdgeInsets.all(0),
   children: <Widget>[
     for (var i = 0; i < d; i++)
     GestureDetector(
@@ -52,6 +53,7 @@ child: Stack(
 children: [
 Container(
 height: 160,
+width: dev_width,
 alignment: Alignment.center,
 child: Image.network(snapshot.data[i]['imgurl'].toString(),fit: BoxFit.fill,
 )

@@ -21,6 +21,7 @@ dependencies:
   iconly: ^1.0.1
   pie_chart: ^5.3.2
   shared_preferences: ^2.0.15
+  sqflite: ^2.2.2
   
 
 dev_dependencies:

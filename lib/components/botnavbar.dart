@@ -10,7 +10,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 class bottom_navigation_bar extends StatelessWidget {
 var numindex;
 
-   bottom_navigation_bar({super.key, required this.numindex});
+  bottom_navigation_bar({super.key, required this.numindex});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ var numindex;
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list(),));}),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favourite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
+                text: 'Favorite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
                 GButton(icon: Icons.person_rounded,
                 text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
             ],selectedIndex: numindex,
