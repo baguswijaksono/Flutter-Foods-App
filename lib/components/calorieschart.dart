@@ -2,7 +2,15 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class BarChartSample2 extends StatefulWidget {
-  const BarChartSample2({super.key});
+  BarChartSample2({super.key, required this.klmn, required this.klte, required this.klwd, required this.kltu, required this.klfr, required this.klst, required this.klsu});
+
+  final double klmn;
+  final double klte;
+  final double klwd;
+  final double kltu;
+  final double klfr;
+  final double klst;
+  final double klsu;
 
   @override
   State<StatefulWidget> createState() => BarChartSample2State();
@@ -23,11 +31,11 @@ class BarChartSample2State extends State<BarChartSample2> {
     super.initState();
     final barGroup1 = makeGroupData(0, 5, 12);
     final barGroup2 = makeGroupData(1, 16, 12);
-    final barGroup3 = makeGroupData(2, 18, 5);
-    final barGroup4 = makeGroupData(3, 20, 16);
-    final barGroup5 = makeGroupData(4, 17, 6);
-    final barGroup6 = makeGroupData(5, 19, 1.5);
-    final barGroup7 = makeGroupData(6, 10, 1.5);
+    final barGroup3 = makeGroupData(2, 18, 12);
+    final barGroup4 = makeGroupData(3, 20, 12);
+    final barGroup5 = makeGroupData(4, 17, 12);
+    final barGroup6 = makeGroupData(5, 19, 12);
+    final barGroup7 = makeGroupData(6, 10, 12);
 
     final items = [
       barGroup1,

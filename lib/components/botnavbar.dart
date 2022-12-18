@@ -1,7 +1,5 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
-import 'package:flutter_application_akhir/pages/favorite.dart';
+import 'package:flutter_application_akhir/pages/about.dart';
 import 'package:flutter_application_akhir/pages/home.dart';
 import 'package:flutter_application_akhir/pages/list.dart';
 import 'package:flutter_application_akhir/pages/user_profile.dart';
@@ -28,7 +26,7 @@ var numindex;
                 GButton(icon: Icons.list_rounded,
                  text: 'List',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>list(),));}),
                 GButton(icon: Icons.favorite_rounded,
-                text: 'Favorite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>fav()));}),
+                text: 'Favorite',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>info()));}),
                 GButton(icon: Icons.person_rounded,
                 text: 'Account',textStyle: TextStyle(color: Colors.white,),onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>user()));}),                
             ],selectedIndex: numindex,

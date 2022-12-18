@@ -2,10 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
 import 'package:flutter_application_akhir/components/calorieschart.dart';
 import 'package:flutter_application_akhir/components/profile_header.dart';
+import 'package:flutter_application_akhir/database/sql_helper.dart';
 
-class user extends StatelessWidget {
+class user extends StatefulWidget {
   const user({super.key});
 
+  @override
+  State<user> createState() => _userState();
+}
+
+class _userState extends State<user> {
+    TextEditingController judulController = TextEditingController();
+
+  TextEditingController deskripsiController = TextEditingController();
+
+  List<Map<String,dynamic>> catatan=[];
+
+  void refreshCatatan() async {
+    final data = await SQLHelper.getCatatan();
+    setState((){
+      catatan =data;
+    });
+  }
   @override
   Widget build(BuildContext context) {
    // double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
@@ -35,13 +53,49 @@ class user extends StatelessWidget {
               height: 300,
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
-                child: BarChartSample2(),
+                child: BarChartSample2(klfr: 6, klmn: 6, klst: 6, klsu: 6, klte: 6, kltu: 6, klwd: 6,),
               ),
             )
                 //kotak scroll
           ],
           )
           ),
+            floatingActionButton: FloatingActionButton(onPressed: (){
+        modalForm();
+      })
     );
-  }
+      }
+
+  Future<void> tambahkancatatan() async {
+  await SQLHelper.tambahkancatatan(judulController.text, deskripsiController.text);
+  refreshCatatan();
 }
+  void modalForm() async {
+  showModalBottomSheet(context: context, builder: (_)=>Container(
+    padding: const EdgeInsets.all(12),
+    width: double.infinity,
+    height: 800,
+    child: SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.end ,
+        children: [
+        TextField(
+          controller: judulController,
+          decoration: const InputDecoration(hintText: 'judul'),
+        ),
+                TextField(
+          controller: deskripsiController,
+          decoration: const InputDecoration(hintText: 'deskripsi'),
+        ),
+                  ElevatedButton(
+            onPressed: () async { 
+             await tambahkancatatan();
+             },
+          child:const Text('dsds'))
+      ],),
+    ),
+  ));
+}
+}
+
