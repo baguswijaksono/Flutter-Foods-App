@@ -5,7 +5,7 @@ import 'package:flutter_application_akhir/components/piechart.dart';
 
 // ignore: must_be_immutable
 class detail_screen extends StatelessWidget {
-   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit, required this.bhn}) : super(key: key);
+   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit,}) : super(key: key);
   final String fdnm;
   final String desc;
   final String imgurl;
@@ -13,7 +13,6 @@ class detail_screen extends StatelessWidget {
   final String lmk;
   final String prtn;
   final String vit;
-  final List bhn;
   @override
   Widget build(BuildContext context) {
 

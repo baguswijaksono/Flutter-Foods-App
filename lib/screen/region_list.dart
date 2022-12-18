@@ -57,13 +57,13 @@ style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30.
 
     ),
   
-    for (var i = 0; d < 5; i++)
+    for (var i = 0; i < d; i++)
     
     GestureDetector(
 onTap:() {Navigator.push(
 context,
 MaterialPageRoute(
-builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString(), kal: snapshot.data[i]['Kalori'], lmk: snapshot.data[i]['Lemak'], prtn: snapshot.data[i]['Protein'], vit: snapshot.data[i]['Vitamin'], bhn: [],)));},
+builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString(), kal: snapshot.data[i]['Kalori'], lmk: snapshot.data[i]['Lemak'], prtn: snapshot.data[i]['Protein'], vit: snapshot.data[i]['Karbohidrat'])));},
 child: ClipRRect(
 child: Stack(
 children: [
