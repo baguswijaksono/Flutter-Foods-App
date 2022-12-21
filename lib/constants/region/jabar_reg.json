@@ -1,7 +1,8 @@
 [
     {
-      "fdnm": "Soto Kudus",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538902-9329f142-424a-4b5a-851c-bc40352e4c38.jpg",
+      "fdnm": "Seblak Sunda",
+      "imgurl": "",
+      "imgurl2":"",
       "desc":"Soto Kudus adalah soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau.",
       "type":"berkuah",
       "Kalori": "425",
@@ -10,8 +11,9 @@
       "Karbohidrat": "58"
     },
     {
-      "fdnm": "Kupat Tahu Solo",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539281-8831f2a9-c507-4615-9ab8-ce1db82b3151.jpg",
+      "fdnm": "Karedok Sunda",
+      "imgurl": "",
+      "imgurl2":"",
       "desc":"Kupat tahu adalah makanan tradisional Indonesia yang berbahan dasar ketupat, tahu, kol, dan tauge yang telah digoreng, dicampur dengan bumbu kacang dan kecap. Sebagai alternatif, lontong dapat juga digunakan sebagai pengganti ketupat.",
       "type":"nonkuah",
       "Kalori": "425",
@@ -20,18 +22,21 @@
       "Karbohidrat": "58"
     },
     {
-      "fdnm": "Mie Ongklok Wonosobo",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539206-375f5a7a-aa8f-4cb1-a019-3af0e56102bf.jpg",
+      "fdnm": "Lotek",
+      "imgurl": "",
+      "imgurl2":"",
       "desc":"Mi ongklok adalah mi rebus khas kota Wonosobo dan sekitarnya. Mi rebus ini dibuat dengan menggunakan kol, potongan daun kucai, dan kuah kental berkanji yang disebut loh. Mi ini banyak dijajakan di berbagai warung, rumah makan, maupun dijajakan keliling memakai gerobak di kota tersebut.",
       "type":"berkuah",
       "Kalori": "425",
       "Protein": "22",
       "Lemak": "35",
       "Karbohidrat": "58"
+      
     },
     {
-      "fdnm": "Lumpia Semarang",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205539073-4366f1a2-3f4e-4fe6-b747-0a4ecde47549.jpg",
+      "fdnm": "Nasi Timbel",
+      "imgurl": "",
+      "imgurl2":"",
       "desc":"Lumpia semarang adalah makanan semacam rollade yang berisi rebung, telur, dan daging ayam atau udang. Cita rasa lumpia semarang adalah perpaduan rasa antara Tionghoa dan Indonesia karena pertama kali dibuat oleh seorang keturunan Tionghoa yang menikah dengan orang Indonesia dan menetap di Semarang, Jawa Tengah",
       "type":"goreng",
       "Kalori": "425",
@@ -40,8 +45,9 @@
       "Karbohidrat": "58"
     },
     {
-      "fdnm": "Mendoan Banyumas",
-      "imgurl": "https://user-images.githubusercontent.com/106671990/205538970-e5f9d9ed-65e3-4759-a082-b8da32284f90.jpg",
+      "fdnm": "Batagor",
+      "imgurl": "",
+      "imgurl2":"",
       "desc":"Mendoan adalah makanan sejenis gorengan yang berasal dari Eks Keresidenan Banyumas, Jawa Tengah. Kata Mendoan sendiri berasal dari bahasa Banyumasan, yaitu mendo yang berarti setengah matang atau lembek.",
       "type":"goreng",
       "Kalori": "425",

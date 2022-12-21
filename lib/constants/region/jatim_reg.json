@@ -1,52 +1,57 @@
 [
   {
-    "fdnm": "Soto Lamongan",
-    "imgurl": "https://cdn1.katadata.co.id/media/images/thumb/2021/11/12/Soto_ayam_Lamongan-2021_11_12-07_11_23_a43683d33b40f413228d54e3c6ed4a2f_400x267_thumb.jpg",
+    "fdnm": "Bebek Madura",
+    "imgurl": "",
+    "imgurl2":"https://user-images.githubusercontent.com/106671990/208838989-6ba40deb-d8d6-45c4-a60d-215c691e79df.png",
     "desc":"Soto Lamongan adalah sajian makanan soto ayam yang khas dari daerah Lamongan, Jawa Timur. Salah satu ciri khas dari Soto Lamongan ini terletak pada serbuk krupuk udangnya yang sering disebut koya atau poya.",
     "type":"berkuah",
     "Kalori":"312",
-    "Protein":"24,01",
-    "Lemak":"14,92",
-    "Karbohidrat":"19,55"
+    "Protein":"24.01",
+    "Lemak":"14.92",
+    "Karbohidrat":"19.55"
   },
   {
-    "fdnm": "Soto Rawon",
-    "imgurl": "https://www.masakapahariini.com/wp-content/uploads/2018/04/resep-rawon-daging-780x440.jpg",
+    "fdnm": "Pecel Madiun",
+    "imgurl": "",
+    "imgurl2":"https://user-images.githubusercontent.com/106671990/208839179-e6b24ae1-bae4-4b41-9906-b7aa550f35f9.png",
     "desc":"Rawon merupakan salah satu makanan khas Jawa Timur yang mudah didapatkan di mana saja, mulai dari warung-warung kecil hingga restoran-restoran besar. Rawon terbuat dari daging dan kuah daging sapi yang ditambah bumbu-bumbu untuk mendapatkan citarasa khas rawon. Bumbu rawon terdiri dari berbagai macam rempah-rempah, seperti bawang merah, bawang putih, kemiri, cabe merah, dan kluwak.",
     "type":"berkuah",
     "Kalori":"60",
-    "Protein":"5,4",
-    "Lemak":"2,5",
+    "Protein":"5.4",
+    "Lemak":"2.5",
     "Karbohidrat":"4"
   },
   {
     "fdnm": "Bakso Malang",
-    "imgurl": "https://asset.kompas.com/crops/WsUxzVKuLHaWTO3vge_sPMpj90I=/0x129:1000x796/375x240/data/photo/2020/03/03/5e5e292daa840.jpg",
+    "imgurl": "",
+    "imgurl2":"https://user-images.githubusercontent.com/106671990/208838790-79cb7665-2787-474c-a7c3-51ca8123aafa.png",
     "desc":"Bakso Malang adalah hidangan bakso yang banyak ditemui di seluruh belahan Kota Malang dan Kabupaten Malang, Jawa Timur. Mirip dengan hidangan bakso lainnya, hidangan tersebut terdiri dari daging yang dibentuk bundar dan mi. Bedanya ada pada penambahan kulit pangsit yang digoreng dan tahu yang digoreng.",
     "type":"berkuah",
     "Kalori":"57",
-    "Protein":"3,74",
-    "Lemak":"3,69",
-    "Karbohidrat":"2,12"
+    "Protein":"3.74",
+    "Lemak":"3.69",
+    "Karbohidrat":"2.12"
   },
   {
-    "fdnm": "Gethuk Pisang",
-    "imgurl": "https://suarakonsumen.co/asset/foto_berita/IMG20201126084156.jpg",
+    "fdnm": "Rawon",
+    "imgurl": "",
+    "imgurl2":"https://user-images.githubusercontent.com/106671990/208839380-6de41786-5118-4e79-b863-1a486da815c8.png",
     "desc":"Gethuk pisang merupakan makanan khas dari Kediri yang terbuat dari bahan dasar pisang dan disajikan dengan cara dibungkus daun pisang. Gethuk pisang terbuat dari pisang khusus yaitu jenis pisang raja nangka.",
     "type":"berkuah",
     "Kalori":"144",
     "Protein":"1,1",
-    "Lemak":"0,4",
-    "Karbohidrat":"34,1"
+    "Lemak":"0.4",
+    "Karbohidrat":"34.1"
   },
   {
-    "fdnm": "Tahu Campur",
-    "imgurl": "https://kbu-cdn.com/dk/wp-content/uploads/tahu-campur.jpg",
+    "fdnm": "Soto Lamongan",
+    "imgurl": "",
+    "imgurl2":"https://user-images.githubusercontent.com/106671990/208839526-abe4ebf0-ec1c-475f-9681-162ce4d0866a.png",
     "desc":"Tahu campur adalah salah satu makanan khas Jawa Timur, tepatnya dari kota Lamongan. Tahu campur terdiri dari sop daging sapi kenyal, kikil sapi, tahu goreng, perkedel singkong, taoge segar, selada air segar, mi kuning, dan kerupuk udang. Semua ini kemudian dicampurkan ke bumbu petis, bawang goreng, dan sambal. Masakan ini banyak dijual di warung kaki lima dengan label Tahu Campur Lamongan.",
     "type":"berkuah",
     "Kalori":"80",
-    "Protein":"10,9",
-    "Lemak":"4,7",
-    "Karbohidrat":"0,8"
+    "Protein":"10.9",
+    "Lemak":"4.7",
+    "Karbohidrat":"0.8"
   }
 ]

@@ -30,12 +30,7 @@ dependencies:
 ```
 ## Api
 
-[Food detail api](https://api.jsonbin.io/v3/b/638c7418a3c728450edf31ff?meta=false)
-
 [Region card api](https://api.jsonbin.io/v3/b/638ce0bca3c728450edf79ab?meta=false)
-
-https://api.jsonbin.io/v3/b/638d5f5ea3c728450edfcf1c?meta=false jateng food
-https://api.jsonbin.io/v3/b/638e261372ad6d6ffb34e376?meta=false food type
 
 
 ## Installation
