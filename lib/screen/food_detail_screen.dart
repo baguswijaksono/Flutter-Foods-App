@@ -2,17 +2,31 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/piechart.dart';
 
+import '../components/komposisi.dart';
+
 
 // ignore: must_be_immutable
 class detail_screen extends StatelessWidget {
-   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit,}) : super(key: key);
+   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit, required this.imgurl2, required this.l1, required this.l2, required this.l3, required this.l4, required this.b1, required this.b2, required this.b3, required this.b4,}) : super(key: key);
   final String fdnm;
   final String desc;
   final String imgurl;
+    final String imgurl2;
   final String kal;
   final String lmk;
   final String prtn;
   final String vit;
+  final String l1;
+    final String l2;
+      final String l3;
+        final String l4;
+                final String b1;
+                        final String b2;
+                                final String b3;
+                                 final String b4;
+
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -169,29 +183,7 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   const SizedBox(
                     height: 10,
                   ),
-                  Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Row(
-        children: [
-          const CircleAvatar(
-            radius: 10,
-            backgroundColor: Color(0xFFE3FFF8),
-            child: Icon(
-              Icons.done,
-              size: 15,
-              color: Color(0xFF1FCC79),
-            ),
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Text(
-            "4 Eggs",
-            style: Theme.of(context).textTheme.bodyText2,
-          ),
-        ],
-      ),
-    ),
+   bahan(a: '',),
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 15),
                     child: Divider(
@@ -221,7 +213,7 @@ Padding(
               SizedBox(
                 width: 270,
                 child: Text(
-                  "Your recipe has been uploaded, you can see it on your profile. Your recipe has been uploaded, you can see it on your",
+                  l1,
                   maxLines: 3,
                   style: Theme.of(context)
                       .textTheme
@@ -238,25 +230,6 @@ Padding(
         ],
       ),
     ),
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.all(15),
-                                    child: ElevatedButton(
-          child: Text('Elevated Button'),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green,
-          ),
-          onPressed: () {},
-        ),),Padding(padding: EdgeInsets.all(15),
-                                    child: ElevatedButton(
-          child: Text('Elevated Button'),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green,
-          ),
-          onPressed: () {},
-        ),),
-                    ],
-                  )
                 ],
               ),
             ),
