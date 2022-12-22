@@ -70,7 +70,7 @@ Padding(
   padding: const EdgeInsets.all(0.0),
   child:   banner()
 ),                    
-            Padding(padding: const EdgeInsets.all(15.0),
+            Padding(padding: const EdgeInsets.all(10.0),
             child: region_view_more_text(clasifier: 'region',)
             ),
 // nuslis interface disini
@@ -81,7 +81,7 @@ Padding(
                       child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
-                        for (int i = 0; i < 5; i++)...[
+                        for (int i = 0; i < 4; i++)...[
                                       regioncard(imgurlnum: i, regnmsnum: i,regurlnum: i,)]
  ],
          ),

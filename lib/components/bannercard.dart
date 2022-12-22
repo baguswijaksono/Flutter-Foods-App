@@ -72,7 +72,7 @@ if (snapshot.hasData) {
                           height: 75,
                           alignment: Alignment.centerRight,
                           child: Text(
-      "Randomtext here blablabla.",textAlign: TextAlign.right,
+      snapshot.data[randomNumber]['fdnm'].toString(),textAlign: TextAlign.right,
       style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25,color: Colors.white,),
     ),
                         ),
@@ -85,11 +85,15 @@ if (snapshot.hasData) {
                                       ),
                               ),
   );}else {
-            return CardLoading(
-  height: 300,
+            return Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: CardLoading(
+  height: 175,
+  width: 300,
   borderRadius: BorderRadius.all(Radius.circular(10)),
   margin: EdgeInsets.only(bottom: 10),
-);
+),
+            );
           }
   
         }

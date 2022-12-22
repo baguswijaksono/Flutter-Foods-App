@@ -23,7 +23,7 @@ class regioncard extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
             return Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(4.0),
               child: GestureDetector(
                   onTap:() {Navigator.push(
                                             context,
@@ -54,11 +54,14 @@ class regioncard extends StatelessWidget {
 ),
             );
           } else {
-            return CardLoading(
-  height: 300,
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: CardLoading(
+                height: 250,
+  width: 200,
   borderRadius: BorderRadius.all(Radius.circular(10)),
-  margin: EdgeInsets.only(bottom: 10),
-);
+),
+            );
           }
         },
       );

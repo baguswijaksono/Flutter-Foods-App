@@ -100,7 +100,7 @@ fit: BoxFit.fill,
 ),
 Container(
 height: 160,
-alignment: Alignment.center,
+alignment: Alignment.bottomRight,
 child: Text(
 snapshot.data[i]['fdnm'].toString(),
 style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.0, ), 

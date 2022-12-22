@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/screen/foodtype_list.dart';
 import 'package:http/http.dart' as http;
@@ -57,7 +58,14 @@ class typecard extends StatelessWidget {
 ),
             );
           } else {
-            return const Center(child: CircularProgressIndicator());
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: CardLoading(
+                height: 150,
+  width: 200,
+  borderRadius: BorderRadius.all(Radius.circular(10)),
+),
+            );
           }
         },
       );
