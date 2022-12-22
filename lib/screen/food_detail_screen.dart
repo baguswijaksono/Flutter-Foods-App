@@ -197,39 +197,7 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   const SizedBox(
                     height: 10,
                   ),
-Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          CircleAvatar(
-            backgroundColor: Color(0xFF2E3E5C),
-            radius: 12,
-            child: Text("1"),
-          ),
-          Column(
-            children: [
-              SizedBox(
-                width: 270,
-                child: Text(
-                  l1,
-                  maxLines: 3,
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2!
-                      .copyWith(color: Color(0xFF2E3E5C)),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-
-            ],
-          )
-        ],
-      ),
-    ),
+/////\
                 ],
               ),
             ),
