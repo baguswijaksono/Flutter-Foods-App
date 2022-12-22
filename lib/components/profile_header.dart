@@ -35,20 +35,6 @@ class page extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.orange.withOpacity(0.5),
-                          borderRadius: BorderRadius.circular(12)),
-                      child: Center(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Power levle 5",
-                            style: TextStyle(color: Colors.orange[900]),
-                          ),
-                        ),
-                      ),
-                    )
                   ],
                 ),
               ),

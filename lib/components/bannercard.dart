@@ -26,7 +26,6 @@ if (snapshot.hasData) {
             // ignore: unused_local_variable
             var d=snapshot.data.length ;
             int randomNumber = random.nextInt(d);
-
             return GestureDetector(
                 onTap:() {Navigator.push(
                                         context,
@@ -86,12 +85,11 @@ if (snapshot.hasData) {
                               ),
   );}else {
             return Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(15.0),
               child: CardLoading(
   height: 175,
   width: 300,
   borderRadius: BorderRadius.all(Radius.circular(10)),
-  margin: EdgeInsets.only(bottom: 10),
 ),
             );
           }

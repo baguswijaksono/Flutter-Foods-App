@@ -39,7 +39,9 @@ flutter:
      - images/dark.png
      - images/region_dark.png
      - images/type_dark.png
-     - images/type_dark.png
-     - images/type_dark.png
+     - images/centraljava.png
+     - images/westjava.png
+     - images/eastjava.png
+     - images/bali.png
 
 #  fonts:

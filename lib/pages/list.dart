@@ -98,11 +98,19 @@ style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22.
 )     
           );
           } else {
-            return CardLoading(
-  height: 300,
-  borderRadius: BorderRadius.all(Radius.circular(10)),
-  margin: EdgeInsets.only(bottom: 10),
-);
+            return Scaffold(
+              body: ListView
+            (
+              children: <Widget>[
+                 for (var i = 0; i < 10; i++)
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: CardLoading(height: 160,borderRadius: BorderRadius.all(Radius.circular(10)))  
+                )
+              ]
+
+            ),);
+
           }
         },
       );

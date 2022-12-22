@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
+import 'package:flutter_application_akhir/components/regionviewmore.dart';
 
 class info extends StatefulWidget {
   const info({super.key});
@@ -28,6 +29,76 @@ class _infoState extends State<info> {
           ),
         ),
       ),
-    );
+      body: ListView
+            (
+              children: <Widget>[
+                          region_view_more_text(clasifier: 'Wesst Java'),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                height: 200,
+                width: 975,
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/westjava.png',height: 220220,width: 975, ),
+              ),
+                          ),  
+                                    Padding(
+              padding:
+                  const EdgeInsets.all(8),
+              child: Container(
+                child: Text(
+                  "Thave 11 years commercial experience providing front-end development, producing responsive websites and exceptional user experience.",
+                  style: TextStyle(color: Colors.grey, fontSize: 15),
+                ),
+              ),
+            ),
+                      region_view_more_text(clasifier: 'Wesst Java'),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                height: 200,
+                width: 975,
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/westjava.png',height: 220220,width: 975, ),
+              ),
+                          ),  
+                                    Padding(
+              padding:
+                  const EdgeInsets.all(8),
+              child: Container(
+                child: Text(
+                  "Thave 11 years commercial experience providing front-end development, producing responsive websites and exceptional user experience.",
+                  style: TextStyle(color: Colors.grey, fontSize: 15),
+                ),
+              ),
+            ),
+                      region_view_more_text(clasifier: 'Wesst Java'),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                height: 200,
+                width: 975,
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/westjava.png',height: 220220,width: 975, ),
+              ),
+                          ),  
+                                    Padding(
+              padding:
+                  const EdgeInsets.all(8),
+              child: Container(
+                child: Text(
+                  "Thave 11 years commercial experience providing front-end development, producing responsive websites and exceptional user experience.",
+                  style: TextStyle(color: Colors.grey, fontSize: 15),
+                ),
+              ),
+            ), 
+              ]
+
+            ) ,   
+
+      );
   }
 }
