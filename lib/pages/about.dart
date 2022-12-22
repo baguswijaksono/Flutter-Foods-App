@@ -61,7 +61,7 @@ class _infoState extends State<info> {
                 width: 975,
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/westjava.png',height: 220220,width: 975, ),
+                'images/centraljava.png',height: 220220,width: 975, ),
               ),
                           ),  
                                     Padding(
@@ -82,7 +82,27 @@ class _infoState extends State<info> {
                 width: 975,
                 alignment: Alignment.center,
                 child: Image.asset(
-                'images/westjava.png',height: 220220,width: 975, ),
+                'images/eastjava.png',height: 220220,width: 975, ),
+              ),
+                          ),  
+                                    Padding(
+              padding:
+                  const EdgeInsets.all(8),
+              child: Container(
+                child: Text(
+                  "Thave 11 years commercial experience providing front-end development, producing responsive websites and exceptional user experience.",
+                  style: TextStyle(color: Colors.grey, fontSize: 15),
+                ),
+              ),
+            ),
+                                 Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                height: 200,
+                width: 975,
+                alignment: Alignment.center,
+                child: Image.asset(
+                'images/bali.png',height: 220220,width: 975, ),
               ),
                           ),  
                                     Padding(

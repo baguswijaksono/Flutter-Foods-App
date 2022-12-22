@@ -52,7 +52,7 @@ class _homepagegwehState extends State<homepagegweh> {
     Column(
       children: [
         Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(20.0),
           child: Text(
             "Temukan Makanan \nFavoritmu disini.",       
             textAlign: TextAlign.left,
