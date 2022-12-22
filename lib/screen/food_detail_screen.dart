@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_akhir/components/instruksi.dart';
 import 'package:flutter_application_akhir/components/piechart.dart';
 
 import '../components/komposisi.dart';
@@ -7,7 +8,7 @@ import '../components/komposisi.dart';
 
 // ignore: must_be_immutable
 class detail_screen extends StatelessWidget {
-   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit, required this.imgurl2, required this.l1, required this.l2, required this.l3, required this.l4, required this.b1, required this.b2, required this.b3, required this.b4,}) : super(key: key);
+   detail_screen({Key? key, required this.fdnm, required this.desc, required this.imgurl, required this.kal, required this.lmk, required this.prtn, required this.vit, required this.imgurl2, required this.l1, required this.l2, required this.l3, required this.l4, required this.b1, required this.b2, required this.b3, required this.b4, required this.b5, required this.b6,}) : super(key: key);
   final String fdnm;
   final String desc;
   final String imgurl;
@@ -24,6 +25,8 @@ class detail_screen extends StatelessWidget {
                         final String b2;
                                 final String b3;
                                  final String b4;
+                                                                 final String b5;
+                                 final String b6;
 
 
 
@@ -37,7 +40,7 @@ class detail_screen extends StatelessWidget {
         children: [
           SizedBox(
             width: double.infinity,
-            child: Image.network(imgurl),
+            child: Image.network(imgurl2),
           ),
           buttonArrow(context),
           scroll(),
@@ -183,7 +186,13 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   const SizedBox(
                     height: 10,
                   ),
-   bahan(a: '',),
+   bahan(a: b1,),
+      bahan(a: b2,),
+         bahan(a: b3,),
+            bahan(a: b4,),
+   bahan(a: b5,),
+      bahan(a: b6,),
+
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 15),
                     child: Divider(
@@ -197,7 +206,10 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
                   const SizedBox(
                     height: 10,
                   ),
-/////\
+instruksi(index: '1', langkah: l1),
+instruksi(index: '2', langkah: l2),
+instruksi(index: '3', langkah: l3),
+instruksi(index: '4', langkah: l4)
                 ],
               ),
             ),

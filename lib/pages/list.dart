@@ -47,7 +47,24 @@ class list extends StatelessWidget {
 onTap:() {Navigator.push(
 context,
 MaterialPageRoute(
-builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(), desc: snapshot.data[i]['desc'].toString(), imgurl: snapshot.data[i]['imgurl'].toString(), kal:snapshot.data[i]['Kalori'].toString(), vit: snapshot.data[i]['Karbohidrat'].toString(), lmk: snapshot.data[i]['Lemak'].toString(), prtn: snapshot.data[i]['Protein'].toString(), b1: '', b2: '', b3: '', b4: '', imgurl2: '', l1: '', l2: '', l3: '', l4: '',)));},
+builder: (context) => detail_screen(fdnm: snapshot.data[i]['fdnm'].toString(),
+                                   desc: snapshot.data[i]['desc'].toString(), 
+                                  imgurl: snapshot.data[i]['imgurl'].toString(), 
+                                  kal: snapshot.data[i]['Kalori'], 
+                                  lmk: snapshot.data[i]['Lemak'], 
+                                  prtn: snapshot.data[i]['Protein'], 
+                                  vit: snapshot.data[i]['Karbohidrat'], 
+                                  b1: snapshot.data[i]['bahan1'],
+                                  b2: snapshot.data[i]['bahan2'],
+                                  b3: snapshot.data[i]['bahan3'], 
+                                  b4: snapshot.data[i]['bahan4'], 
+                                  imgurl2: snapshot.data[i]['imgurl2'], 
+                                  l1: snapshot.data[i]['langkah1'], 
+                                  l2: snapshot.data[i]['langkah2'], 
+                                  l3: snapshot.data[i]['langkah3'], 
+                                  l4: snapshot.data[i]['langkah4'], 
+                                  b5: snapshot.data[i]['bahan5'], 
+                                  b6: snapshot.data[i]['bahan6'],)));},
 child: ClipRRect(
 child: Stack(
 children: [
