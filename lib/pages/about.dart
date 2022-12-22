@@ -36,7 +36,7 @@ class _infoState extends State<info> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                height: 200,
+                height: 240,
                 width: 975,
                 alignment: Alignment.center,
                 child: Image.asset(
@@ -57,7 +57,7 @@ class _infoState extends State<info> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                height: 200,
+                height: 240,
                 width: 975,
                 alignment: Alignment.center,
                 child: Image.asset(
@@ -78,7 +78,7 @@ class _infoState extends State<info> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                height: 200,
+                height: 240,
                 width: 975,
                 alignment: Alignment.center,
                 child: Image.asset(
@@ -98,7 +98,7 @@ class _infoState extends State<info> {
                                  Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                height: 200,
+                height: 240,
                 width: 975,
                 alignment: Alignment.center,
                 child: Image.asset(
