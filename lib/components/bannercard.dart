@@ -68,10 +68,10 @@ if (snapshot.hasData) {
                       Padding(
                         padding: const EdgeInsets.all(15),
                         child: Container(
-                          height: 75,
-                          alignment: Alignment.centerRight,
+                          height: 145,
+                          alignment: Alignment.center,
                           child: Text(
-      snapshot.data[randomNumber]['fdnm'].toString(),textAlign: TextAlign.right,
+      snapshot.data[randomNumber]['fdnm'].toString(),textAlign: TextAlign.center,
       style: TextStyle(fontWeight: FontWeight.w700, fontSize: 25,color: Colors.white,),
     ),
                         ),

@@ -10,7 +10,7 @@ final String clasifier;
   //mainAxisSize: MainAxisSize.max,
   children: <Widget>[
     Text(
-      "Food Classify by $clasifier",
+      clasifier,
       textAlign: TextAlign.left,
       style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
     ),

@@ -49,13 +49,6 @@ class _userState extends State<user> {
           crossAxisAlignment:CrossAxisAlignment.stretch, 
           children: [ 
             page(),
-            SizedBox(
-              height: 300,
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: BarChartSample2(klfr: 6, klmn: 6, klst: 6, klsu: 6, klte: 6, kltu: 6, klwd: 6,),
-              ),
-            )
                 //kotak scroll
           ],
           )

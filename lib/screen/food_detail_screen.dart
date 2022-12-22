@@ -28,8 +28,6 @@ class detail_screen extends StatelessWidget {
                                                                  final String b5;
                                  final String b6;
 
-
-
   @override
   Widget build(BuildContext context) {
 
@@ -192,7 +190,6 @@ piechart(kal: pkal ,lmk: plmk, prtn: pprtn, vtmn: pvit,),
    bahan(a: b4,),
    bahan(a: b5,),
    bahan(a: b6,),
-
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 15),
                     child: Divider(

@@ -16,7 +16,6 @@ class _homepagegwehState extends State<homepagegweh> {
     // ignore: unused_local_variable
     double dev_width = MediaQuery.of(context).size.width;//variabel buat nyari lebar device
     double dev_height = MediaQuery.of(context).size.height; //variabel buat nyari panjang device
-    
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -54,7 +53,7 @@ class _homepagegwehState extends State<homepagegweh> {
         Padding(
           padding: const EdgeInsets.all(20.0),
           child: Text(
-            "Temukan Makanan \nFavoritmu disini.",       
+            "Temukan Makanan \nFavoritmu disini :)",       
             textAlign: TextAlign.left,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,color: Colors.black),
           ),
@@ -71,7 +70,7 @@ Padding(
   child:   banner()
 ),                    
             Padding(padding: const EdgeInsets.all(10.0),
-            child: region_view_more_text(clasifier: 'region',)
+            child: region_view_more_text(clasifier: 'Makanan Berdasarkan Derah',)
             ),
 // nuslis interface disini
                     Padding(
@@ -88,7 +87,7 @@ Padding(
       ),
   ),      
     Padding(padding: const EdgeInsets.all(15.0),
-            child: region_view_more_text(clasifier: 'type',)
+            child: region_view_more_text(clasifier: 'Makanan Berdasarkan Jenis',)
 ),
                     Padding(
                       padding: const EdgeInsets.only(left: 15),

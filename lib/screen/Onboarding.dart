@@ -14,28 +14,28 @@ class _OnBoardState extends State<OnBoard> {
   late PageController _pageController;
   List<OnboardModel> screens = <OnboardModel>[
     OnboardModel(
-      img: 'assets/images/img-1.png',
-      text: "Belajar Dengan Metode Learning by Doing",
+      img: 'images/Illustration-02.png',
+      text: "Bantu kamu pilih makanan yang kamu mau makan hari ini.",
       desc:
           "Sebuah metode belajar yang terbuktiampuh dalam meningkatkan produktifitas belajar, Learning by Doing",
       bg: Colors.white,
-      button: Color(0xFF4756DF),
+      button: Color.fromARGB(255, 71, 223, 96),
     ),
     OnboardModel(
-      img: 'assets/images/img-2.png',
-      text: "Dapatkan Kemudahan Akses Kapanpun dan Dimanapun",
+      img: 'images/Illustration-03.png',
+      text: "Bantu kamu menghindari alergi.",
       desc:
           "Tidak peduli dimanapun kamu, semua kursus yang telah kamu ikuti bias kamu akses sepenuhnya",
-      bg: Color(0xFF4756DF),
+      bg: Color.fromARGB(255, 71, 223, 96),
       button: Colors.white,
     ),
     OnboardModel(
-      img: 'assets/images/img-3.png',
-      text: "Gunakan Fitur Kolaborasi Untuk Pengalaman Lebih",
+      img: 'images/Illustration-05.png',
+      text: "Bantu kamu kontrol gizi.",
       desc:
           "Tersedia fitur Kolaborasi dengan tujuan untuk mengasah skill lebih dalam karena bias belajar bersama",
       bg: Colors.white,
-      button: Color(0xFF4756DF),
+      button: Color.fromARGB(255, 71, 223, 96),
     ),
   ];
 
@@ -62,9 +62,9 @@ class _OnBoardState extends State<OnBoard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: currentIndex % 2 == 0 ? Color(0xFFFFFFFF) : Color(0xFF4756DF),
+      backgroundColor: currentIndex % 2 == 0 ? Color(0xFFFFFFFF) : Color.fromARGB(255, 71, 223, 96),
       appBar: AppBar(
-        backgroundColor: currentIndex % 2 == 0 ? Color(0xFFFFFFFF) : Color(0xFF4756DF),
+        backgroundColor: currentIndex % 2 == 0 ? Color(0xFFFFFFFF) : Color.fromARGB(255, 71, 223, 96),
         elevation: 0.0,
         actions: [
           TextButton(
@@ -152,7 +152,6 @@ class _OnBoardState extends State<OnBoard> {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) => homepagegweh()));
                       }
-
                       _pageController.nextPage(
                         duration: Duration(milliseconds: 300),
                         curve: Curves.bounceIn,
@@ -162,21 +161,21 @@ class _OnBoardState extends State<OnBoard> {
                       padding:
                           EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
                       decoration: BoxDecoration(
-                          color: index % 2 == 0 ? Color(0xFF4756DF) : Color(0xFFFFFFFF),
+                          color: index % 2 == 0 ? Color.fromARGB(255, 71, 223, 96) : Color(0xFFFFFFFF),
                           borderRadius: BorderRadius.circular(15.0)),
                       child: Row(mainAxisSize: MainAxisSize.min, children: [
                         Text(
                           "Next",
                           style: TextStyle(
                               fontSize: 16.0,
-                              color: index % 2 == 0 ? Color(0xFFFFFFFF) : Color(0xFF4756DF)),
+                              color: index % 2 == 0 ? Color(0xFFFFFFFF) : Color.fromARGB(255, 71, 223, 96)),
                         ),
                         SizedBox(
                           width: 15.0,
                         ),
                         Icon(
                           Icons.arrow_forward_sharp,
-                          color: index % 2 == 0 ? Color(0xFFFFFFFF) : Color(0xFF4756DF),
+                          color: index % 2 == 0 ? Color(0xFFFFFFFF) : Color.fromARGB(255, 71, 223, 96),
                         )
                       ]),
                     ),

@@ -6,8 +6,6 @@ import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/screen/food_detail_screen.dart';
 
-import '../components/backbutton.dart';
-
 class foodtype extends StatelessWidget {
    foodtype({super.key, required this.allpirul,required this.typeindex});
   final String allpirul;
@@ -29,38 +27,6 @@ class foodtype extends StatelessWidget {
       body: ListView(
   padding: const EdgeInsets.all(0),
   children: <Widget>[
-    SizedBox(
-      height: 250,
-      child: Stack(
-  children: <Widget>[
-        backarrow(),
-    Column(
-      children: [
-        Container(
-          height: 75,
-        ),
-        Container(
-alignment: Alignment.center,
-child: Text('Regional Foods ',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
-),),
-    Container(
-alignment: Alignment.center,
-child: Text('of ',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
-),),
-    Container(
-alignment: Alignment.center,
-child: Text('regionname',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22.0, ), 
-),)
-      ],
-    ),
-  ],
-)
-
-    ),
-
 for (var i = 0; i < 20; i++)
 if (snapshot.data[i]['type'].toString()==arr[typeindex])
 GestureDetector(

@@ -38,7 +38,7 @@ class list extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       body: ListView(
   padding: EdgeInsets.all(0),
   children: <Widget>[
