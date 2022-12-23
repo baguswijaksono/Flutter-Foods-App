@@ -44,7 +44,7 @@ child: Image.asset(
         Container(
 padding: EdgeInsets.only(top: 80),
 alignment: Alignment.center,
-child: Text('MAKANAN DAERAH',style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 35 , fontWeight: FontWeight.bold), 
+child: Text('MAKANAN DAERAH',style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 35 , fontWeight: FontWeight.w900), 
 ),),
     Padding(
       padding: const EdgeInsets.all(4.0),
@@ -64,9 +64,7 @@ style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35.
     ),
   ],
 )
-
-    ),
-  
+    ), 
     for (var i = 0; i < d; i++)
     
     GestureDetector(

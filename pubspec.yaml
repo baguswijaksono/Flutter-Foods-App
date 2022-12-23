@@ -52,6 +52,8 @@ flutter:
          - asset: fonts/Raleway-Black.ttf
          - asset: fonts/Raleway-BlackItalic.ttf
          - asset: fonts/Raleway-Bold.ttf
+         - asset: Raleway-ExtraBold.ttf
+         
      - family: Black
        fonts:
          - asset: fonts/Black_Theory.otf
