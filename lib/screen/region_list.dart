@@ -28,28 +28,38 @@ final String regionname;
   padding: const EdgeInsets.all(0),
   children: <Widget>[
     SizedBox(
-      
       height: 250,
       child: Stack(
   children: <Widget>[
     backarrow(),
+        Padding(
+          padding: const EdgeInsets.only(top: 65),
+          child: Container(
+alignment: Alignment.center,
+child: Image.asset(
+                  'images/brush.png',height: 90 ),),
+        ),
     Column(
       children: [
         Container(
 padding: EdgeInsets.only(top: 80),
 alignment: Alignment.center,
-child: Text('MAKANAN DAERAH',style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 30), 
+child: Text('MAKANAN DAERAH',style: TextStyle(color: Colors.black,fontFamily: 'Raleway',fontSize: 35 , fontWeight: FontWeight.bold), 
 ),),
-    Container(
+    Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: Container(
 alignment: Alignment.center,
 child: Text('dari',
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 12.0, ), 
+style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12.0, ), 
 ),),
+    ),
     Container(
 alignment: Alignment.center,
 child: Text(regionname,
-style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30.0, ), 
-),)
+style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35.0, fontFamily: 'Novembah'), 
+),),
+
       ],
     ),
   ],

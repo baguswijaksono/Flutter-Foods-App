@@ -15,11 +15,9 @@ dependencies:
   http: ^0.13.1
   fl_chart: ^0.55.2
   common_ui_toolkit: ^0.2.6
-  flutter_timer_countdown: ^1.0.5
   google_fonts: ^3.0.1
   card_loading: ^0.2.2
   iconly: ^1.0.1
-  pie_chart: ^5.3.2
   shared_preferences: ^2.0.15
   sqflite: ^2.2.2
   
@@ -46,5 +44,21 @@ flutter:
      - images/Illustration-02.png
      - images/Illustration-03.png
      - images/Illustration-05.png
+     - images/brush.png
 
-#  fonts:
+  fonts:
+     - family: Raleway
+       fonts:
+         - asset: fonts/Raleway-Black.ttf
+         - asset: fonts/Raleway-BlackItalic.ttf
+         - asset: fonts/Raleway-Bold.ttf
+     - family: Black
+       fonts:
+         - asset: fonts/Black_Theory.otf
+     - family: Novembah
+       fonts:
+         - asset: fonts/Hey_November.ttf
+
+
+
+         

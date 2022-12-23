@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_akhir/components/botnavbar.dart';
-import 'package:flutter_application_akhir/components/calorieschart.dart';
+//import 'package:flutter_application_akhir/components/calorieschart.dart';
 import 'package:flutter_application_akhir/components/profile_header.dart';
 import 'package:flutter_application_akhir/database/sql_helper.dart';
 

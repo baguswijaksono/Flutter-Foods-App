@@ -17,7 +17,7 @@ class _OnBoardState extends State<OnBoard> {
       img: 'images/Illustration-02.png',
       text: "Bantu kamu pilih makanan yang kamu mau makan hari ini.",
       desc:
-          "Sebuah metode belajar yang terbuktiampuh dalam meningkatkan produktifitas belajar, Learning by Doing",
+          "Bantu kamu saat kesusahan milih makanan apa yang ingin kamu makan hari ini .",
       bg: Colors.white,
       button: Color.fromARGB(255, 71, 223, 96),
     ),
@@ -25,7 +25,7 @@ class _OnBoardState extends State<OnBoard> {
       img: 'images/Illustration-03.png',
       text: "Bantu kamu menghindari alergi.",
       desc:
-          "Tidak peduli dimanapun kamu, semua kursus yang telah kamu ikuti bias kamu akses sepenuhnya",
+          "Punya alergi pada bahan makanan tertentu ? nggak usah kawatir kalau kamu pake app ini karena app ini tersedia komposisi makanan.",
       bg: Color.fromARGB(255, 71, 223, 96),
       button: Colors.white,
     ),
@@ -33,7 +33,7 @@ class _OnBoardState extends State<OnBoard> {
       img: 'images/Illustration-05.png',
       text: "Bantu kamu kontrol gizi.",
       desc:
-          "Tersedia fitur Kolaborasi dengan tujuan untuk mengasah skill lebih dalam karena bias belajar bersama",
+          "Takut kamu nggak bisa kontrol kalori yang masuk ? dengan apk ini kamu bisa sedikit lebih tenang karena tiap makanan diberi keterangan gizi.",
       bg: Colors.white,
       button: Color.fromARGB(255, 71, 223, 96),
     ),
@@ -52,7 +52,6 @@ class _OnBoardState extends State<OnBoard> {
   }
 
   _storeOnboardInfo() async {
-    print("Shared pref called");
     int isViewed = 0;
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt('onBoard', isViewed);
