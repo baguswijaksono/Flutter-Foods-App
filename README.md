@@ -30,7 +30,7 @@ Clone the repo
    ```sh
    git clone baguswijaksono/Flutter-Foods-Information-App
    ```
-Install NPM packages
+Install pub packages
    ```sh
    flutter pub get
    ```
