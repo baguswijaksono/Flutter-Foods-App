@@ -5,7 +5,7 @@
 ![alt text](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ## What are This Project?
-Hi Fella, I'm Bagus. I'm a student who comes from a small town in the province of Central Java. Maybe you are wondering what kind of application project this actually is. So Mbadogtify is an application that I developed for the final project in my mobile programming course. Mbadog is a word that comes from the Javanese language and means to eat. The word "Mbadog" is included in the Rough Ngoko Javanese language category. Mbadog means to "eat something or put staple food in the mouth and chew and swallow it." This project uses the Dart programming language and the Flutter framework. This application can be used by all of you to view information about a food, whether it's nutrition information, the ingredients used to make the dish, or how to cook the food.
+Mbadogtify is an application that I developed for the final project in my mobile programming course. Mbadog is a word that comes from the Javanese language and means to eat. The word "Mbadog" is included in the Rough Ngoko Javanese language category. Mbadog means to "eat something or put staple food in the mouth and chew and swallow it." This project uses the Dart programming language and the Flutter framework. This application can be used by all of you to view information about a food, whether it's nutrition information, the ingredients used to make the dish, or how to cook the food.
 
 ## User interface Overview
 
